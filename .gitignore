@@ -1,0 +1,16 @@
+# ── 标准全文语料（版权归各标准组织，不随仓库分发）──
+references/sources/
+
+# ── OCR 渲染缓存（单份标准可达数百 MB）──
+**/_pages/
+*.progress.json
+
+# ── 中间产物 ──
+tools/inventory.json
+ocr_*.log
+
+# ── 系统 ──
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]

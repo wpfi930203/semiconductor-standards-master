@@ -1,0 +1,2999 @@
+{
+ "generated": "2026-10-08",
+ "source_tier": "L4-OCR",
+ "note": "来源为军标目录页 OCR 产物。**方法号可用于定位**；标题可能含 OCR 误差与偶发错位，引用前须核对原页。每份标准的标题可信度见 validation 字段。",
+ "validation": {
+  "GJB-548B": {
+   "total": 2,
+   "with_title": 0,
+   "monotonic": true,
+   "trust": "**配对待核**（标题覆盖率 0%，单调性 True）"
+  },
+  "GJB-548C": {
+   "total": 2,
+   "with_title": 1,
+   "monotonic": true,
+   "trust": "**配对待核**（标题覆盖率 50%，单调性 True）"
+  },
+  "MIL-STD-883F": {
+   "total": 74,
+   "with_title": 70,
+   "monotonic": true,
+   "trust": "可用（标题覆盖率 95%，方法号单调）"
+  },
+  "MIL-STD-883K": {
+   "total": 100,
+   "with_title": 92,
+   "monotonic": true,
+   "trust": "可用（标题覆盖率 92%，方法号单调）"
+  }
+ },
+ "standards": {
+  "GJB-548B": [
+   {
+    "method": "1001",
+    "rev": null,
+    "title": "低气压（高空工作）",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1002",
+    "rev": null,
+    "title": "浸液 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1003",
+    "rev": null,
+    "title": "绝缘电阻． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1004",
+    "rev": "1",
+    "title": "耐湿",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1006",
+    "rev": null,
+    "title": "间歇寿命 “ ，",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1007",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1008",
+    "rev": null,
+    "title": "」稳定性烘焙， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1009",
+    "rev": "2",
+    "title": "盐雾（盐汽） “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1010",
+    "rev": "1",
+    "title": "温度循环",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1011",
+    "rev": null,
+    "title": "热冲击",
+    "page": "",
+    "ocr_altered": true,
+    "source": "目录页"
+   },
+   {
+    "method": "1012",
+    "rev": null,
+    "title": "热性能 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1013",
+    "rev": "1",
+    "title": "露点",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1014",
+    "rev": "2",
+    "title": "密封",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1015",
+    "rev": "1",
+    "title": "老炼试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1016",
+    "rev": null,
+    "title": "寿命／可靠性试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1017",
+    "rev": null,
+    "title": "中子辐射 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1019",
+    "rev": "2",
+    "title": "电离辐射（总剂量）试验程序 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1020",
+    "rev": "1",
+    "title": "剂量率感应锁定试验程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1021",
+    "rev": null,
+    "title": "数字微电路的剂量率翻转试验",
+    "page": "",
+    "ocr_altered": true,
+    "source": "目录页"
+   },
+   {
+    "method": "1022",
+    "rev": null,
+    "title": "MOS 场效应晶体管阈值电压",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1023",
+    "rev": "1",
+    "title": "线性微电路的剂量率响应和翻转阈值",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1030",
+    "rev": "1",
+    "title": "密封前老炼 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1031",
+    "rev": null,
+    "title": "薄膜腐蚀试验 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1032",
+    "rev": null,
+    "title": "封装引起的软错误试验程序． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1033",
+    "rev": null,
+    "title": "写 / 擦疲劳寿命 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1034",
+    "rev": null,
+    "title": "染色渗透试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2001",
+    "rev": null,
+    "title": "恒定加速度",
+    "page": "",
+    "ocr_altered": true,
+    "source": "目录页"
+   },
+   {
+    "method": "2002",
+    "rev": "1",
+    "title": "机械冲击",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2003",
+    "rev": "1",
+    "title": "可焊性",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2004",
+    "rev": "2",
+    "title": "引线牢固性",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2005",
+    "rev": null,
+    "title": "振动疲劳．．．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2006",
+    "rev": null,
+    "title": "振动噪声． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2007",
+    "rev": null,
+    "title": "扫频振动． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2009",
+    "rev": "1",
+    "title": "外部目检． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2010",
+    "rev": "1",
+    "title": "内部目检〈单片）． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2011",
+    "rev": null,
+    "title": "键合强度（破坏性键合拉力试验），，，",
+    "page": "",
+    "ocr_altered": true,
+    "source": "目录页"
+   },
+   {
+    "method": "2012",
+    "rev": "1",
+    "title": "x 射线照相． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2013",
+    "rev": null,
+    "title": "破坏性物理分析〈 D 趴）的内部目检 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2014",
+    "rev": null,
+    "title": "内部目检和结构检查 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2015",
+    "rev": "1",
+    "title": "耐溶剂性 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2016",
+    "rev": null,
+    "title": "外形尺寸",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2017",
+    "rev": null,
+    "title": "内部自检（混合电路了",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548C 目录（GJB-548B 目录相应页在扫描件中缺失）；**GJB-548B 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "2018",
+    "rev": "1",
+    "title": "扫描电子显微镜（ SEM ）检查， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2019",
+    "rev": "2",
+    "title": "芯片剪切强度",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2020",
+    "rev": "1",
+    "title": "粒子碰撞噪声检测试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2021",
+    "rev": null,
+    "title": "玻璃钝化层的完整性 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2022",
+    "rev": "2",
+    "title": "可焊性（浸润法）",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2023",
+    "rev": "2",
+    "title": "非破坏性键合拉力试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2024",
+    "rev": null,
+    "title": "玻璃熔封盖板的扭矩试验． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2025",
+    "rev": "1",
+    "title": "引线涂覆附着力试验．．．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2026",
+    "rev": "1",
+    "title": "随机振动",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2027",
+    "rev": "1",
+    "title": "芯片粘结强度， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2028",
+    "rev": null,
+    "title": "针栅阵列式封装破坏性引线拉力试验 “ ，",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2029",
+    "rev": null,
+    "title": "陶瓷片式载体焊接强度（破坏性推力试验）",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2030",
+    "rev": null,
+    "title": "芯片粘接的超声检测 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2031",
+    "rev": null,
+    "title": "倒装片拉脱试验．．．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2032",
+    "rev": null,
+    "title": "无源元件的目检．．．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2035",
+    "rev": null,
+    "title": "载带自动焊焊接质量的超声检测",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2036",
+    "rev": null,
+    "title": "耐焊接热",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548C 目录（GJB-548B 目录相应页在扫描件中缺失）；**GJB-548B 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "2037",
+    "rev": null,
+    "title": "铅锡焊料成分分析一 x 射线荧光检测",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548C 目录（GJB-548B 目录相应页在扫描件中缺失）；**GJB-548B 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "2038",
+    "rev": null,
+    "title": "焊柱阵列封装的破坏性引线拉力",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548C 目录（GJB-548B 目录相应页在扫描件中缺失）；**GJB-548B 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "3023",
+    "rev": null,
+    "title": "集成电路锁定",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548C 目录（GJB-548B 目录相应页在扫描件中缺失）；**GJB-548B 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "5001",
+    "rev": null,
+    "title": "参数平均值控制 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5002",
+    "rev": null,
+    "title": "参数分布控制， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5003",
+    "rev": null,
+    "title": "微电路的失效分析程序 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5004",
+    "rev": "2",
+    "title": "筛选程序 “ ，",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5005",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5006",
+    "rev": null,
+    "title": "",
+    "page": "333",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5007",
+    "rev": "1",
+    "title": "晶圆批验收 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5008",
+    "rev": null,
+    "title": "混合和多片微电路的试验程序， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5009",
+    "rev": null,
+    "title": "破坏性物理分析， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5010",
+    "rev": "2",
+    "title": "复杂单片微电路试验程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5011",
+    "rev": null,
+    "title": "聚合材料的评价和验收程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5012",
+    "rev": null,
+    "title": "数字微电路的故障覆盖率测量",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5013",
+    "rev": null,
+    "title": "GaAs 工艺的晶圆制造控制和接收程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   }
+  ],
+  "GJB-548C": [
+   {
+    "method": "1001",
+    "rev": null,
+    "title": "低气压（高空工作）",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1002",
+    "rev": null,
+    "title": "浸液 “ ．",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1003",
+    "rev": null,
+    "title": "绝缘电阻． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1004",
+    "rev": null,
+    "title": "耐湿",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1006",
+    "rev": null,
+    "title": "间歇寿命 “ ，",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1008",
+    "rev": null,
+    "title": "」稳定性烘焙， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1009",
+    "rev": null,
+    "title": "盐雾（盐汽） “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1010",
+    "rev": null,
+    "title": "温度循环",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1011",
+    "rev": null,
+    "title": "热冲击",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1012",
+    "rev": null,
+    "title": "热性能 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1013",
+    "rev": null,
+    "title": "露点",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1014",
+    "rev": null,
+    "title": "密封",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1015",
+    "rev": null,
+    "title": "老炼试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1016",
+    "rev": null,
+    "title": "寿命／可靠性试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1017",
+    "rev": null,
+    "title": "中子辐射 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1019",
+    "rev": null,
+    "title": "电离辐射（总剂量）试验程序 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1020",
+    "rev": null,
+    "title": "剂量率感应锁定试验程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1021",
+    "rev": null,
+    "title": "数字微电路的剂量率翻转试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1022",
+    "rev": null,
+    "title": "MOS 场效应晶体管阈值电压",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1023",
+    "rev": null,
+    "title": "线性微电路的剂量率响应和翻转阈值",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1030",
+    "rev": null,
+    "title": "密封前老炼 “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "1031",
+    "rev": null,
+    "title": "薄膜腐蚀 · “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1032",
+    "rev": null,
+    "title": "封装引起的软错误",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1033",
+    "rev": null,
+    "title": "写 / 擦疲劳寿命",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1034",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2001",
+    "rev": null,
+    "title": "恒定加速度",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "2002",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2003",
+    "rev": "2",
+    "title": "吲 24",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2004",
+    "rev": "3",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2005",
+    "rev": "1",
+    "title": "振动疲劳",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2006",
+    "rev": null,
+    "title": "振动噪声",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2007",
+    "rev": null,
+    "title": "扫频振动",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2009",
+    "rev": "2",
+    "title": "外部目检",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2010",
+    "rev": "2",
+    "title": "内部目检（单片电路）",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2011",
+    "rev": null,
+    "title": "键合强度（破坏性键合拉力）",
+    "page": "",
+    "ocr_altered": true,
+    "source": "目录页"
+   },
+   {
+    "method": "2012",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2013",
+    "rev": null,
+    "title": "破坏性物理分析 ' （ D 趴）的内部目检",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2014",
+    "rev": null,
+    "title": "内部目检和结构检查",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2015",
+    "rev": null,
+    "title": "“ 耐溶剂性",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2016",
+    "rev": null,
+    "title": "夕下形尺寸",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2017",
+    "rev": "2",
+    "title": "内部自检（混合电路了",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2018",
+    "rev": null,
+    "title": "扫描电子显微镜（ SEM ）检查， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "2019",
+    "rev": "3",
+    "title": "芯片剪切强度",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2020",
+    "rev": "2",
+    "title": "粒子碰撞噪声检测",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2021",
+    "rev": null,
+    "title": "玻璃钝化层的完整性",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2022",
+    "rev": "2",
+    "title": "可焊性餒润法）",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2023",
+    "rev": "3",
+    "title": "非破坏性合拉力， “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2024",
+    "rev": null,
+    "title": "玻璃熔封盖板的扭矩试验． “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "同源标准参考",
+    "source_detail": "据 GJB-548B 目录（GJB-548C 目录相应页在扫描件中缺失）；**GJB-548C 可能已修订该标题，不得直接引用**"
+   },
+   {
+    "method": "2025",
+    "rev": null,
+    "title": "引线涂覆附着",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2026",
+    "rev": "1",
+    "title": "随机振动",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2027",
+    "rev": "1",
+    "title": "芯片粘结强度",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2028",
+    "rev": null,
+    "title": "针栅阵列封装的破坏性引线拉力",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2029",
+    "rev": null,
+    "title": "陶瓷片式载体焊接强度〈破坏性推力）",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2030",
+    "rev": null,
+    "title": "芯片粘接的超声检测",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2031",
+    "rev": null,
+    "title": "倒装片拉脱",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2032",
+    "rev": "1",
+    "title": "无源元件的目检 · “",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2035",
+    "rev": null,
+    "title": "载带自动焊焊接质量的超声检测",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2036",
+    "rev": null,
+    "title": "耐焊接热",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2037",
+    "rev": null,
+    "title": "铅锡焊料成分分析一 x 射线荧光检测",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2038",
+    "rev": null,
+    "title": "焊柱阵列封装的破坏性引线拉力",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3023",
+    "rev": null,
+    "title": "集成电路锁定",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5001",
+    "rev": null,
+    "title": "参数平均值控制",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5002",
+    "rev": null,
+    "title": "参数分布控制",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5003",
+    "rev": null,
+    "title": "微电路的失效分析程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5004",
+    "rev": "3",
+    "title": "筛选程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5005",
+    "rev": "3",
+    "title": "鉴定和质量一致性检验程疗",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5006",
+    "rev": null,
+    "title": "极限试验",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5007",
+    "rev": null,
+    "title": "晶圆批验收",
+    "page": "",
+    "ocr_altered": true,
+    "source": "目录页"
+   },
+   {
+    "method": "5008",
+    "rev": null,
+    "title": "混合和多片微电路的检验程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5009",
+    "rev": null,
+    "title": "破坏性物理分析",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5010",
+    "rev": "3",
+    "title": "复杂单片微电路检验程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5011",
+    "rev": null,
+    "title": "聚合物材料的评价和验收程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5012",
+    "rev": null,
+    "title": "数字微电路的故障覆盖率测量",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5013",
+    "rev": "1",
+    "title": "GaAs 工艺的晶圆制造控制和接收程序",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   }
+  ],
+  "MIL-STD-883F": [
+   {
+    "method": "1001",
+    "rev": null,
+    "title": "Barometric pressure ， reduced (altitude operation)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1002",
+    "rev": null,
+    "title": "lmmersion",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1003",
+    "rev": null,
+    "title": "lnsulation resistance",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1006",
+    "rev": null,
+    "title": "lntermittent life",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1007",
+    "rev": null,
+    "title": "Agree life",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1008",
+    "rev": "2",
+    "title": "Salt atmosphere (corrosion)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1009",
+    "rev": "8",
+    "title": "Temperature cycling",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1010",
+    "rev": "8",
+    "title": "Thermal shock",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1011",
+    "rev": "9",
+    "title": "ThermaI characteristics",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1012",
+    "rev": "1",
+    "title": "Dew point",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1013",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1014",
+    "rev": "11",
+    "title": "SeaI",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1015",
+    "rev": "9",
+    "title": "Burn-in test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1016",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1017",
+    "rev": "2",
+    "title": "Neutron irradiation",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1022",
+    "rev": null,
+    "title": "Mosfet threshold voltage",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1023",
+    "rev": "2",
+    "title": "Dose rate response linear microcircuits",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1030",
+    "rev": "2",
+    "title": "Preseal burn-in",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1031",
+    "rev": null,
+    "title": "Thin film corrosion test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1032",
+    "rev": "1",
+    "title": "Endurance life test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1033",
+    "rev": null,
+    "title": "Die penetrant test 00r plastic devices)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2001",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2004",
+    "rev": "5",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2006",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2007",
+    "rev": "3",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2008",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2009",
+    "rev": "9",
+    "title": "External visual",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2010",
+    "rev": "11",
+    "title": "Bond strength (destructive bond pull test)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2013",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2014",
+    "rev": null,
+    "title": "lnternal visual and mechanical",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2016",
+    "rev": null,
+    "title": "Physical dimensions",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2017",
+    "rev": "8",
+    "title": "lnternal visual (hybrid)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2020",
+    "rev": "8",
+    "title": "Particle impact noise detection test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2021",
+    "rev": "3",
+    "title": "Glassivation layer integrity",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2022",
+    "rev": "2",
+    "title": "Wetting balance solderability",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2024",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2025",
+    "rev": "4",
+    "title": "Adhesion of lead finish",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2026",
+    "rev": null,
+    "title": "Random vibration",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2027",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2028",
+    "rev": "4",
+    "title": "Pin grid package destructive lead pull test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2029",
+    "rev": null,
+    "title": "Ultrasonic inspection Of die attach",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2030",
+    "rev": null,
+    "title": "Flip chip pull-off test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2032",
+    "rev": "2",
+    "title": "Ultrasonic inspection Of TAB bonds",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2035",
+    "rev": null,
+    "title": "ELECTR ℃ AL TESTS （ D ℃ 汗 A 凵",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3001",
+    "rev": "1",
+    "title": "Drive source dynamic",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3005",
+    "rev": "1",
+    "title": "Power supply current",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3006",
+    "rev": "1",
+    "title": "High level output voltage",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3007",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3008",
+    "rev": "1",
+    "title": "Breakdown voltaget input or output",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3009",
+    "rev": "1",
+    "title": "lnput current ， high level",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3011",
+    "rev": "1",
+    "title": "Terminal capacitance",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3013",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3014",
+    "rev": null,
+    "title": "Functional testing",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3015",
+    "rev": "7",
+    "title": "Electrostatic discharge sensitivity classification",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3016",
+    "rev": null,
+    "title": "Activation time verification",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3017",
+    "rev": null,
+    "title": "Microelectronics package digital signal transmission",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3018",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3019",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3020",
+    "rev": null,
+    "title": "High impedance (off-state) w ． v output leakage current",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3021",
+    "rev": null,
+    "title": "High impedance (off-state) high-level output leakage current",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3022",
+    "rev": null,
+    "title": "lnput clamp voltage",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3023",
+    "rev": "1",
+    "title": "Simultaneous switching noise measurements for digital microelectronic devices",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3024",
+    "rev": null,
+    "title": "ELECTR ℃ AL TESTS （ 凵 NEAR)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4002",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4003",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4007",
+    "rev": null,
+    "title": "Automatic gain control range",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5001",
+    "rev": null,
+    "title": "Parameter mean value control",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5002",
+    "rev": "1",
+    "title": "Parameter distribution control",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5003",
+    "rev": null,
+    "title": "Failure analysis procedures 《 or microcircuits",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5004",
+    "rev": "11",
+    "title": "Screening procedures",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5006",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5009",
+    "rev": "1",
+    "title": "Destructive physical analysis",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5010",
+    "rev": "4",
+    "title": "Test procedures for custom monolithic microcircuits",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5011",
+    "rev": "4",
+    "title": "Evaluation and acceptance procedures fO 了 polymeric adhesives.",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5012",
+    "rev": "1",
+    "title": "Wafer fabrication control and wafer acceptance procedures for processed GaAs wafers",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5013",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   }
+  ],
+  "MIL-STD-883K": [
+   {
+    "method": "1001",
+    "rev": null,
+    "title": "Barometric pressure ， reduced (altitude operation)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1002",
+    "rev": null,
+    "title": "lmmersion",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1003",
+    "rev": null,
+    "title": "lnsulation resistance",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1004",
+    "rev": "7",
+    "title": "Moisture reSlStance",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1005",
+    "rev": "10",
+    "title": "Steady state life",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1006",
+    "rev": null,
+    "title": "lntermittent life",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1007",
+    "rev": "1",
+    "title": "Agree life",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1008",
+    "rev": "2",
+    "title": "Salt atmosphere (corrosion)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1009",
+    "rev": "8",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1010",
+    "rev": "9",
+    "title": "Temperature cycling",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1011",
+    "rev": "9",
+    "title": "Thermal shock",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1012",
+    "rev": "1",
+    "title": "Thermal characteristics",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1013",
+    "rev": null,
+    "title": "Dew point",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1014",
+    "rev": "15",
+    "title": "SeaI",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1015",
+    "rev": "11",
+    "title": "Burn-in test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1016",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1017",
+    "rev": "3",
+    "title": "Neutron irradiation",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1019",
+    "rev": "9",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1020",
+    "rev": "1",
+    "title": "Dose rate induced latchup test procedure",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1021",
+    "rev": "3",
+    "title": "Dose rate upset testing Of digital microarcuits",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1022",
+    "rev": null,
+    "title": "Mosfet threshold voltage",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1023",
+    "rev": "3",
+    "title": "Dose rate response Of linear microcircuits",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1030",
+    "rev": "2",
+    "title": "Preseal burn-in",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1031",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1032",
+    "rev": "1",
+    "title": "Package induced soft error test procedure (due tO alpha particles)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1033",
+    "rev": null,
+    "title": "Endurance life test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "1034",
+    "rev": "2",
+    "title": "Die penetrant test (for plastic devices)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2001",
+    "rev": "4",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2002",
+    "rev": "5",
+    "title": "Mechanical shock",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2003",
+    "rev": "12",
+    "title": "SoIderabiIity",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2005",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2006",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2007",
+    "rev": "3",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2008",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2009",
+    "rev": "12",
+    "title": "External visual",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2010",
+    "rev": "14",
+    "title": "lnternal visual (monolithic)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2011",
+    "rev": "9",
+    "title": "Bond strength (destructive bond pull test)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2012",
+    "rev": "9",
+    "title": "Radiography",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2013",
+    "rev": "1",
+    "title": "lnternal visual inspection for DPA",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2014",
+    "rev": null,
+    "title": "lnternal visual and mechanical",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2015",
+    "rev": "14",
+    "title": "Resistance to solvents",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2016",
+    "rev": null,
+    "title": "Physical dimensions",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2017",
+    "rev": "11",
+    "title": "lnternal visual (hybrid)",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2018",
+    "rev": "6",
+    "title": "Scanning electron microscope (SEM) inspection Of metallization",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2019",
+    "rev": "9",
+    "title": "Die shear strength",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2020",
+    "rev": "9",
+    "title": "Particle impact noise detection test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2021",
+    "rev": "3",
+    "title": "Glassivation layer integrity",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2022",
+    "rev": "3",
+    "title": "Wetting balance solderability",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2024",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2025",
+    "rev": "4",
+    "title": "Adhesion of lead finish",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2026",
+    "rev": null,
+    "title": "Random vibration",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2027",
+    "rev": "2",
+    "title": "Substrate attach strength",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2028",
+    "rev": "4",
+    "title": "Pin grid package destructive lead pull test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2029",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2030",
+    "rev": "2",
+    "title": "UItrasonic inspectlon Of die attach",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2031",
+    "rev": "1",
+    "title": "Flip chip pu 0 什 test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2032",
+    "rev": "3",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2035",
+    "rev": null,
+    "title": "UItrasonic inspection Of TAB bonds",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2036",
+    "rev": "1",
+    "title": "Resistance tO soldering heat",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2037",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "2038",
+    "rev": null,
+    "title": "SoIder C01umn Package Destructive Lead PuII Test",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3001",
+    "rev": "1",
+    "title": "Drive source dynamic",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3002",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3003",
+    "rev": "1",
+    "title": "Delay measurements",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3004",
+    "rev": "1",
+    "title": "Transition time measurements",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3005",
+    "rev": "1",
+    "title": "Power SUPPIY current",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3006",
+    "rev": "1",
+    "title": "High level output voltage",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3007",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3008",
+    "rev": "1",
+    "title": "Breakdown voltage, input 0 「 output",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3009",
+    "rev": "1",
+    "title": "lnput current, IOW level",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3010",
+    "rev": "1",
+    "title": "lnput current, high level",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3011",
+    "rev": "1",
+    "title": "Output short circuit current",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3012",
+    "rev": "1",
+    "title": "Terminal capacitance",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3013",
+    "rev": "1",
+    "title": "NOIse margin measurements for digital microelectronic devices",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3014",
+    "rev": null,
+    "title": "FunctionaI testing",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3015",
+    "rev": "9",
+    "title": "EIectrostatic discharge sensitivity classification",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3016",
+    "rev": "1",
+    "title": "Activation time verification",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3017",
+    "rev": null,
+    "title": "Microelectronics package digital signal transmission",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3018",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3019",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3020",
+    "rev": null,
+    "title": "High impedance (off-state) 《 0 艹 厄 ve 《 output leakage current",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3021",
+    "rev": null,
+    "title": "High impedance (off-state) high-level OUtPUt leakage current",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3022",
+    "rev": null,
+    "title": "lnput clamp voltage",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3023",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "3024",
+    "rev": null,
+    "title": "Simultaneous SWltching nose measurements for digital m ℃ roelectromc devices",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4001",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4002",
+    "rev": "1",
+    "title": "Phase margn and SIew rate measurements",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4003",
+    "rev": "1",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4004",
+    "rev": "2",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4005",
+    "rev": "1",
+    "title": "Output performance",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4006",
+    "rev": "1",
+    "title": "Power galn and noise figure",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "4007",
+    "rev": null,
+    "title": "Automatic gain control range",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5001",
+    "rev": null,
+    "title": "Parameter mean value control",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5002",
+    "rev": "1",
+    "title": "Parameter distribution control",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5003",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5004",
+    "rev": "13",
+    "title": "Screenlng procedures",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5005",
+    "rev": "17",
+    "title": "QuaIification and quality conformance procedures",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5006",
+    "rev": null,
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5007",
+    "rev": "8",
+    "title": "Wafer 《 Ot acceptance",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5008",
+    "rev": "9",
+    "title": "",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5009",
+    "rev": "1",
+    "title": "Destructive physical analysis",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5010",
+    "rev": "4",
+    "title": "Test procedures for custom monolithic microcircuits",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5011",
+    "rev": "6",
+    "title": "Evaluation and acceptance procedures for polymeric adhesives.",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5012",
+    "rev": "1",
+    "title": "Fault coverage measurement for digital microcircuits.",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   },
+   {
+    "method": "5013",
+    "rev": "1",
+    "title": "Wafer fabrication control and wafer acceptance procedures for processed GaAs wafers",
+    "page": "",
+    "ocr_altered": false,
+    "source": "目录页"
+   }
+  ]
+ },
+ "cross_validation": {
+  "GJB-548B": {
+   "gjb_only": [
+    "2023"
+   ],
+   "mil883_only": [
+    "1005",
+    "2008",
+    "3001",
+    "3002",
+    "3003",
+    "3004",
+    "3005",
+    "3006",
+    "3007",
+    "3008",
+    "3009",
+    "3010",
+    "3011",
+    "3012",
+    "3013",
+    "3014",
+    "3015",
+    "3016",
+    "3017",
+    "3018",
+    "3019",
+    "3020",
+    "3021",
+    "3022",
+    "3024",
+    "4001",
+    "4002",
+    "4003",
+    "4004",
+    "4005",
+    "4006",
+    "4007"
+   ],
+   "agree_ratio": "74/75 = 99%",
+   "altered_count": 4,
+   "note": "GJB 548 与 MIL-STD-883 方法号同源，故可作为独立交叉校验。gjb_only 多为 OCR 数字混淆残留或 883 侧尚未 OCR 到的号。"
+  },
+  "GJB-548C": {
+   "gjb_only": [
+    "2023"
+   ],
+   "mil883_only": [
+    "1005",
+    "1007",
+    "2008",
+    "3001",
+    "3002",
+    "3003",
+    "3004",
+    "3005",
+    "3006",
+    "3007",
+    "3008",
+    "3009",
+    "3010",
+    "3011",
+    "3012",
+    "3013",
+    "3014",
+    "3015",
+    "3016",
+    "3017",
+    "3018",
+    "3019",
+    "3020",
+    "3021",
+    "3022",
+    "3024",
+    "4001",
+    "4002",
+    "4003",
+    "4004",
+    "4005",
+    "4006",
+    "4007"
+   ],
+   "agree_ratio": "73/74 = 99%",
+   "altered_count": 2,
+   "note": "GJB 548 与 MIL-STD-883 方法号同源，故可作为独立交叉校验。gjb_only 多为 OCR 数字混淆残留或 883 侧尚未 OCR 到的号。"
+  }
+ },
+ "gaps": {
+  "GJB-548B": {
+   "series_gaps": {
+    "1": [
+     {
+      "from": "1005",
+      "to": "1005",
+      "count": 1
+     },
+     {
+      "from": "1018",
+      "to": "1018",
+      "count": 1
+     },
+     {
+      "from": "1024",
+      "to": "1029",
+      "count": 6
+     }
+    ],
+    "2": [
+     {
+      "from": "2008",
+      "to": "2008",
+      "count": 1
+     },
+     {
+      "from": "2017",
+      "to": "2017",
+      "count": 1
+     },
+     {
+      "from": "2033",
+      "to": "2034",
+      "count": 2
+     }
+    ]
+   },
+   "meaning": "号段不连续。可能是(a)该号在标准中本就不存在（标准跳号），也可能是(b)目录页 OCR 漏识。**本 skill 不判断是哪种**，需查原页确认。"
+  },
+  "GJB-548C": {
+   "series_gaps": {
+    "2": [
+     {
+      "from": "2008",
+      "to": "2008",
+      "count": 1
+     },
+     {
+      "from": "2018",
+      "to": "2018",
+      "count": 1
+     },
+     {
+      "from": "2024",
+      "to": "2024",
+      "count": 1
+     },
+     {
+      "from": "2033",
+      "to": "2034",
+      "count": 2
+     }
+    ]
+   },
+   "meaning": "号段不连续。可能是(a)该号在标准中本就不存在（标准跳号），也可能是(b)目录页 OCR 漏识。**本 skill 不判断是哪种**，需查原页确认。"
+  },
+  "MIL-STD-883F": {
+   "series_gaps": {
+    "1": [
+     {
+      "from": "1004",
+      "to": "1005",
+      "count": 2
+     },
+     {
+      "from": "1018",
+      "to": "1021",
+      "count": 4
+     },
+     {
+      "from": "1024",
+      "to": "1029",
+      "count": 6
+     }
+    ],
+    "2": [
+     {
+      "from": "2002",
+      "to": "2003",
+      "count": 2
+     },
+     {
+      "from": "2005",
+      "to": "2005",
+      "count": 1
+     },
+     {
+      "from": "2011",
+      "to": "2012",
+      "count": 2
+     },
+     {
+      "from": "2015",
+      "to": "2015",
+      "count": 1
+     },
+     {
+      "from": "2018",
+      "to": "2019",
+      "count": 2
+     },
+     {
+      "from": "2023",
+      "to": "2023",
+      "count": 1
+     },
+     {
+      "from": "2031",
+      "to": "2031",
+      "count": 1
+     },
+     {
+      "from": "2033",
+      "to": "2034",
+      "count": 2
+     }
+    ],
+    "3": [
+     {
+      "from": "3002",
+      "to": "3004",
+      "count": 3
+     },
+     {
+      "from": "3010",
+      "to": "3010",
+      "count": 1
+     },
+     {
+      "from": "3012",
+      "to": "3012",
+      "count": 1
+     }
+    ],
+    "4": [
+     {
+      "from": "4004",
+      "to": "4006",
+      "count": 3
+     }
+    ],
+    "5": [
+     {
+      "from": "5005",
+      "to": "5005",
+      "count": 1
+     },
+     {
+      "from": "5007",
+      "to": "5008",
+      "count": 2
+     }
+    ]
+   },
+   "meaning": "号段不连续。可能是(a)该号在标准中本就不存在（标准跳号），也可能是(b)目录页 OCR 漏识。**本 skill 不判断是哪种**，需查原页确认。"
+  },
+  "MIL-STD-883K": {
+   "series_gaps": {
+    "1": [
+     {
+      "from": "1018",
+      "to": "1018",
+      "count": 1
+     },
+     {
+      "from": "1024",
+      "to": "1029",
+      "count": 6
+     }
+    ],
+    "2": [
+     {
+      "from": "2004",
+      "to": "2004",
+      "count": 1
+     },
+     {
+      "from": "2023",
+      "to": "2023",
+      "count": 1
+     },
+     {
+      "from": "2033",
+      "to": "2034",
+      "count": 2
+     }
+    ]
+   },
+   "meaning": "号段不连续。可能是(a)该号在标准中本就不存在（标准跳号），也可能是(b)目录页 OCR 漏识。**本 skill 不判断是哪种**，需查原页确认。"
+  }
+ }
+}

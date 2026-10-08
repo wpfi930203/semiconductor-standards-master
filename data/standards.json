@@ -1,0 +1,1906 @@
+{
+ "_meta": {
+  "schema_version": "1.0",
+  "built_date": "2026-10-05",
+  "source": "JEDEC 原文 PDF / JEDEC 官网 / IEC Webstore / SEMI 官网 / AEC 官网 / ECPE 官网 / NASA NTRS 托管 MIL-STD-883F",
+  "confidence_levels": {
+   "A": "一手权威：标准组织官网或标准原文 PDF 可查证",
+   "B": "二手交叉验证：多独立来源标题一致，未取得原文",
+   "C": "待人工确认：单一来源 / 来源矛盾 / 付费墙内未验证"
+  },
+  "disclaimer": "凡 confidence=C 的条目，CLI 仅返回「未核实」警示，不返回标题断言。",
+  "last_updated": "2026-10-05 (AQG 324 全文入库)",
+  "source_count": 0
+ },
+ "orgs": {
+  "JEDEC": {
+   "name": "JEDEC Solid State Technology Association",
+   "url": "https://www.jedec.org/document_search",
+   "note": "服务条款禁止自动化抓取，curl 实测 403；ballot 在 vote.jedec.org 内部不公开；无 API"
+  },
+  "IEC": {
+   "name": "IEC - International Electrotechnical Commission",
+   "url": "https://webstore.iec.ch",
+   "note": "产品页实测仅 Product detail / Lifecycle / Normative references 三个内容 Tab，无 Referenced by；stability date = 下次强制复审时点，非最后更新日期"
+  },
+  "SEMI": {
+   "name": "SEMI International",
+   "url": "https://store-us.semi.org",
+   "note": "⚠ semiverse.org 实为韩国 NFT 项目，非 SEMI 标准平台"
+  },
+  "AEC": {
+   "name": "Automotive Electronics Council",
+   "url": "http://aecouncil.com/Documents/AECDocuments.html",
+   "note": "AEC-Q100 原文 Rev-I 可免费下载"
+  },
+  "ECPE": {
+   "name": "ECPE (AQG 324 持有方)",
+   "url": "https://www.ecpe.org",
+   "note": "AQG 324 由 ECPE 持有，非 ZVEI；全文 CC BY-ND 可免费下载"
+  },
+  "IPC": {
+   "name": "IPC - Association Connecting Electronics Industries",
+   "url": "https://www.ipc.org"
+  },
+  "MILSTD": {
+   "name": "MIL-STD-883 微电路试验方法",
+   "url": "https://nepp.nasa.gov/docuploads/31ECBD46-FFA0-43AE-82C09A3B2B6FE26B/std883.pdf",
+   "note": "NASA NEPP 免费托管原文"
+  }
+ },
+ "status_vocab": {
+  "_note": "JEDEC 实际使用的状态词。不存在 Active/Withdrawn。JM21W §7.2：满 5 年须委员会选 Reaffirm / 修订 / Rescind / 转 ANSI-IEC",
+  "JEDEC": [
+   "Reaffirmed",
+   "Superseded",
+   "Rescinded",
+   "Draft",
+   "In Publication"
+  ],
+  "IEC": [
+   "Published",
+   "Stability date reached",
+   "Withdrawn",
+   "Under revision",
+   "Merited",
+   "Frag1",
+   "Frag2",
+   "Merged"
+  ],
+  "generic": [
+   "现行",
+   "已废止",
+   "被替代",
+   "被撤销",
+   "草案"
+  ]
+ },
+ "standards": [
+  {
+   "id": "JESD22-A104",
+   "org": "JEDEC",
+   "title": "Temperature Cycling",
+   "title_zh": "温度循环",
+   "group": "A1xx",
+   "type": "环境应力/寿命",
+   "version": "F.01",
+   "date": "2023-04",
+   "status": "现行",
+   "confidence": "A",
+   "note": "⚠ A104 本身【不规定循环次数】——由 JESD47 或供采双方约定。若中断次数之和 > 规定总循环数的 10%，试验必须从头重启。",
+   "conditions": [
+    {
+     "id": "A",
+     "ts_min": -55,
+     "ts_max": 85,
+     "cph": "2-3",
+     "soak": "1,2,3"
+    },
+    {
+     "id": "B",
+     "ts_min": -55,
+     "ts_max": 125,
+     "cph": "2-3",
+     "soak": "1,2"
+    },
+    {
+     "id": "C",
+     "ts_min": -65,
+     "ts_max": 150,
+     "cph": "2",
+     "soak": "1,2"
+    },
+    {
+     "id": "G",
+     "ts_min": -40,
+     "ts_max": 125,
+     "cph": "<1-2",
+     "soak": "1,2,3,4"
+    },
+    {
+     "id": "H",
+     "ts_min": -55,
+     "ts_max": 150,
+     "cph": "2",
+     "soak": "1,2"
+    },
+    {
+     "id": "I",
+     "ts_min": -40,
+     "ts_max": 115,
+     "cph": "1-2",
+     "soak": "1,2,3,4"
+    },
+    {
+     "id": "J",
+     "ts_min": 0,
+     "ts_max": 100,
+     "cph": "1-3",
+     "soak": "1,2,3,4"
+    },
+    {
+     "id": "K",
+     "ts_min": 0,
+     "ts_max": 125,
+     "cph": "1-3",
+     "soak": "1,2,3,4"
+    },
+    {
+     "id": "L",
+     "ts_min": -55,
+     "ts_max": 110,
+     "cph": "1-3",
+     "soak": "1,2,3,4"
+    },
+    {
+     "id": "M",
+     "ts_min": -40,
+     "ts_max": 150,
+     "cph": "1-3",
+     "soak": "1,2,3,4"
+    },
+    {
+     "id": "N",
+     "ts_min": -40,
+     "ts_max": 85,
+     "cph": "1-3",
+     "soak": "1,2,3"
+    },
+    {
+     "id": "R",
+     "ts_min": -25,
+     "ts_max": 125,
+     "cph": "1-2",
+     "soak": "1,2"
+    },
+    {
+     "id": "T",
+     "ts_min": -40,
+     "ts_max": 100,
+     "cph": "1-2",
+     "soak": "3,4"
+    }
+   ],
+   "soak_modes": {
+    "1": "1 min",
+    "2": "5 min",
+    "3": "10 min",
+    "4": "15 min"
+   },
+   "cautions": [
+    "CAUTION 1: Ts(max) 可能超过某些封装材料的玻璃化转变温度 Tg，诱发现场不会出现的失效机理",
+    "CAUTION 2: 必须避免 DUT 间与器件内部的大温度梯度",
+    "CAUTION 3: 温区内 CTE 失配可能导致试验板电镀通孔提前失效",
+    "CAUTION 4: Ts(max) > 125°C 的条件【不推荐用于 Pb/Sn 焊料】，可能导致动态再结晶"
+   ],
+   "solder_interconnect_reco": "焊互连级 ramp rate ≤ 15 °C/min（优选 10–14）；cycle rate 1–2 cph；cycle time < 30 min 不推荐；大热质量需单区箱体；热冲击箱不得替代温循箱",
+   "usage": "焊点疲劳、分层、键合疲劳（核心）",
+   "refs": [
+    "JESD47",
+    "JEP140",
+    "JEP153",
+    "IPC-SM-785"
+   ]
+  },
+  {
+   "id": "JESD22-A108",
+   "org": "JEDEC",
+   "title": "Temperature, Bias, and Operating Life",
+   "title_zh": "温度-偏压-工作寿命",
+   "group": "A1xx",
+   "type": "热-电/寿命",
+   "version": "G",
+   "date": "2022-11",
+   "status": "现行（替代 F/2017-07）",
+   "confidence": "A",
+   "note": "⚠ 标题纠错（2026-10-05 二轮核实）：官方标题为 Temperature, Bias, and Operating Life。1991 至 G 版【全称无 Voltage】。'TBL' 是【中文/业界俗称】，官方标题不含该缩写——引用时勿把 TBL 当官方名。G 版相对 F 版主要更新：4.2.2 允许使用较低工作电压（需报告实际电压）、4.2.3.3 明确 HTRB 为 80%–100% 击穿电压、第 8 章标题改为寿命试验报告。",
+   "usage": "HTOL/HTRB/HTGB/LTOL/HTFB 的母标准；burn-in 不在其 scope 内",
+   "refs": [
+    "JESD47",
+    "JEP122"
+   ]
+  },
+  {
+   "id": "JESD22-A101",
+   "org": "JEDEC",
+   "title": "Steady State Temperature Humidity Bias Life Test",
+   "title_zh": "稳态温湿偏置寿命（THB）",
+   "group": "A1xx",
+   "type": "湿热",
+   "version": "D.01",
+   "date": "2021-01",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "85 °C / 85 %RH, 1000 h, 加偏压",
+   "usage": "湿气驱动的腐蚀与迁移；Peck 模型是其理论基础",
+   "refs": [
+    "JESD22-A113"
+   ]
+  },
+  {
+   "id": "JESD22-A100",
+   "org": "JEDEC",
+   "title": "Cycled Temperature-Humidity Bias Life Test",
+   "title_zh": "循环温湿偏置寿命",
+   "group": "A1xx",
+   "type": "湿热",
+   "version": "E",
+   "date": "2020-11",
+   "status": "现行",
+   "confidence": "B",
+   "usage": "湿气+电化学迁移、腐蚀"
+  },
+  {
+   "id": "JESD22-A102",
+   "org": "JEDEC",
+   "title": "Accelerated Moisture Resistance — Unbiased Autoclave",
+   "title_zh": "加速蒸煮（无偏压）",
+   "group": "A1xx",
+   "type": "湿热",
+   "version": "E",
+   "date": "2021-01",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "121 °C / 100 %RH / 15–30 psig, 96–1000 h",
+   "usage": "塑封体吸湿爆裂、分层（popcorn）"
+  },
+  {
+   "id": "JESD22-A103",
+   "org": "JEDEC",
+   "title": "High Temperature Storage Life",
+   "title_zh": "高温存储寿命（HTSL）",
+   "group": "A1xx",
+   "type": "热-电/寿命",
+   "version": "E.01",
+   "date": "2021-07",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "150 °C, 1000 h, 无偏压",
+   "usage": "模塑料/粘接层热稳定性"
+  },
+  {
+   "id": "JESD22-A105",
+   "org": "JEDEC",
+   "title": "Power and Temperature Cycling",
+   "title_zh": "功率温度循环（PTC）",
+   "group": "A1xx",
+   "type": "热-机械",
+   "version": "D",
+   "date": "2020-01",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "外部加热 + 通电循环",
+   "usage": "功率器件热循环"
+  },
+  {
+   "id": "JESD22-A106",
+   "org": "JEDEC",
+   "title": "Thermal Shock",
+   "title_zh": "热冲击（TS）",
+   "group": "A1xx",
+   "type": "热-机械",
+   "version": "B.01",
+   "date": "2016-11",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "两液槽法，转换时间 < 10 s",
+   "usage": "快速温变应力。⚠ 与温度循环(TC)是【不同试验】——热冲击箱不得替代温循箱"
+  },
+  {
+   "id": "JESD22-A107",
+   "org": "JEDEC",
+   "title": "Salt Atmosphere",
+   "title_zh": "盐雾",
+   "group": "A1xx",
+   "type": "湿热/腐蚀",
+   "version": "C",
+   "date": "2013-04",
+   "status": "现行",
+   "confidence": "B",
+   "usage": "离子污染腐蚀"
+  },
+  {
+   "id": "JESD22-A109",
+   "org": "JEDEC",
+   "title": "Hermeticity",
+   "title_zh": "气密性",
+   "group": "A1xx",
+   "type": "物理",
+   "version": "B",
+   "date": "2011-11",
+   "status": "现行（指向军标）",
+   "confidence": "B",
+   "conditions": "氦细漏 / 碳氢化合物粗漏",
+   "usage": "陶瓷/气密封装的密封性"
+  },
+  {
+   "id": "JESD22-A110",
+   "org": "JEDEC",
+   "title": "Highly-Accelerated Temperature and Humidity Stress Test (HAST)",
+   "title_zh": "高加速温湿试验（有偏压）",
+   "group": "A1xx",
+   "type": "湿热",
+   "version": "E.01",
+   "date": "2021-05",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "130 °C / 85 %RH, 96 h, 加偏压",
+   "usage": "⚠ IEC 60749-4 原文：THB 结果优先于 HAST。HAST 与压力锅可能导致封装材料过度劣化"
+  },
+  {
+   "id": "JESD22-A111",
+   "org": "JEDEC",
+   "title": "(Surface Mount Solidity Test for) Components Mounted in a Single Panel on the Bottom",
+   "title_zh": "单面板底面表贴器件耐浸焊能力",
+   "group": "A1xx",
+   "type": "工艺",
+   "version": "B",
+   "date": "2018-03",
+   "status": "现行",
+   "confidence": "B",
+   "usage": "可焊性/浸焊"
+  },
+  {
+   "id": "JESD22-A113",
+   "org": "JEDEC",
+   "title": "Preconditioning of Nonhermetic Surface Mount Devices Prior to Reliability Testing",
+   "title_zh": "非气密封装可靠性试验前预处理（PC）",
+   "group": "A1xx",
+   "type": "预处理",
+   "version": "I",
+   "date": "2020-04",
+   "status": "现行",
+   "confidence": "B",
+   "usage": "按 MSL 分级的 soak + 红外 + 【回流】。⚠ TC/HAST 前必做"
+  },
+  {
+   "id": "JESD22-A115",
+   "org": "JEDEC",
+   "title": "ESD Sensitivity Testing, Machine Model (MM)",
+   "title_zh": "机器模型 ESD 敏感度测试",
+   "group": "A1xx",
+   "type": "电/ESD",
+   "version": "C",
+   "date": "2016-09",
+   "status": "inactive",
+   "confidence": "A"
+  },
+  {
+   "id": "JESD22-A117",
+   "org": "JEDEC",
+   "title": "Electrically Erasable Programmable ROM (EEPROM) Program/Erase Endurance and Data Retention Test",
+   "title_zh": "EEPROM 耐久与数据保持",
+   "group": "A1xx",
+   "type": "寿命",
+   "version": "E",
+   "date": "2018-11",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-A118",
+   "org": "JEDEC",
+   "title": "Accelerated Moisture Resistance — Unbiased HAST (uHAST)",
+   "title_zh": "无偏压 HAST",
+   "group": "A1xx",
+   "type": "湿热",
+   "version": "B.01",
+   "date": "2021-05",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "130 °C / 85 %RH",
+   "usage": "湿气分层（无偏压）"
+  },
+  {
+   "id": "JESD22-A119",
+   "org": "JEDEC",
+   "title": "Low Temperature Storage Life",
+   "title_zh": "低温存储寿命（LTSL）",
+   "group": "A1xx",
+   "type": "寿命",
+   "version": "A",
+   "date": "2015-10",
+   "status": "现行",
+   "confidence": "B",
+   "usage": "低温 CTE 失配"
+  },
+  {
+   "id": "JESD22-A120",
+   "org": "JEDEC",
+   "title": "Test Method for the Measurement of Moisture Diffusivity and Water Solubility in Organic Materials Used in Integrated Circuits",
+   "title_zh": "IC 有机材料湿气扩散率与水溶解度测量",
+   "group": "A1xx",
+   "type": "材料",
+   "version": "B",
+   "date": "2014-07",
+   "status": "现行",
+   "confidence": "B",
+   "usage": "模塑料/底填胶吸湿建模"
+  },
+  {
+   "id": "JESD22-A121",
+   "org": "JEDEC",
+   "title": "Test Method for Tin Whisker Growth…",
+   "title_zh": "锡须生长测试",
+   "group": "A1xx",
+   "type": "材料/可靠性",
+   "version": "A",
+   "date": "2008-07",
+   "status": "现行",
+   "confidence": "B",
+   "conditions": "约 3 cph, soak 5–10 min",
+   "note": "⚠ 硬断言：A121 是【锡须测试】，不是 ESD。检索中高频误传。",
+   "usage": "纯锡镀层/焊接球须晶"
+  },
+  {
+   "id": "JESD22-A122",
+   "org": "JEDEC",
+   "title": "Power Cycling",
+   "title_zh": "功率循环（PC）",
+   "group": "A1xx",
+   "type": "热-机械/热-电",
+   "version": "A",
+   "date": "2016-06",
+   "status": "现行",
+   "confidence": "B",
+   "note": "⚠ 功率循环不是 A108。A108 是 TBL/HTOL 母标准。功率循环 = A122 / A105 + IEC 60749-34 / AQG 324 QL-01~02。",
+   "usage": "IGBT/SiC 模块键合与焊层疲劳（核心）"
+  },
+  {
+   "id": "JESD22-B100",
+   "org": "JEDEC",
+   "title": "Physical Dimensions",
+   "title_zh": "外形尺寸测量",
+   "group": "B1xx",
+   "type": "几何",
+   "version": "B",
+   "date": "2003-06",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B101",
+   "org": "JEDEC",
+   "title": "External Visual",
+   "title_zh": "外观目检",
+   "group": "B1xx",
+   "type": "外观",
+   "version": "C",
+   "date": "2015-10",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B103",
+   "org": "JEDEC",
+   "title": "Vibration, Variable Frequency",
+   "title_zh": "变频振动",
+   "group": "B1xx",
+   "type": "机械",
+   "version": "B.01",
+   "date": "2016-09",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B105",
+   "org": "JEDEC",
+   "title": "Lead Integrity",
+   "title_zh": "引线完整性",
+   "group": "B1xx",
+   "type": "机械",
+   "version": "E",
+   "date": "2017-02",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B106",
+   "org": "JEDEC",
+   "title": "Resistance to Soldering Temperature for Through-Hole Mounted Devices",
+   "title_zh": "通孔件耐焊接热",
+   "group": "B1xx",
+   "type": "工艺",
+   "version": "E",
+   "date": "2016-11",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B107",
+   "org": "JEDEC",
+   "title": "Marking Permanency",
+   "title_zh": "标识耐久性",
+   "group": "B1xx",
+   "type": "外观",
+   "version": "D",
+   "date": "2011-03",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B108",
+   "org": "JEDEC",
+   "title": "Coplanarity Test for Surface-Mount Semiconductor Devices",
+   "title_zh": "表贴器件共面性",
+   "group": "B1xx",
+   "type": "几何",
+   "version": "B",
+   "date": "2010-09",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B109",
+   "org": "JEDEC",
+   "title": "Flip Chip Pull-off Test",
+   "title_zh": "倒装芯片拉脱",
+   "group": "B1xx",
+   "type": "机械",
+   "version": "C",
+   "date": "2021-03",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B110",
+   "org": "JEDEC",
+   "title": "Mechanical Shock (Component)",
+   "title_zh": "机械冲击（现行版）",
+   "group": "B1xx",
+   "type": "机械",
+   "version": "B.01",
+   "date": "2019-06",
+   "status": "现行",
+   "confidence": "B",
+   "note": "⚠ 取代已废止的 B104"
+  },
+  {
+   "id": "JESD22-B111",
+   "org": "JEDEC",
+   "title": "Board Level Drop Test Method of Components for Handheld Electronic Products",
+   "title_zh": "板级跌落（手持电子）",
+   "group": "B1xx",
+   "type": "机械/板级",
+   "version": "A",
+   "date": "2016-11",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B112",
+   "org": "JEDEC",
+   "title": "Package Warp Test Method at High Temperature",
+   "title_zh": "高温封装翘曲",
+   "group": "B1xx",
+   "type": "几何/机械",
+   "version": "B",
+   "date": "2018-08",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B113",
+   "org": "JEDEC",
+   "title": "Board Level Cyclic Bend Test Method for Interconnect Reliability Characterization of Components for Handheld Electronic Products",
+   "title_zh": "板级循环弯折（互连可靠性）",
+   "group": "B1xx",
+   "type": "机械/板级",
+   "version": "B",
+   "date": "2018-08",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B114",
+   "org": "JEDEC",
+   "title": "Marking Legibility",
+   "title_zh": "标识可识别性",
+   "group": "B1xx",
+   "type": "外观",
+   "version": "B",
+   "date": "2020-01",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B115",
+   "org": "JEDEC",
+   "title": "Ball Shear Test",
+   "title_zh": "焊球剪切",
+   "group": "B1xx",
+   "type": "机械",
+   "version": "A.01",
+   "date": "2016-07",
+   "status": "现行",
+   "confidence": "B",
+   "note": "对应 AEC-Q100-010"
+  },
+  {
+   "id": "JESD22-B116",
+   "org": "JEDEC",
+   "title": "Wire Bond Shear Test Method",
+   "title_zh": "引线键合剪切",
+   "group": "B1xx",
+   "type": "机械",
+   "version": "C",
+   "date": "2026-08",
+   "status": "现行",
+   "confidence": "B",
+   "note": "对应 AEC-Q100-001"
+  },
+  {
+   "id": "JESD22-B117",
+   "org": "JEDEC",
+   "title": "BGA Ball Shear",
+   "title_zh": "BGA 焊球剪切",
+   "group": "B1xx",
+   "type": "机械",
+   "version": "B",
+   "date": "2014-05",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B118",
+   "org": "JEDEC",
+   "title": "Visual Inspection of Semiconductor Wafers and Wafers with Backside Coating",
+   "title_zh": "晶圆/背面涂覆目检",
+   "group": "B1xx",
+   "type": "外观",
+   "version": "A",
+   "date": "2021-11",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD22-B122",
+   "org": "JEDEC",
+   "title": "Board Level Vibration Test Method of Semiconductor Packages for General Electronic and Automotive Products",
+   "title_zh": "板级振动（通用+汽车）",
+   "group": "B1xx",
+   "type": "机械/板级",
+   "version": "—",
+   "date": "2026-09",
+   "status": "现行",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD47",
+   "org": "JEDEC",
+   "title": "Stress-Test-Driven Qualification of Integrated Circuits",
+   "title_zh": "IC 应力驱动鉴证",
+   "group": "顶级",
+   "type": "资格标准/裁判",
+   "version": "N",
+   "date": "2026-08",
+   "status": "现行（取代 M:2025）",
+   "confidence": "A",
+   "note": "⚠ Scope 明确声明【不适用于汽车 under-the-hood】——车规必须走 AQG 324。资格样本量 ≠ FIT 外推样本量。Scope 原文列出 4 类必须偏离标准条件的情形（『标准未覆盖』是标准自己授权的）。",
+   "usage": "定义哪些试验、各多少样本、验收判据",
+   "refs": [
+    "JESD94"
+   ]
+  },
+  {
+   "id": "JESD94",
+   "org": "JEDEC",
+   "title": "Application Specific Qualification using Knowledge Based Test Methodology",
+   "title_zh": "基于知识方法的应用特定鉴证",
+   "group": "顶级",
+   "type": "方法论/裁判",
+   "version": "B",
+   "date": "—",
+   "status": "现行",
+   "confidence": "B",
+   "note": "★ 这是【从标准条款到试验方案】的官方方法论骨架（JESD47 引用）。流程：使用条件 → FMEA(JEP131) 选失效机理 → 寿命模型(JEP122/JESD91) → AF 计算 → 资格策略(JEP143) → 选 JESD22 方法 → 执行报告。强调基于知识而非固定应力；应力不得超越材料物理极限。",
+   "usage": "自定义应力条件的授权依据"
+  },
+  {
+   "id": "JESD78",
+   "org": "JEDEC",
+   "title": "IC Latch-Up Test",
+   "title_zh": "IC 闩锁测试",
+   "group": "顶级",
+   "type": "电应力",
+   "version": "F.02",
+   "date": "2023-11",
+   "status": "现行",
+   "confidence": "A",
+   "note": "⚠ 硬断言：JESD78 是【闩锁测试】，与 ESD 【无关】。常被误传为 ESD 体系。现行版 F.02。"
+  },
+  {
+   "id": "JESD79-4",
+   "org": "JEDEC",
+   "title": "DDR4 SDRAM Standard",
+   "title_zh": "DDR4 SDRAM 标准",
+   "group": "顶级",
+   "type": "存储器",
+   "version": "D",
+   "date": "—",
+   "status": "现行",
+   "confidence": "A",
+   "note": "⚠ 硬断言：DDR4 是 JESD79-4，不是 JESD204。"
+  },
+  {
+   "id": "JESD204",
+   "org": "JEDEC",
+   "title": "SerDes 接口标准",
+   "title_zh": "串行器/解串器接口",
+   "group": "顶级",
+   "type": "接口",
+   "version": "—",
+   "date": "—",
+   "status": "现行",
+   "confidence": "B",
+   "note": "⚠ 硬断言：JESD204 是【SerDes】，不是 DDR4。用于数据转换器↔FPGA/ASIC。"
+  },
+  {
+   "id": "JESD88",
+   "org": "JEDEC",
+   "title": "Dictionary of Terms for Solid-State Technology",
+   "title_zh": "固态技术术语字典",
+   "group": "顶级",
+   "type": "术语",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD201",
+   "org": "JEDEC",
+   "title": "Environmental Acceptance Requirements for Tin Whisker Susceptibility…",
+   "title_zh": "锡须敏感性环境验收要求",
+   "group": "顶级",
+   "type": "验收",
+   "confidence": "B"
+  },
+  {
+   "id": "JESD91",
+   "org": "JEDEC",
+   "title": "Methods for Developing Acceleration Models for Electronic Component Failure Mechanisms",
+   "title_zh": "电子部件失效机理加速模型建立方法",
+   "group": "顶级",
+   "type": "方法论",
+   "confidence": "B",
+   "usage": "★ 加速模型（含 Ea 拟合）方法依据。JESD94 流程引用。"
+  },
+  {
+   "id": "JESD85",
+   "org": "JEDEC",
+   "title": "Methods for Calculating Failure Rates in Units of FITs",
+   "title_zh": "FIT 失效率换算",
+   "group": "顶级",
+   "type": "统计",
+   "confidence": "B"
+  },
+  {
+   "id": "JEP122",
+   "org": "JEDEC",
+   "title": "Failure Mechanisms and Models for Semiconductor Devices",
+   "title_zh": "半导体器件失效机理与模型",
+   "group": "JEP",
+   "type": "PoF",
+   "confidence": "B",
+   "usage": "★ 失效机理与 Ea 表 —— PoF 基础。加速模型 Ea 应由此 + 自有数据标定。"
+  },
+  {
+   "id": "JEP131",
+   "org": "JEDEC",
+   "title": "Potential Failure Mode and Effects Analysis (FMEA)",
+   "title_zh": "潜在失效模式与影响分析",
+   "group": "JEP",
+   "type": "方法论",
+   "confidence": "B",
+   "usage": "JESD94 流程中用于【失效机理选择】"
+  },
+  {
+   "id": "JEP143",
+   "org": "JEDEC",
+   "title": "Solid State Reliability Assessment Qualification Methodologies",
+   "title_zh": "可靠性评估鉴证方法（含 burn-in）",
+   "group": "JEP",
+   "type": "方法论",
+   "confidence": "B",
+   "usage": "JESD94 流程中用于【定资格策略】"
+  },
+  {
+   "id": "JEP140",
+   "org": "JEDEC",
+   "title": "Beaded Thermocouple Measurement of Semiconductor Packages",
+   "title_zh": "半导体封装珠式热电偶测温",
+   "group": "JEP",
+   "type": "测量",
+   "confidence": "A",
+   "note": "A104F.01 参考文献原文引用"
+  },
+  {
+   "id": "JEP153",
+   "org": "JEDEC",
+   "title": "Characterization and Monitoring of thermal Stress Test Oven Temperatures",
+   "title_zh": "热应力试验烘箱温度表征与监控",
+   "group": "JEP",
+   "type": "测量",
+   "confidence": "A",
+   "note": "A104F.01 参考文献原文引用"
+  },
+  {
+   "id": "JEP148",
+   "org": "JEDEC",
+   "title": "Reliability Qualification of Semiconductor Devices Based on Physics of Failure Risk and Opportunity Assessment",
+   "title_zh": "基于 PoF 风险与机会评估的器件鉴证",
+   "group": "JEP",
+   "type": "PoF",
+   "confidence": "B"
+  },
+  {
+   "id": "JEP150",
+   "org": "JEDEC",
+   "title": "Stress-Test-Driven Qualification and Failure Mechanisms Associated with Assembled Solid State Surface-Mount Components",
+   "title_zh": "表贴组件应力驱动鉴证与失效机理",
+   "group": "JEP",
+   "type": "组件鉴证",
+   "confidence": "B",
+   "usage": "板级/组件场景追加"
+  },
+  {
+   "id": "JEP174",
+   "org": "JEDEC",
+   "title": "Understanding Electrical Overstress — EOS",
+   "title_zh": "电气过应力（EOS）理解",
+   "group": "JEP",
+   "type": "电应力",
+   "confidence": "B"
+  },
+  {
+   "id": "JS-001",
+   "org": "JEDEC",
+   "title": "ESDA/JEDEC Joint Standard for ESD Sensitivity Testing — HBM — Component Level",
+   "title_zh": "ESD 敏感度测试 HBM 器件级（ESDA/JEDEC 联合标准）",
+   "group": "JS",
+   "type": "电/ESD",
+   "version": "2017",
+   "date": "2017",
+   "status": "现行",
+   "confidence": "A",
+   "note": "⚠ 取代已废止的 JESD22-A114。日期后缀 2017 是【年份】（与 JESD78F.02 的增补号结构不同）"
+  },
+  {
+   "id": "JS-002",
+   "org": "JEDEC",
+   "title": "ESDA/JEDEC Joint Standard for ESD Sensitivity Testing — CDM — Device Level",
+   "title_zh": "ESD 敏感度测试 CDM 器件级",
+   "group": "JS",
+   "type": "电/ESD",
+   "version": "2018",
+   "date": "2018",
+   "status": "现行",
+   "confidence": "A",
+   "note": "⚠ 取代已撤销的 JESD22-C101"
+  },
+  {
+   "id": "AQG324",
+   "org": "ECPE",
+   "title": "Qualification of Power Modules for Use in Power Electronics Converter Units in Motor Vehicles",
+   "title_zh": "用于电机车辆功率电子变换器单元的功率模块资格验证",
+   "type": "资格指南/裁判（Qualification Guideline）",
+   "group": "ECPE 车规功率模块",
+   "version": "04.1/2025",
+   "date": "2025-03-31",
+   "status": "现行版（Release 04.1/2025，发布 2025-04-24；前一版 03.1/2021-05-31；首发 02.1/2019-05-15）",
+   "confidence": "A",
+   "holder": "ECPE e.V.（European Center for Power Electronics），Nuremberg；联系人 Dipl.-Phys. Thomas Harder",
+   "origin": "前身 LV 324 —— 由德国汽车 OEM 与功率电子供应商行业在 ECPE + ZVEI 联合工作组下制定（BMW GS 95035 / VW 82324 Group Standard / Daimler, 2014）。⚠ 常被误记为 ZVEI 持有，实为 ECPE。",
+   "scope": "仅覆盖【模块设计与组装层面】。明确不替代芯片级认证（AEC-Q101/QC080000）与整车级验证。",
+   "normative_refs": {
+    "_note": "★ 下表为 AQ 324 04.1/2025 第3章【规范性引用标准原文清单】（一手，非推断）",
+    "quality": [
+     "IATF 16949",
+     "ISO/IEC 17025"
+    ],
+    "semiconductor_device": [
+     "IEC 60747-2:2016 Rectifier diodes",
+     "IEC 60747-8:2010 Field-effect transistors (MOSFET)",
+     "IEC 60747-9:2007 Insulated-gate bipolar transistors (IGBT)",
+     "IEC 60747-15:2010 Isolated power semiconductor devices"
+    ],
+    "test_method": [
+     "IEC 60749-5:2017 Steady-state temperature humidity bias life test",
+     "IEC 60749-6 高温存储（⚠见 doc_defects）",
+     "IEC 60749-23:2011 High temperature operating life",
+     "IEC 60749-25:2003 Temperature cycling",
+     "IEC 60749-34:2011 Power cycling"
+    ],
+    "environment": [
+     "IEC 60068-2-6:2007 Vibration (sinusoidal)",
+     "IEC 60068-2-27:2008 Shock (Ea)",
+     "IEC 60068-2-64:2008 Vibration broadband random (Fh)"
+    ],
+    "insulation": [
+     "IEC 60664-1:2007 绝缘配合 第1部分",
+     "IEC 60664-4:2005 高频电压应力",
+     "IEC/TR 60664-2-1:2011 + Cor.1:2011 (= DIN EN 60664-1 Addendum 1)"
+    ],
+    "jedec": [
+     "JESD22-A104F:2020 Temperature cycling",
+     "JESD22-A119:2015 Low Temperature Storage Life"
+    ]
+   },
+   "sic_annex_refs": {
+    "_note": "★ Annex SiC 第3章规范性引用（全部为 JEP，5 个，全部 SiC 专属）",
+    "JEP183": "2021-01 Guideline for measuring the threshold voltage (VT) of SiC MOSFETs",
+    "JEP184": "2021-03 Guideline for evaluating bias temperature instability of SiC MOSFETs",
+    "JEP190": "2022-08 Guideline for evaluating dV/dt robustness of SiC power devices",
+    "JEP195": "2023-02 Guideline for evaluating gate switching instability of SiC devices",
+    "JEP197": "2023-11 Guideline for evaluating Bipolar Degradation of SiC power devices"
+   },
+   "ql_tests": {
+    "_note": "★ 下表为第9章 QL-01~QL-07 条件表逐条一手转录（04.1/2025 Table 9.1~9.11）。ΔTvj 温升与循环次数由模块厂按寿命模型自定，标准只给边界。",
+    "QL-01_PCsec": {
+     "name": "Power cycling (PCsec)",
+     "table": "Table 9.1/9.2/9.3",
+     "physics": "键合线/芯片金属化退化 + 芯片近互连（die-attach / 顶部接触）",
+     "ton": "< 5 s（硬性上限）",
+     "IL": "> 0.85·IC,nom (IGBT) / > 0.85·ID,nom (MOSFET)；>0.85 只能用于一个采样点，第二个采样点可低于 0.85",
+     "Vgate": "IGBT typically 15 V",
+     "Qcool": "恒定（须记录）",
+     "base_method": "IEC 60749-34:2011",
+     "hard_rules": [
+      "ton/toff 必须用固定时间值控制，全程不得调整（禁止按 ΔTvj 或 PL 恒定控制）",
+      "允许用栅压调节 ΔTvj，但仅限 MOSFET 线性区 / IGBT 饱和区，试验开始时设定一次",
+      "MOSFET 结温不得在沟道测，须用体二极管；建议加负栅压彻底关断沟道",
+      "禁止用数据手册的 Rth + PL 反算 Tvj",
+      "禁止采用 IEC 60749-34 表1 的试验条件（不适用于寿命模型验证）",
+      "至少 2 个不同 ΔTvj，且 ΔTvj,max 至少比 ΔTvj,min 高 40%",
+      "抽样≥6 个拓扑开关，来自≥3 个不同 DUT，且每次都覆盖应用相关电流路径"
+     ],
+     "eol": "VCE,sat/VDS/VF 上升 +5%；Rth,j-c/j-s/j-f 上升 +20%（可选 ΔTvj）",
+     "requirement": "Nf = f(ΔTvj, Tvj,max, ton) 须标注在可靠性曲线上，须给出概率（建议 B5）"
+    },
+    "QL-02_PCmin": {
+     "name": "Power cycling (PCmin)",
+     "table": "Table 9.4/9.5/9.6",
+     "physics": "焊点开裂为主，可能诱发基板/底板间焊点裂纹",
+     "ton": "> 15 s（硬性下限）",
+     "IL": "> 0.85·IC,nom / ID,nom（同 PCsec 规则）",
+     "Vgate": "typically 15 V (IGBT)",
+     "base_method": "IEC 60749-34:2011",
+     "eol": "同 PCsec：Vf +5% / Rth +20%",
+     "note": "⚠ PCsec 与 PCmin 的 EOL 判据【完全相同】，差异在 ton 与考核物理对象，不在判据"
+    },
+    "QL-03_HTS": {
+     "name": "High-temperature storage",
+     "table": "Table 9.7",
+     "base_method": "IEC 60749-6",
+     "duration": "1000 h",
+     "Ta": "≥ 125 °C (typ.)；若数据手册定义更高则取更高值",
+     "extra": "试验后须做 SAM 分析并记录互连分层程度",
+     "eol": "DUT 须完全功能；数据手册参数漂移分析范围与客户约定"
+    },
+    "QL-04_LTS": {
+     "name": "Low-temperature storage",
+     "table": "Table 9.8",
+     "base_method": "JESD22-A119:2015 condition A",
+     "duration": "1000 h",
+     "Ta": "≤ -40 °C (typ.)；若数据手册定义更低则取更低值",
+     "extra": "试验后须做 SAM 分析并记录互连分层程度"
+    },
+    "QL-05_HTRB": {
+     "name": "High-temperature reverse bias",
+     "table": "Table 9.9",
+     "base_method": [
+      "IEC 60747-9:2007 §7.1.4.1 (IGBT)",
+      "IEC 60747-8:2010 (MOSFET)",
+      "IEC 60747-2:2016 (diode)",
+      "IEC 60749-23:2011"
+     ],
+     "duration": "≥ 1000 h",
+     "Tvj": "Tvj,max（修正：Tvj = Tvj,max − ΔTP,loss）",
+     "VCE/VDS/VR": "≥ 0.8 × 额定阻断电压",
+     "VGE/VGS": "0 V（若不能保证沟道完全关断，须加数据手册最小静态 VGS,min）",
+     "critical_note": "⚠ 官方 Notes 明确：用高于 80% 阻断电压的电压试验【并不会自动得到更可靠的产品】；接近 100% 会显著提高宇宙射线失效（随机事件）风险，此类失效【不含可靠性信息】，因失效物理机理不同。"
+    },
+    "QL-06_HTGB": {
+     "name": "High-temperature gate bias",
+     "table": "Table 9.10",
+     "base_method": [
+      "IEC 60747-9:2007 §7.1.4.1",
+      "IEC 60747-8:2010",
+      "IEC 60749-23:2011"
+     ],
+     "duration": "≥ 1000 h",
+     "Tvj": "Tvj,max",
+     "VCE/VDS": "0 V",
+     "VGE/VGS": "50% 样品正压 = VGE/VGS,max；50% 样品负压 = VGE/VGS,min",
+     "applicability": "不适用于二极管",
+     "records": "须连续记录 IGE,leak 或 IGS,leak",
+     "targets": [
+      "栅介质完整性(TDDB)",
+      "半导体/介质边界层状态(阈值电压漂移、Miller 电容)",
+      "可动离子污染"
+     ]
+    },
+    "QL-07_H3TRB": {
+     "name": "High-humidity high-temperature reverse bias",
+     "table": "Table 9.11",
+     "base_method": [
+      "IEC 60747-9:2007",
+      "IEC 60747-8:2010",
+      "IEC 60747-2:2016",
+      "IEC 60749-5:2017 §5.2 e)1)"
+     ],
+     "duration": "≥ 1000 h",
+     "Tvj": "81 °C < Tvj < 90 °C ★04.1/2025 新增窗口（03.1/2021 及之前无此约束）",
+     "Ta": "85 °C",
+     "RH": "85%",
+     "variant": "Variant 1（80 V）已【withdrawn 撤回】，仅保留 Variant 2：VCE/VDS/VR = 0.8 × 额定阻断电压；VGE/VGS = 0 V",
+     "load": "必须恒定电压负载（§5.2 e)1)，不允许间歇），DUT 须持续阻断"
+    },
+    "QL-08_HTFB": {
+     "name": "High-temperature forward bias (SiC)",
+     "status": "★参数【尚未确定】under discussion",
+     "note": "考核双极退化（bipolar degradation，见 JEP197），属芯片相关问题。是否需要做、如何做须由客户提供漂移数据 + 技术论证后共同商定"
+    },
+    "QL-09_DGS": {
+     "name": "Dynamic gate stress (SiC)",
+     "table": "Table 9.13",
+     "duration": "≥ 10^11 cycles（车用逆变器等效最低应力；其他应用可能需 10^12）",
+     "Tvj": "25 °C",
+     "VDS": "0 V",
+     "ABS(dVGS/dt)": "≥ 0.3 V/ns",
+     "f": "25 kHz ~ 1000 kHz",
+     "duty": "40%~60%",
+     "VGS,on": "VGS,max ≤ VGS,on ≤ VGS,max+0.5 V",
+     "VGS,off": "VGS,min−0.5 V ≤ VGS,off ≤ VGS,min",
+     "purpose": "考核栅开关不稳定 GSI（JEP195）",
+     "three_methods": [
+      "A 芯片供应商出具 dataset 论证即可，模块级免测",
+      "B 模块厂在合适载具上做芯片级测试，论证充分则模块级免测",
+      "C 模块级测试，按 Table 9.13"
+     ],
+     "failure_criterion": "★ 所有 SiC MOSFET 都表现 GSI 效应，最终判据须与客户约定"
+    },
+    "QL-10_DRB": {
+     "name": "Dynamic reverse bias (SiC)",
+     "table": "Table 9.15",
+     "duration": "≥ 10^11 cycles",
+     "Tvj": "≥ 25 °C",
+     "VDS": "0.8·VDS,max ≤ VDS ≤ 0.95·VDS,max",
+     "VDS,DC": "> 0.5·VDS,max",
+     "dV/dt turn on": "≤ -50 V/ns",
+     "dV/dt turn off": "≥ 50 V/ns",
+     "f": "25~1000 kHz",
+     "ID": "≥ 0 A",
+     "duty": "40%~60%",
+     "mode": "主动（仅含 MOSFET 等有源开关）/被动（设备产生交变电压，适用于二极管）"
+    },
+    "QL-11_dynH3TRB": {
+     "name": "Dynamic H3TRB (SiC)",
+     "table": "Table 9.17",
+     "status": "★原文声明参数【尚未固定】，给出的是典型目标值",
+     "duration": "1000 h",
+     "Ta": "85 °C",
+     "RH": "85%",
+     "VDS": "0.8~0.95·VDS,max",
+     "VDS,DC": "> 0.5·VDS,max",
+     "dV/dt on/off": "∓30 V/ns",
+     "f": "15~25 kHz",
+     "duty": "40%~60%",
+     "note": "若 DUT 为有源 MOSFET，须同时考虑 QL-10：此时 VGS,th 漂移【不算】湿度相关失效"
+    }
+   },
+   "statistics": {
+    "_note": "★ Annex I.C —— 强制统计判据（一手原文）",
+    "distribution": "Weibull 为功率循环磨损的标准选择；有理由时可用 log-normal 或其他分布",
+    "B_value": "★ 累积失效概率须【shall】用 5%（B5），由客户约定（1% B1 / 5% B5 / 10% B10）",
+    "confidence": "★ 置信度 CL = 80%（下界），依据 VDA Volume 3 Part 2",
+    "allowed_alt": "确认试验允许用右删失（right censoring）或成功run（success run）法，只要满足 B5 的统计目标",
+    "documentation": "必须记录寿命图生成过程：失效概率分配到各试验结果、Weibull 密度回归方法、寿命模型依据（Arrhenius / Coffin-Manson / CIPS2008）",
+    "data_reuse": "AQG 324 资格试验允许复用寿命评定数据（DeQuMa）",
+    "user_relevance": "★ 这解释了为什么功率循环必须做出失效点：零失效数据无法给 B5/CL80%，只能给卡方上界（参见 MM-2 心智模型）"
+   },
+   "lifetime_models": {
+    "_note": "★ Annex II.B —— 寿命公式原文转录",
+    "formula5_LESIT": "Nf = A · ΔTj^a · exp( Ea / (kB · Tj,mean) )  ← LESIT 经验模型，Coffin-Manson 项 + Arrhenius 项；扩展该模型是为纳入焊点退化的时间依赖性",
+    "formula6_LESIT_labeled": "（原文标号 6 的写法同上，a 即 Coffin-Manson 指数，β2 与 a 同义）",
+    "formula7_Bayerer": "Nf = K · ΔTj^β1 · exp( Ea / (kB·(Tj+273)) ) · t_on^β3 · I^β4 · V^β5 · D^β6  ← 大数据集拟合，含键合线直径、电流等参数",
+    "formula8_extended": "nf(ΔTj, Tj, ton) = A · ΔTj^α · arr^(β1·ΔTj+β0) · ((C+1)/(C+ton))^γ · exp( Ea/(kB·Tj) ) · f_Diode  ← 考虑 Ag 烧结（sintering）芯片贴装的扩展模型 [Scheuermann & Schmidt, PCIM 2013]",
+    "counting_method": "Rainflow counting（ASTM E1049 / MATLAB 生态算法）提取 ΔTj 与 ton",
+    "curve_probability": "寿命曲线须代表一个定义好的存活概率（如 95%）；寿命消耗 100% ⇔ 5% 器件已达 EOL",
+    "engineering_insights": [
+     "Rth 降低 10% → 寿命提高约 40%（Annex II.B 实测仿真）",
+     "导通损耗或逆变器电流变化有类似量级影响",
+     "施加约 20% 的安全裕度会降低功率密度但【寿命翻倍】",
+     "任务剖面应是典型而非最恶劣驱动剖面（寿命模型本身已含 5% 失效概率）",
+     "ton < 100ms 的温度波动对驱动逆变器应用通常可忽略（铝键合线需 >100ms 才热透）",
+     "模块瞬态热阻在 <100ms 时很小"
+    ]
+   },
+   "standards_tolerances": {
+    "_note": "★ Table 4.6/4.7 —— 通用容差与标准值（一手）",
+    "frequency": "± 1%",
+    "measured_temperature": "± 2 °C",
+    "indirectly_determined_temperature": "± 5 °C",
+    "humidity": "± 5%",
+    "times": "+5% / -0",
+    "voltages": "± 2%",
+    "currents": "± 2%",
+    "TRT": "23 °C ± 5 °C",
+    "RH": "25%~75%",
+    "Ttest": "= TRT",
+    "principle": "★ 容差针对【实测值】，必须独立于测试系统自身容差被满足"
+   },
+   "doc_defects": [
+    "⚠【版本矛盾·一手发现】第3章引用表写 IEC 60749-6:**2017**，但 9.4 节正文三处（试验依据 + §4.1 + §4.2）均写 IEC 60749-6:**2002**。同一文档内自相矛盾，引用时必须与 ECPE 确认以哪个为准。",
+    "⚠ QL-08(HTFB) 参数 under discussion、QL-11(dyn.H3TRB) 原文声明参数 not yet fixed —— 不可当作已定条件引用",
+    "⚠ QL-07 的 80 V Variant 1 已 withdrawn，但 legacy devices 定义在 §4.1.15 —— 判定旧器件时须回查该节"
+   ],
+   "references": {
+    "_note": "Annex II.B Literature 共 23 条，一手转录关键项",
+    "lesit": "[12] K. Mainka, M. Thoben, O. Schilling, \"Lifetime calculation for power modules, application and theory of models and counting methods\", EPE, Birmingham, 2011",
+    "bayerer": "[16] R. Bayerer et al: Model for Power Cycling lifetime of IGBT Modules - various factors influencing lifetime, 5th Int. Conf. on Integrated Power Electronics Systems, Nuremberg, 2008",
+    "thoben_pcim2008": "[7] M. Thoben, K. Mainka, R. Bayerer, I. Graf, M. Münzer: From vehicle drive cycle to reliability testing of Power Modules for hybrid vehicle inverter, PCIM 2008, Nuremberg",
+    "thoben_tutorial": "[8] M. Thoben: Reliability and Lifetime of Power Modules Tutorial, DOI 10.13140/RG.2.2.34359.32160, EPE'16 ECCE Europe, Karlsruhe, 2016",
+    "sintering_ext": "[21] U. Scheuermann, R. Schmidt: A New Lifetime Model for Advanced Power Modules with Sintered Chips and Optimized Al Wire Bonds, PCIM 2013, Nuremberg",
+    "cifs2008": "[15] E. Wolfgang: From Fit for Standard to Fit for Application, 3D-PEIM 2018, College Park MD",
+    "vda3": "VDA Volume 3, Part 2（可靠性统计方法学依据）",
+    "lv324": "[2] LV324: Qualification of Power Electronics Modules for Use in Motor Vehicle Components, General Requirements, Test Conditions and Tests. 供应商门户映射：BMW GS 95035 / VW 82324 Group Standard / Daimler, 2014"
+   },
+   "version_evolution": {
+    "02.1/2019": "首发（2019-05-15），70 页，QL-01~QL-07",
+    "03.1/2021": "2021-05-31，129 页，新增 QL-08，SiC 内容作为 Annex III.A（非规范性）",
+    "04.1/2025": "2025-03-31 发布 / 04-24 生效，145 页，★Annex SiC 升为【规范性】并移至第1位，QL-08~QL-11 重构（旧 QL-05a/06a/07a 删除），QL-07 新增 Tvj 81~90°C 窗口，Annex I.C 新增 4 节统计要求，IATF 16949 加入引用，新增 4.1.15 Legacy Devices / 4.1.16 Dataset* / 4.1.17 Technology qualification"
+   },
+   "usage": "车规功率模块资格验证的事实标准。汽车 under-the-hood 应用 JESD47 明确排除，必须走 AQG 324。",
+   "local_source": "references/sources/books/AQG324_04.1_2025.pdf（110 逻辑页正文 + 35 页附录，全文本地可查）",
+   "refs": [
+    "IEC60749-34",
+    "IEC60749-5",
+    "IEC60749-23",
+    "JESD22-A104",
+    "JESD22-A119",
+    "JEP183",
+    "JEP184",
+    "JEP190",
+    "JEP195",
+    "JEP197",
+    "AEC-Q101",
+    "IATF16949"
+   ]
+  },
+  {
+   "id": "AEC-Q100",
+   "org": "AEC",
+   "title": "Failure Mechanism Based Stress Test Qualification for Integrated Circuits",
+   "title_zh": "IC 失效机理应力测试资格（车规）",
+   "type": "资格标准/裁判",
+   "version": "Rev-I",
+   "status": "现行",
+   "confidence": "A",
+   "note": "免费原文：http://aecouncil.com/Documents/AEC_Q100_Rev_I.pdf。Q100 Grade 分级：Grade 0/1/2/3 对应不同温度范围与样本量。",
+   "url": "http://aecouncil.com/Documents/AEC_Q100_Rev_I.pdf"
+  },
+  {
+   "id": "AEC-Q101",
+   "org": "AEC",
+   "title": "Failure Mechanism Based Stress Test Qualification for Discrete Semiconductors",
+   "title_zh": "分立半导体资格（车规）",
+   "type": "资格标准/裁判",
+   "confidence": "B",
+   "note": "⚠ HV-H3TRB 的定位：不是独立标准编号，是【AEC-Q101 语境下 H3TRB 的高压变体】（Vds 提到额定值的 80%，如 1200V 器件用 960V）→ 属 AQG 324 基线之上的【加严项】。HV-H3TRB 的 Rev 号未取一手。"
+  },
+  {
+   "id": "IPC-SM-785",
+   "org": "IPC",
+   "title": "Guidelines for Accelerated Reliability Testing of Surface Mount Solder Attachments",
+   "title_zh": "表贴焊点加速可靠性测试指南",
+   "type": "方法论",
+   "confidence": "A",
+   "note": "A104F.01 参考文献原文引用。Norris-Landzberg 模型的标定对象即锡铅焊互连热疲劳。"
+  },
+  {
+   "id": "IPC-A610",
+   "org": "IPC",
+   "title": "Acceptability of Electronic Assemblies",
+   "title_zh": "电子组件可接受性",
+   "type": "验收",
+   "confidence": "B"
+  },
+  {
+   "id": "IPC-9701",
+   "org": "IPC",
+   "title": "Performance Test Methods and Qualification Requirements for Surface Mount Solder Attachments",
+   "title_zh": "表贴焊点性能试验方法与资格要求",
+   "type": "资格",
+   "confidence": "B"
+  },
+  {
+   "id": "IPC-9704",
+   "org": "IPC",
+   "title": "Temperature Cycling",
+   "title_zh": "温度循环（板级）",
+   "type": "热-机械",
+   "confidence": "B"
+  },
+  {
+   "id": "J-STD-020",
+   "org": "IPC",
+   "title": "Moisture/Reflow Sensitivity Classification for Nonhermetic Solid State Surface Mount Devices",
+   "title_zh": "非气密封装湿气/回流敏感度分级（MSL）",
+   "type": "分级",
+   "confidence": "B",
+   "note": "⚠ 取代已废止的 JESD22-A112"
+  },
+  {
+   "id": "J-STD-002D",
+   "org": "IPC",
+   "title": "Solderability Tests for Component Leads, Terminations, Lugs…",
+   "title_zh": "元件引线可焊性测试",
+   "type": "工艺",
+   "confidence": "B",
+   "note": "⚠ 取代 2014 废止的 JESD22-B102"
+  },
+  {
+   "id": "J-STD-033",
+   "org": "JEDEC",
+   "title": "Handling, Packing, Shipping and Use of Moisture/Reflow Sensitive Surface Mount Devices",
+   "title_zh": "MSL 器件的搬运、包装、运输与使用",
+   "type": "工艺",
+   "confidence": "B"
+  },
+  {
+   "id": "MIL-STD-883",
+   "org": "MILSTD",
+   "title": "Test Methods for Microelectronics",
+   "title_zh": "微电子试验方法",
+   "type": "总纲",
+   "status": "现行（F 版）",
+   "confidence": "A",
+   "note": "⚠ 硬断言：MIL-STD-883 是【微电路试验方法总纲】不是仅环境试验——环境(1xxx)+机械(2xxx)+电气(3xxx)+工艺(5xxx) 全含。方法号是【四位】。1xxx 与 JESD22 的 A 系列几乎一一对应。⚠【不存在 M-101 / M-105 这类三位方法号】。",
+   "url": "https://nepp.nasa.gov/docuploads/31ECBD46-FFA0-43AE-82C09A3B2B6FE26B/std883.pdf"
+  },
+  {
+   "id": "IEC60749-34",
+   "org": "IEC",
+   "title": "Semiconductor devices – Mechanical and climatic test methods – Part 34: Power cycling",
+   "title_zh": "半导体器件 机械与气候试验方法 第34部分：功率循环",
+   "type": "试验方法（母方法）",
+   "version": "2011",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "★ AQG 324 功率循环（QL-01/QL-02）的母方法。AQG 324 按 §4/§5/§6/§8/§9 逐节加补充，并【明确排除其表1 的试验条件】（不适用于寿命模型验证）",
+   "usage": "功率循环；只给方法，不给可用于寿命模型的完整条件"
+  },
+  {
+   "id": "IEC60749-5",
+   "org": "IEC",
+   "title": "Semiconductor devices – Mechanical and climatic test methods – Part 5: Steady-state temperature humidity bias life test",
+   "title_zh": "半导体器件 机械与气候试验方法 第5部分：稳态温湿度偏压寿命试验",
+   "type": "试验方法",
+   "version": "2017",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "★ H3TRB 的母方法。标准本身允许恒定/间歇两种电压负载，AQG 324 强制选 §5.2 e)1) 恒定电压",
+   "usage": "H3TRB / HV-H3TRB"
+  },
+  {
+   "id": "IEC60749-6",
+   "org": "IEC",
+   "title": "Semiconductor devices – Mechanical and climatic test methods – Part 6: Storage at high temperature",
+   "title_zh": "半导体器件 机械与气候试验方法 第6部分：高温存储",
+   "type": "试验方法",
+   "version": "⚠ 2017（AQG 324 引用表）/ 2002（AQG 324 §9.4 正文）",
+   "status": "⚠ 版本引用自相矛盾，见 AQG324.doc_defects",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "⚠ AQG 324 04.1/2025 引用表写 2017，§9.4 正文三处均写 2002。做 HTS 引用时必须确认以哪一版为准"
+  },
+  {
+   "id": "IEC60749-23",
+   "org": "IEC",
+   "title": "… – Part 23: High temperature operating life",
+   "title_zh": "第23部分：高温工作寿命",
+   "type": "试验方法",
+   "version": "2011",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "HTRB / HTGB 的引用依据之一"
+  },
+  {
+   "id": "IEC60749-25",
+   "org": "IEC",
+   "title": "… – Part 25: Temperature cycling",
+   "title_zh": "第25部分：温度循环",
+   "type": "试验方法",
+   "version": "2003",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）"
+  },
+  {
+   "id": "IEC60747-9",
+   "org": "IEC",
+   "title": "Semiconductor devices – Discrete devices – Part 9: Insulated-gate bipolar transistors (IGBTs)",
+   "title_zh": "第9部分：绝缘栅双极晶体管（IGBT）",
+   "type": "器件规范",
+   "version": "2007",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "IGBT 分立器件规范；§7.1.4.1 是 HTRB/HTGB 的引用条款"
+  },
+  {
+   "id": "IEC60747-8",
+   "org": "IEC",
+   "title": "… – Part 8: Field-effect transistors",
+   "title_zh": "第8部分：场效应晶体管（MOSFET）",
+   "type": "器件规范",
+   "version": "2010",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）"
+  },
+  {
+   "id": "IEC60747-2",
+   "org": "IEC",
+   "title": "… – Part 2: Discrete devices – Rectifier diodes",
+   "title_zh": "第2部分：整流二极管",
+   "type": "器件规范",
+   "version": "2016",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）"
+  },
+  {
+   "id": "IEC60747-15",
+   "org": "IEC",
+   "title": "… – Part 15: Isolated power semiconductor devices",
+   "title_zh": "第15部分：隔离型功率半导体器件",
+   "type": "器件规范",
+   "version": "2010",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "★ AQG 324 §7.2.2 结温测量（VCE(T) 法）多处引用此标准。04.1/2025 变更记录显示 §7.2.2 有 3 处因加入它而修改"
+  },
+  {
+   "id": "IEC60068-2-6",
+   "org": "IEC",
+   "title": "Environmental testing – Part 2-6: Tests – Test Fc: Vibration (sinusoidal)",
+   "title_zh": "环境试验 第2-6部分：试验 Fc：正弦振动",
+   "type": "环境试验",
+   "version": "2007",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）"
+  },
+  {
+   "id": "IEC60068-2-27",
+   "org": "IEC",
+   "title": "… – Part 2-27: Tests – Test Ea and guidance: Shock",
+   "title_zh": "第2-27部分：试验 Ea 与导则：冲击",
+   "type": "环境试验",
+   "version": "2008",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）"
+  },
+  {
+   "id": "IEC60068-2-64",
+   "org": "IEC",
+   "title": "… – Part 2-64: Tests – Test Fh: Vibration, broadband random",
+   "title_zh": "第2-64部分：试验 Fh：宽带随机振动",
+   "type": "环境试验",
+   "version": "2008",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）"
+  },
+  {
+   "id": "IEC60664-1",
+   "org": "IEC",
+   "title": "Insulation coordination for equipment within low-voltage systems – Part 1: Principles, requirements and tests",
+   "title_zh": "低压系统内设备的绝缘配合 第1部分：原理、要求和试验",
+   "type": "绝缘配合",
+   "version": "2007",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "AQG 324 §5.5 用它确定电气间隙与爬电距离"
+  },
+  {
+   "id": "IEC60664-4",
+   "org": "IEC",
+   "title": "… – Part 4: Consideration of high-frequency voltage stress",
+   "title_zh": "第4部分：高频电压应力的考虑",
+   "type": "绝缘配合",
+   "version": "2005",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）"
+  },
+  {
+   "id": "IATF16949",
+   "org": "IATF",
+   "title": "Quality management system requirements for automotive production and relevant service parts",
+   "title_zh": "汽车生产及相关服务零件的质量管理体系要求",
+   "type": "质量体系",
+   "version": "2016",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "★ AQG 324 04.1/2025 新增进引用表（变更记录确认）",
+   "usage": "AQG 324 要求试验在 IATF 16949 或 ISO/IEC 17025 认可实验室完成"
+  },
+  {
+   "id": "ISO-IEC-17025",
+   "org": "ISO/IEC",
+   "title": "General requirements for the competence of testing and calibration laboratories",
+   "title_zh": "检测和校准实验室能力的通用要求",
+   "type": "实验室资质",
+   "version": "2017",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf 第3章规范性引用表（一手）",
+   "note": "★ AQG 324 全部试验必须在 ISO/IEC 17025 或 IATF 16949 认可实验室执行"
+  },
+  {
+   "id": "JEP183",
+   "org": "JEDEC",
+   "title": "Guideline for measuring the threshold voltage (VT) of SiC MOSFETs",
+   "title_zh": "SiC MOSFET 阈值电压测量指南",
+   "type": "应用指南（JEP）",
+   "version": "2021-01",
+   "date": "2021-01",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Annex SiC 第3章（一手）",
+   "note": "★ AQG 324 Annex SiC 规范性引用。SiC 专属",
+   "group": "SiC 专属"
+  },
+  {
+   "id": "JEP184",
+   "org": "JEDEC",
+   "title": "Guideline for evaluating bias temperature instability of Silicon Carbide Metal-Oxide-Semiconductor devices for power electronic conversion",
+   "title_zh": "SiC MOSFET 偏压温度不稳定性（BTI）评估指南",
+   "type": "应用指南（JEP）",
+   "version": "2021-03",
+   "date": "2021-03",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Annex SiC 第3章（一手）",
+   "note": "★ AQG 324 Annex SiC 规范性引用",
+   "group": "SiC 专属"
+  },
+  {
+   "id": "JEP190",
+   "org": "JEDEC",
+   "title": "Guideline for evaluating of dV/dt robustness of SiC power devices",
+   "title_zh": "SiC 功率器件 dV/dt 鲁棒性评估指南",
+   "type": "应用指南（JEP）",
+   "version": "2022-08",
+   "date": "2022-08",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Annex SiC 第3章 + QL-10 §9.11.1（一手）",
+   "note": "★ AQG 324 QL-10 DRB 直接引用此 JEP。DRB 定位为【芯片级技术资格】（与 AEC-Q101 并列）",
+   "group": "SiC 专属"
+  },
+  {
+   "id": "JEP195",
+   "org": "JEDEC",
+   "title": "Guideline for evaluating gate switching instability of Silicon Carbide Metal-Oxide-Semiconductor Devices for power electronic conversion",
+   "title_zh": "SiC 器件栅开关不稳定性（GSI）评估指南",
+   "type": "应用指南（JEP）",
+   "version": "2023-02",
+   "date": "2023-02",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Annex SiC 第3章 + QL-09 §9.10.1（一手）",
+   "note": "★ AQG 324 QL-09 DGS 的方法学依据。原文：GSI 主要取决于半导体技术与电气工况，应【优先在芯片级评估】",
+   "group": "SiC 专属"
+  },
+  {
+   "id": "JEP197",
+   "org": "JEDEC",
+   "title": "Guideline for evaluating Bipolar Degradation of Silicon Carbide power devices",
+   "title_zh": "SiC 功率器件双极退化评估指南",
+   "type": "应用指南（JEP）",
+   "version": "2023-11",
+   "date": "2023-11",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Annex SiC 第3章 + QL-08 §9.9.1（一手）",
+   "note": "★ AQG 324 QL-08 HTFB under discussion 的技术依据。原文：双极退化是【强芯片相关】问题",
+   "group": "SiC 专属"
+  },
+  {
+   "id": "LV324",
+   "org": "OEM 联合（BMW/VW/Daimler）",
+   "title": "Qualification of Power Electronics Modules for Use in Motor Vehicle Components, General Requirements, Test Conditions and Tests",
+   "title_zh": "电机车辆部件用功率电子模块资格验证：通用要求、试验条件与试验",
+   "type": "OEM 供应规范（AQG 324 前身）",
+   "version": "2014",
+   "date": "2014",
+   "status": "被 AQG 324 取代（现行版为 04.1/2025）",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Preface + Annex II.B [2]（一手）",
+   "note": "★ AQG 324 的直接前身。供应商门户映射编号：BMW GS 95035、VW 82324 Group Standard、Daimler。反查 OEM 内部规范编号的入口",
+   "refs": [
+    "AQG324"
+   ]
+  },
+  {
+   "id": "VDA-Vol3-Part2",
+   "org": "VDA（德国汽车工业协会）",
+   "title": "VDA Volume 3 – Reliability of Automotive Electrical/Electronic Systems – Part 2: Statistical methods",
+   "title_zh": "VDA 第三卷 可靠性 第2部分：统计方法",
+   "type": "统计方法学",
+   "version": "—",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Annex I.C（一手）",
+   "note": "★ AQG 324 自身的统计方法学依据（B5 + CL 80% 下界、右删失、success run 均源自此）。做可靠性数据分析必须同时具备",
+   "refs": [
+    "AQG324"
+   ]
+  },
+  {
+   "id": "ASTM-E1049",
+   "org": "ASTM",
+   "title": "Standard Practices for Cycle Counting in Fatigue Analysis (E 1049-85, Reapproved 2005)",
+   "title_zh": "疲劳分析循环计数实践",
+   "type": "计数方法",
+   "version": "E1049-85 (2005)",
+   "status": "现行",
+   "confidence": "A",
+   "source": "AQG324_04.1_2025.pdf Annex II.B [13]（一手）",
+   "note": "Rainflow 计数法的美国规范来源；AQG 324 Annex II.B 推荐的 MATLAB 算法见 [14]"
+  }
+ ],
+ "milstd883_map": {
+  "_note": "MIL-STD-883 四位方法号 ↔ JESD22 映射（⚠ 仅 1xxx 环境应力段可靠；2xxx 是检验/分析/工艺类，与 JESD22-B 应力试验不同源）",
+  "_correction": "2026-10-05 二轮核实修正了 3 条错误映射（原 2012→B115、2011→B105、2001→B100 均错）",
+  "1xxx": {
+   "域": "环境试验（可靠对应 JESD22-A 系列）",
+   "映射": [
+    {
+     "mil": "1005",
+     "jesd": "JESD22-A108",
+     "主题": "稳态寿命 ↔ TBL"
+    },
+    {
+     "mil": "1010",
+     "jesd": "JESD22-A104",
+     "主题": "温度循环 ↔ TC"
+    },
+    {
+     "mil": "1011",
+     "jesd": "JESD22-A106",
+     "主题": "热冲击 ↔ Thermal Shock"
+    },
+    {
+     "mil": "1014",
+     "jesd": "JESD22-A109",
+     "主题": "气密性 ↔ Hermeticity"
+    },
+    {
+     "mil": "1009",
+     "jesd": "JESD22-A107",
+     "主题": "盐雾 ↔ Salt Atmosphere"
+    }
+   ]
+  },
+  "2xxx": {
+   "域": "机械/检验/工艺（⚠ 与 JESD22-B 非等价）",
+   "映射": [
+    {
+     "mil": "2002",
+     "jesd": "JESD22-B110",
+     "主题": "机械冲击"
+    },
+    {
+     "mil": "2004",
+     "jesd": "JESD22-B105",
+     "主题": "引线完整性"
+    },
+    {
+     "mil": "2007",
+     "jesd": "JESD22-B103",
+     "主题": "变频振动"
+    },
+    {
+     "mil": "2009",
+     "jesd": "JESD22-B101",
+     "主题": "外观目检"
+    },
+    {
+     "mil": "2016",
+     "jesd": "JESD22-B100",
+     "主题": "物理尺寸"
+    },
+    {
+     "mil": "2011",
+     "jesd": null,
+     "主题": "键合拉力 Bond Strength（Destructive Bond Pull）—— 库内无对应 JESD22 项"
+    },
+    {
+     "mil": "2012",
+     "jesd": null,
+     "主题": "X 射线照相 Radiography —— 库内无对应 JESD22 项"
+    },
+    {
+     "mil": "2019",
+     "jesd": null,
+     "主题": "芯片剪切强度 Die Shear —— 库内无对应 JESD22 项"
+    },
+    {
+     "mil": "2020",
+     "jesd": null,
+     "主题": "PIND 颗粒撞击噪声检测 —— 库内无对应 JESD22 项"
+    },
+    {
+     "mil": "2001",
+     "jesd": null,
+     "主题": "恒定加速度 Constant Acceleration —— 库内无对应 JESD22 项"
+    },
+    {
+     "mil": "2003",
+     "jesd": null,
+     "主题": "可焊性 Solderability → 查 J-STD-002D"
+    }
+   ]
+  },
+  "3xxx": {
+   "域": "电气试验",
+   "映射": []
+  },
+  "5xxx": {
+   "域": "工艺/分析（DPA 相关）",
+   "映射": [
+    {
+     "mil": "5xxx",
+     "jesd": null,
+     "主题": "DPA / 切片 / SEM 等工艺方法（5004 鉴定 / 5005 性能 / 5007 批接收）"
+    }
+   ]
+  }
+ },
+ "iec_60749_parts": {
+  "_note": "IEC 60749 各部分主题（部分核实）。60749 有 42 parts，全文付费 CHF 260。IEC 60749 全族正在更新（FRAG1/FRAG2 已到 MERGED）",
+  "1": {
+   "主题": "总则/术语",
+   "confidence": "B"
+  },
+  "3": {
+   "主题": "热-电试验（HTRB/HTGB 等）",
+   "confidence": "B"
+  },
+  "4": {
+   "主题": "湿热试验（THB 等）",
+   "note": "原文：『THB 结果优先于 HAST』",
+   "confidence": "A"
+  },
+  "5": {
+   "主题": "稳态温湿偏置 85/85",
+   "confidence": "B"
+  },
+  "11": {
+   "主题": "结温测量方法",
+   "confidence": "A"
+  },
+  "34": {
+   "主题": "功率循环（Power Cycling）",
+   "note": "2025 版转向 test-to-fail",
+   "confidence": "B"
+  },
+  "35": {
+   "主题": "（前言核实来源）",
+   "confidence": "A"
+  }
+ },
+ "deprecations": [
+  {
+   "old": "JESD22-A112",
+   "old_title": "Moisture-Induced Stress Sensitivity for Plastic Surface Mount Devices",
+   "old_date": "1995-11",
+   "status": "被替代",
+   "replaced_by": "J-STD-020",
+   "action": "查 J-STD-020"
+  },
+  {
+   "old": "JESD22-A114",
+   "old_title": "ESD Sensitivity Testing, Human Body Model (HBM)",
+   "old_date": "2008-12",
+   "status": "被替代",
+   "replaced_by": "JS-001-2017",
+   "action": "查 JS-001"
+  },
+  {
+   "old": "JESD22-B102",
+   "old_title": "Solderability Test Method",
+   "old_date": "2007-10",
+   "status": "2014 废止",
+   "replaced_by": "J-STD-002D",
+   "action": "查 J-STD-002D"
+  },
+  {
+   "old": "JESD22-B104",
+   "old_title": "Mechanical Shock",
+   "old_date": "2004-11",
+   "status": "2013-07 被替代",
+   "replaced_by": "JESD22-B110",
+   "action": "查 B110"
+  },
+  {
+   "old": "JESD22-C100",
+   "old_title": "High Temperature Continuity",
+   "status": "已废止",
+   "replaced_by": null,
+   "action": "无替代，注意区分「废止」与「被取代」的处理流程"
+  },
+  {
+   "old": "JESD22-C101",
+   "old_title": "Field-Induced Charged-Device Model (CDM) Test Method",
+   "old_date": "—",
+   "status": "2020-02 撤销",
+   "replaced_by": "JS-002-2018",
+   "action": "查 JS-002"
+  },
+  {
+   "old": "JESD29",
+   "status": "已废止",
+   "replaced_by": null,
+   "action": "需人工核实"
+  },
+  {
+   "old": "JESD34",
+   "status": "已废止",
+   "replaced_by": null,
+   "action": "需人工核实"
+  }
+ ],
+ "unverified": [
+  "JESD48",
+  "JESD671",
+  "JESD82-x 各具体标题",
+  "JESD22-A200 系列全部",
+  "JESD22-B119",
+  "JESD22-B121A",
+  "SEMI N1",
+  "SEMI C1",
+  "SEMI T10",
+  "SEMI E10",
+  "SEMI MS/ME/MI 分级",
+  "IPC-1782",
+  "IPC-TM-650 各具体方法号（2.3.25/2.4.22/2.6.3.7/2.6.25 存在来源冲突）",
+  "MIL-STD-883 Method 5011",
+  "MIL-STD-750A 2030",
+  "任何 GJB 编号",
+  "术语 SPI",
+  "术语 CBS",
+  "术语 MLF",
+  "术语 DV@T",
+  "术语 Tf",
+  "术语 CTH",
+  "术语 MoM",
+  "AQG 324 具体数值条件（ΔTj / 循环次数 / 时长）",
+  "JESD22-A108 F 版与 G 版标题差异",
+  "AEC-Q101 Rev 号",
+  "IEC 62506:2023",
+  "Nordhoff-Peck 公式",
+  "Booth/Chow/Elegant 书目"
+ ],
+ "misconceptions": [
+  {
+   "wrong": "JESD22-A108 = Temperature, Bias and Voltage Life，或官方名就叫 TBL",
+   "truth": "官方标题为 Temperature, Bias, and Operating Life（1991 至 2022 G 版一致，JEDEC 官网 A108C/A108G 页面可证）；全称无 Voltage；'TBL' 是业界俗称，官方标题不含该缩写",
+   "confidence": "A"
+  },
+  {
+   "wrong": "MIL-STD-883 有 M-101 降额 / M-105 功率循环 / M-110 盐雾等三位方法号",
+   "truth": "方法号是四位（1001-1034/2001-2035/3xxx/5xxx）；降额在 MIL-STD-883 中不以此编号存在",
+   "confidence": "A"
+  },
+  {
+   "wrong": "MIL-STD-883 = 环境试验方法（与 JESD22 并列）",
+   "truth": "是微电路试验方法总纲，1xxx 与 JESD22 的 A 系列几乎一一对应（跨体系反查的关键映射）",
+   "confidence": "A"
+  },
+  {
+   "wrong": "ESD 体系 = JESD78-01 / JESD78-02",
+   "truth": "JESD78 是 IC Latch-Up Test（闩锁），与 ESD 无关；现行版 F.02(2023-11)。ESD 体系是 JS-001(HBM)/JS-002(CDM)/A115(MM)",
+   "confidence": "A"
+  },
+  {
+   "wrong": "JESD204 = DDR4 SDRAM",
+   "truth": "DDR4 是 JESD79-4；JESD204 是 SerDes 接口标准",
+   "confidence": "A"
+  },
+  {
+   "wrong": "JESD22-A121 = ESD 测试",
+   "truth": "A121 是锡及锡合金镀层晶须生长测试",
+   "confidence": "B"
+  },
+  {
+   "wrong": "AQG 324 由 ZVEI 持有 / 引用 UNECE R10、ELV、RoHS、WEEE",
+   "truth": "由 ECPE 持有；对 UNECE 系列【零引用】。法规锚点从 UNECE R10 附录 1 与 IPC-175X 反查",
+   "confidence": "A"
+  },
+  {
+   "wrong": "功率循环是 JESD22-A108",
+   "truth": "A108 是 TBL/HTOL 母标准；功率循环 = A122 / A105 + IEC 60749-34 / AQG 324 QL-01~02",
+   "confidence": "A"
+  },
+  {
+   "wrong": "IEC Webstore 产品页有 Referenced by Tab 可拉反向引用",
+   "truth": "实测仅 Product detail / Lifecycle / Normative references 三个内容 Tab；引用图谱须从各标准自身 references 表反向抽取",
+   "confidence": "A"
+  },
+  {
+   "wrong": "semiverse.org 是 SEMI 标准平台",
+   "truth": "实为韩国 NFT 项目，非 SEMI 平台。SEMI 官方商店为 store-us.semi.org",
+   "confidence": "A"
+  },
+  {
+   "wrong": "JESD22-A104 规定了温度循环次数（如 1000 次）",
+   "truth": "A104F.01 §5 明确次数由 JESD47 或供采双方约定；A104 是方法库不是裁判",
+   "confidence": "A"
+  },
+  {
+   "wrong": "JEDEC 标准状态是 Active / Withdrawn",
+   "truth": "JEDEC 实际用 Reaffirmed / Superseded / Rescinded；JM21W §7.2 规定满 5 年须委员会选 Reaffirm/修订/Rescind/转 ANSI-IEC",
+   "confidence": "A"
+  },
+  {
+   "wrong": "HV-H3TRB 是独立标准编号",
+   "truth": "是 AEC-Q101 语境下 H3TRB 的高压变体（Vds 提至额定 80%），属加严项",
+   "confidence": "B"
+  },
+  {
+   "wrong": "IEC 2859-1 = GB/T 2828.1",
+   "truth": "ISO 2859-1:2026 已发布（2026-01），GB/T 2828.1-2012 仍现行为 2025-05 复审确认版，两者不等同；合同引用须写清版本号否则 Ac/Re 不可比",
+   "confidence": "B"
+  },
+  {
+   "wrong": "零失效样本量可以算出预计寿命",
+   "truth": "零失效只能给失效率上界 R_L = 1 − χ²(1-CL)/2S；证明 10ppm/90% 需约 23 万样本，数学上不可行 → IEC 60749-34:2025 与 AQG 324 转向 test-to-fail",
+   "confidence": "A"
+  }
+ ],
+ "fallback_urls": {
+  "JEDEC 文档检索": "https://www.jedec.org/document_search",
+  "JEDEC JC-14 委员会": "https://www.jedec.org/node/19",
+  "IEC Webstore": "https://webstore.iec.ch",
+  "IEC TC 47 文档列表": "https://www.iec.ch/dyn/www/f?p=103:20:3655892773077",
+  "SEMI 标准商店": "https://store-us.semi.org",
+  "AEC 文档列表": "http://aecouncil.com/Documents/AECDocuments.html",
+  "AEC-Q100 Rev-I 原文": "http://aecouncil.com/Documents/AEC_Q100_Rev_I.pdf",
+  "ECPE (AQG 324)": "https://www.ecpe.org",
+  "MIL-STD-883F 原文 (NASA)": "https://nepp.nasa.gov/docuploads/31ECBD46-FFA0-43AE-82C09A3B2B6FE26B/std883.pdf",
+  "NASA EEE Parts Bulletin": "https://nepp.nasa.gov/docs/tasks/EEE-Parts-Bulletin/",
+  "中国 GB/T 全文公开": "https://openstd.samr.gov.cn/bzgk/gb/",
+  "全国标准信息公共服务平台": "https://std.samr.gov.cn/"
+ }
+}

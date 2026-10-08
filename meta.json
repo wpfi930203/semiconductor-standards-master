@@ -1,0 +1,363 @@
+{
+ "slug": "semiconductor-standards-master",
+ "name": "半导体标准专家",
+ "displayName": "半导体标准专家",
+ "icon": "icons/logo.png",
+ "icon_svg": "icons/logo.svg",
+ "icon_generator": "tools/make_icon.py",
+ "version": "1.5.0",
+ "industry": "半导体标准体系 (JEDEC / SEMI / IEC / AEC / AQG / IPC / MIL-STD)",
+ "locale": "zh-CN + global",
+ "profile": "从业者（功率半导体封装可靠性工程师，20年经验）",
+ "focus": [
+  "标准间引用关系 (normative/informative 建模)",
+  "测试方法分类 (按失效机理，跨体系)",
+  "标准编号反向查询 (本地 CLI 五级降级解析)"
+ ],
+ "last_research_date": "2026-10-05",
+ "source_count": 561,
+ "research_lines": 7070,
+ "unverified_count": 29,
+ "local_corpus_mode": "aqg324_obtained + standards_corpus_ingested",
+ "local_corpus_note": "AQG 324 已由 ECPE 官网公开下载并全文入库（references/sources/books/，三版 PDF 04.1/2025 + 03.1/2021 + 02.1/2019，CC BY-ND）。另于 2026-10-07 并入用户提供的本地标准资料库（源目录 <本地标准资料库>，63 个 PDF / 827MB / 5,749 页），抽取出 49 份文本层语料至 references/sources/standards/。详见下方 corpus 字段。仍待用户补充：内部规范 / 历史失效案例 / 客户 TS。",
+ "corpus": {
+  "built": "2026-10-07",
+  "src_root": "<本地标准资料库>",
+  "index": "data/corpus.json",
+  "human_manifest": "references/LOCAL-CORPUS.md",
+  "extraction_log": "references/sources/corpus_index.json",
+  "metadata": "references/sources/corpus_metadata.json",
+  "extractor": "PyMuPDF 文本层抽取（无 OCR / 无翻译 / 无改写）",
+  "pipeline_tools": "tools/corpus/",
+  "stats": {
+   "pdf_files_total": 63,
+   "distinct_std_ids": 52,
+   "text_extracted": 49,
+   "scanned_files_held": 10,
+   "scanned_distinct": 4,
+   "by_tier": {
+    "L1_english_original": 7,
+    "L2_official_translation": 1,
+    "L3_machine_translation": 37,
+    "L4_scanned_not_extracted": 4
+   },
+   "corpus_chars_total": "≈1.4M 文本层字符，2.4 MB"
+  },
+  "evidence_tiers": {
+   "L1": "英文原文在库 — 可直接引用措辞与数值",
+   "L2": "官方中文译本在库 — 可引用，须注明冲突时以英文版为准",
+   "L3": "机器翻译在库 — 仅可定位条款号/结构/表格位置/数值；术语译名禁止引用",
+   "L4": "扫描件在库未提取 — 内容一律不得引用，只能声明已持有",
+   "L0": "不在库 — 必须声明无法确认",
+   "L4-OCR": "扫描件已定向 OCR — 可用于理解与索引；引用前必须人工核对原扫描页"
+  },
+  "L1_std_ids": [
+   "JESD47L",
+   "JESD22-B116B",
+   "JESD51-2A",
+   "JESD51-6",
+   "IPC-7351",
+   "IPC-7351B",
+   "IPC-TM-650-2.4.22c"
+  ],
+  "L2_std_ids": [
+   "IPC-7095D"
+  ],
+  "L4_std_ids": [
+   "MIL-STD-883F",
+   "MIL-STD-883K",
+   "GJB-548B",
+   "GJB-548C"
+  ],
+  "key_findings": [
+   "★ 文件名声明的语种与正文实际语种严重不符：38 份标注「完整英文电子版」的文件正文实为机翻中文，只有 7 份是真英文原文",
+   "★ 文件名与内容语种完全错位：中文名文件 JESD22-B116B引线键合的剪切试验.pdf 是英文原件；英文名文件反而是机翻件",
+   "★ 机翻件术语硬错实测：Wire Bond→「线束」、thermosonic→「热膜」、stitch bond→「针线」、metallurgical bond→「冶金键」",
+   "★ 表格抽取丢符号：A104 表1 的 H 条件 -55°C 被抽成 55°C、J/K 的 0°C 被抽成 -0 —— 数值也须与原文交叉核对",
+   "★ JESD47L 是中英对照双语版（英文段落+中文翻译），Table1 零失效样本量 / Table4 ELFR(60%置信度) 可直接引用",
+   "★ 4 个军标/国军标（MIL-STD-883F/K、GJB-548B/C，共 2,228 页）是纯扫描件，0 字符文本层，未做 OCR",
+   "★ A104 在库版本是 F(2020-11)，非本 skill 另处引用的 F.01 —— 两者不是同一文件",
+   "★ JESD47 在库版本是 L(2022-12)；正文另处提到的「N 版 2026-08」来自二手，本库未持有，须外部核实"
+  ],
+  "digests": {
+   "index": "references/digests/_index.json",
+   "human_index": "references/digests/_INDEX.md",
+   "count": 37,
+   "sections": 672,
+   "sections_repaired": 136,
+   "numeric_lines": 565,
+   "term_error_hits": 431,
+   "scope": "全部 L3 机翻标准的条款级蒸馏（机翻件不能引措辞，但结构与数值可用）"
+  },
+  "military_ocr": {
+   "runner": "tools/ocr_military.py",
+   "output_dir": "references/sources/standards/mil_ocr/",
+   "engine": "RapidOCR (PP-OCRv3 det/rec + v2 cls, onnxruntime CPU)",
+   "measured_speed_sec_per_page": "36 ~ 236（已试 onnxruntime 1.30.0/1.22.0、dpi 100/150/200/300、强制CPU与默认providers）",
+   "full_ocr_pages": 2229,
+   "full_ocr_estimate_hours": "22 ~ 75",
+   "decision": "全量不可行 → 改定向 OCR（各军标目录/方法索引页）",
+   "feasible_alternatives": [
+    "带 GPU 的机器（onnxruntime-gpu）",
+    "安装 Tesseract（约 1~3 秒/页 → 2,229 页约 1~2 小时）"
+   ],
+   "tier_after_ocr": "L4-OCR —— 可用于理解与索引；引用条款号/数值前必须人工核对原扫描页",
+   "engine_final": "Windows.Media.Ocr (WinRT) · zh-Hans-CN",
+   "measured_speed_final_sec_per_page": "1.6 ~ 30（GJB 中文约 3~5，883 英文约 12~25）",
+   "engine_rejected": "RapidOCR PP-OCRv3 + onnxruntime CPU：36~262 s/页（已穷尽排查配置）",
+   "root_cause": "执行环境算力受限（旁证：pip 装 15MB wheel 耗时 20 分钟）",
+   "outputs": {
+    "methods_md": "references/MIL-METHODS.md",
+    "methods_json": "references/mil-methods.json",
+    "fulltext_dir": "references/sources/standards/mil_ocr/",
+    "parser": "tools/parse_mil_methods.py"
+   },
+   "method_index_coverage": {
+    "MIL-STD-883K": "100 个方法号（标题覆盖 92%）",
+    "MIL-STD-883F": "74 个方法号（标题覆盖 95%）",
+    "GJB-548B": "全量 OCR 中",
+    "GJB-548C": "全量 OCR 中"
+   },
+   "known_ocr_errors": [
+    "字符误识：http:// → http:ll；Stabilization → Stab 山 zation",
+    "词间空格丢失：DownIoadedfromhttp；中文被切分（已自动修复）",
+    "★ 标题错位：目录页个别标题被 OCR 提前输出，导致标题与方法号错位"
+   ],
+   "usage_rule": "方法号可信（用于定位）；标题为 OCR 产物，引用前必须核对原扫描页",
+   "method_index": {
+    "MIL-STD-883K": "105 个方法号（81 有标题）",
+    "MIL-STD-883F": "76 个方法号（58 有标题）",
+    "GJB-548B": "75 个方法号（72 有标题）",
+    "GJB-548C": "74 个方法号（70 有标题）"
+   },
+   "cross_validation": "GJB 548 与 MIL-STD-883 方法号同源，实测重合 99%（74/75、73/74）——两侧 OCR 与解析均无系统性错位，互为独立佐证",
+   "source_markers": {
+    "目录页": "该标准自己的目录页 OCR；标题可能因读序错位，须核对原页",
+    "同源标准参考": "本标准目录页在扫描件中缺失，借用同源标准目录；可能已被修订，不得直接引用",
+    "OCR归一": "号中含 OCR 混淆字符（O/l/L/巧/&），已按规则归一；号可信"
+   },
+   "resolved_defects": [
+    "数字内空格：OCR 把 '1011' 拆成 '101 1'，导致漏项 —— 已加 squeeze_digits 修复（883K 方法号 100→105，交叉一致率 95%→99%）",
+    "目录页范围：初版扫全文导致正文句子被当标题 —— 已改为只在各标准目录页范围解析",
+    "中文空格：Windows OCR 在汉字间插空格 —— 已加 CJK 空格折叠",
+    "文件一致性：GJB-548C 前 16 页由旧脚本产出、其余由新脚本追加，含两种格式与重复块 —— 已重 OCR 1-16 页并按页序合并（460 页）"
+   ],
+   "coverage": {
+    "MIL-STD-883K": "全量 OCR 进行中",
+    "MIL-STD-883F": "索引级",
+    "GJB-548B": "全量 100%",
+    "GJB-548C": "全量 100%"
+   }
+  },
+  "method_index": {
+   "human": "references/MIL-METHODS.md",
+   "machine": "references/mil-methods.json",
+   "parser": "tools/parse_mil_methods.py",
+   "runner": "tools/ocr_military.py"
+  }
+ },
+ "cli": {
+  "entry": "scripts/stdq.py",
+  "path_note": "Windows 实际路径 ~/.workbuddy/skills/semiconductor-standards-master/scripts/stdq.py",
+  "deps": "zero (Python 3 stdlib only)",
+  "offline": true,
+  "subcommands": [
+   "find",
+   "refs",
+   "cited-by",
+   "classify",
+   "check",
+   "tree",
+   "unverified",
+   "miscon",
+   "ql",
+   "aqg",
+   "lifetime",
+   "stats",
+   "corpus",
+   "coverage",
+   "source",
+   "digest",
+   "terms",
+   "mil"
+  ],
+  "data": [
+   "data/standards.json",
+   "data/relations.json",
+   "data/corpus.json",
+   "references/digests/_index.json",
+   "references/mil-methods.json",
+   "references/mil-methods.json"
+  ],
+  "local_corpus": "references/sources/books/ (AQG324 04.1/2025 + 03.1/2021 + 02.1/2019 PDF + 提取文本) + references/sources/standards/ (49 份标准文本层语料)"
+ },
+ "db_stats": {
+  "standards": 92,
+  "ref_edges": 57,
+  "deprecations": 8,
+  "unverified": 29,
+  "misconceptions": 15,
+  "confidence_A": 38,
+  "confidence_B": 54,
+  "firsthand_ratio": "41%",
+  "aqg324_ql_tests": 11,
+  "aqg324_normative_refs": 19,
+  "aqg324_jep_refs": 5
+ },
+ "top_figures": [
+  {
+   "name": "J. W. McPherson",
+   "org": "TI → 自办咨询",
+   "why": "TDDB 物理模型四十年权威；2025 IEEE EDR E-Model 发展史是模型外推之争裁判"
+  },
+  {
+   "name": "Dr. Martin Rittner",
+   "org": "Robert Bosch",
+   "why": "AQG 324 工作组主席 + ZVEI-ECPE 联合 WG 主席"
+  },
+  {
+   "name": "D. Stewart Peck",
+   "org": "Bell Laboratories",
+   "why": "湿热 Peck 模型唯一工业来源，JESD22-A101 理论基础"
+  }
+ ],
+ "agentic_protocol": [
+  "体系定位",
+  "状态校验",
+  "方法 vs 裁判",
+  "失效机理对齐",
+  "产品适配修正",
+  "引用链追溯",
+  "统计与判据"
+ ],
+ "mental_models": 5,
+ "playbook_rules": 12,
+ "known_gaps": [
+  "★ 已解决（2026-10-05）：AQG 324 全文已下载入库，QL-01~QL-11 条件表 / B5+CL80% 统计判据 / Annex II.B 寿命公式 / 第3章引用表全部一手化",
+  "AQG 324 QL-08(HTFB) 与 QL-11(dyn.H3TRB) 参数官方声明未定/未固定，无法给出可用条件",
+  "AQG 324 文档缺陷：IEC 60749-6 版本在引用表(2017)与正文(2002)自相矛盾，须向 ECPE 确认",
+  "JESD22 系列多为 B 级（JEDEC 禁爬，只能交叉验证）",
+  "加速模型 Ea/h/n 数值全为二手，须自有数据标定",
+  "29 项未核实（见 data/standards.json → unverified）",
+  "IEC 付费墙（CHF 260 / 60749 42 parts）",
+  "企业标准 VW80000/GMW/USCAR 与客户 TS 不可公开获得",
+  "引用图谱 JEDEC 侧不完整（禁爬）；IEC 侧无 Referenced by Tab",
+  "AQG 324 引用构成中 AEC-Q200 出现 2 次但语境未逐条定位（仍为 C 级）"
+ ],
+ "concepts_audited": [
+  "本 skill 使用 OpenAI 模型生成，已按 research/09 工具链方法论完成五轮溯源审计",
+  "审计维度：事实准确性 / 结构完整性 / 表述清晰度 / 指令明确性 / 领域适配性",
+  "审计记录：references/audit/（含 verdict、逐项问题、修改记录、6 路由回归测试）",
+  "本轮修复：MIL-STD-883 跨体系映射失效、去版本后缀误伤（JESD48→JESD47）、未核实项判定优先级、裸编号(A122/A104)未入索引"
+ ],
+ "changelog": [
+  {
+   "date": "2026-10-08",
+   "rev": "v1.5.0",
+   "change": "军标全量 OCR（GJB 两份完成）+ 方法索引建成 + 三处解析缺陷修复",
+   "detail": [
+    "GJB-548B 全量 OCR 完成（393/393 页）、GJB-548C 全量完成（460/460 页）；MIL-STD-883K 全量进行中",
+    "★ 建成军标方法索引：883K 105 个 / 883F 76 个 / GJB-548B 75 个 / GJB-548C 74 个方法号",
+    "★ 交叉校验：GJB 548 与 MIL-STD-883 方法号同源，实测重合 99%（74/75、73/74）—— 独立佐证两侧 OCR 与解析无系统性错位",
+    "新增三种来源标记：目录页 / 同源标准参考 / OCR归一，逐条标注可信度",
+    "新增缺口声明（按系列内检测号段不连续），并明确「不判断是标准跳号还是 OCR 漏识」",
+    "修复数字内空格漏项：OCR 把 1011 拆成 '101 1' → squeeze_digits（883K 100→105 个方法号，交叉一致率 95%→99%）",
+    "修复正文污染标题：初版扫全文，正文句子被当标题 → 改为只在各标准目录页范围解析",
+    "修复中文空格：Windows OCR 在汉字间插空格 → CJK 空格折叠",
+    "修复 GJB-548C 文件一致性：前 16 页旧格式 + 其余新格式导致重复块 → 重 OCR 并按页序合并（460 页）",
+    "同源补齐：GJB-548C 目录 I 页在扫描件中缺失（1001~1030），用 GJB-548B 目录补齐并标注「可能已被修订，不得直接引用」",
+    "放弃不可靠做法：曾试从正文节标题补齐缺口，但产出的是正文句子（如 1005 → 交叉引用句），已回退",
+    "CLI 新增 `stdq mil <方法号>`；SKILL.md §0.6 重写（引擎选型实测 + 方法索引 + 三种 OCR 误差 + 来源标记）"
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "rev": "v1.4.0",
+   "change": "军标 OCR（定向）+ 机翻标准完整蒸馏（条款级 digest + 术语纠错表）",
+   "detail": [
+    "★ 机翻标准全部蒸馏：为 37 份 L3 生成条款级 digest（references/digests/），含章节结构 + 数值条件 + 本文件命中的术语错误",
+    "★ 新发现机翻件第三个缺陷：约 20% 的条款号存在确定性错位（首位数字被移到末尾），如 .32 实为 2.3、.162 实为 2.16、.21 实为 1.2；错位可逆，digest 已按规则还原并标注（还原）",
+    "条款号错位验证依据：A104F 上下文（夹在 2.2 与 2.4 之间）+ J-STD-020 目录三重交叉（1.1范围 → .21背景 → .31术语和定义）",
+    "★ 建机翻术语纠错表 10 条，每条与英文原件逐行对齐核实：模具←die / 模具垫←die pad / 球键←ball bond / 线束←wire bond / 热膜←thermosonic / 针线←stitch bond / 冶金键←metallurgical bond / 骰子←dice / 偏见·偏差←bias",
+    "digest 产出规模：672 章节条目（其中 136 条需还原，占 20%）+ 565 条数值条件行 + 431 次术语错误命中",
+    "★ 军标 OCR：建立 tools/ocr_military.py（逐页落盘 / 断点续跑 / 版面还原 / 限页）",
+    "★ OCR 性能实测（非推测）：本机 36~236 秒/页。已试 onnxruntime 1.30.0 与 1.22.0 两版、dpi 100/150/200/300 四档、强制 CPU 与默认 providers 两种配置、RapidOCR PP-OCRv3 det/rec。最快 36 s/页",
+    "→ 全量 OCR 2,229 页需 22~75 小时，判定不可行；改用定向 OCR（各军标目录/方法索引页）",
+    "新增引用层级 L4-OCR：扫描件 OCR 后「可用于理解与索引，引用前必须人工核对原扫描页」",
+    "CLI 新增 2 子命令：digest（单份/全部条款级 digest）、terms（机翻术语纠错表）；subcommands 15→17",
+    "SKILL.md 新增 §0.6「军标 OCR 的实测约束」+ §0.5 扩充（L4-OCR 层 / digest 资源 / 术语纠错表 / 条款号错位警示 / 回答纪律 5→7 条）",
+    "LOCAL-CORPUS.md 扩至 777 行：新增「机翻标准条款级蒸馏」与「条款号错位」两节，逐份标注蒸馏状态与 OCR 进度",
+    "新增 tools/corpus/distill_l3.py（L3 蒸馏器）与 tools/ocr_military.py（军标 OCR 运行器）"
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "rev": "v1.3.0",
+   "change": "并入用户本地标准资料库（63 PDF / 52 编号）+ 建立引用分层纪律",
+   "detail": [
+    "源目录 <本地标准资料库>（63 个 PDF / 827MB / 5,749 页）",
+    "按仓颉蒸馏流程执行：盘点去重 → 文本层抽取 → 文档自述元数据 → 分层定级 → 整合入 skill（未新建任何独立 skill）",
+    "★ 实测发现文件名声明语种与正文实际语种严重不符：标注「完整英文电子版」的 38 份实为机翻中文，仅 7 份是真英文原文",
+    "★ 发现文件名与内容语种完全错位：中文名文件是英文原件，英文名文件反而是机翻件（B116B 案例）",
+    "抽取 49 份标准文本层语料（≈1.4M 字符 / 2.4MB）至 references/sources/standards/（jedec 41 / ipc 4）",
+    "4 个军标/国军标（MIL-STD-883F/K、GJB-548B/C，2,228 页）确认纯扫描件，0 字符文本层；如实登记为 L4，不做 OCR",
+    "建立五层引用分层模型 L1~L5：L1 英文原文 7 / L2 官方译本 1 / L3 机翻 37 / L4 扫描件 4 / L0 不在库",
+    "★ 实测机翻件术语硬错：Wire Bond→「线束」、thermosonic→「热膜」、stitch bond→「针线」、metallurgical bond→「冶金键」—— 确立「L3 只能定位、不能引用译名」规则",
+    "★ 实测表格抽取丢符号：A104 表1 的 H 条件 -55°C 被抽成 55°C、J/K 的 0°C 被抽成 -0 —— 数值也须交叉核对",
+    "CLI 新增 3 个子命令：corpus（资料库概览+分层）/ coverage（按类别总账）/ source（单份出处与引用规则）",
+    "★ cmd_find 增强：每条 find 结果自动附「本地资料库持有情况 + 可引用程度」，让引用纪律无需额外查询即生效",
+    "新增 references/LOCAL-CORPUS.md（682 行）人读覆盖清单：逐份列类别/适用范围/关键条目/出处/层级",
+    "新增 data/corpus.json 机器可读索引；references/sources/corpus_index.json 抽取台账；corpus_metadata.json 自述元数据",
+    "新增 tools/corpus/ 五步抽取流水线（盘点/抽取/元数据/索引/清单）+ README（含 5 个已知陷阱）",
+    "SKILL.md 新增 §0.5「本地资料库与引用纪律」——六条强制回答纪律；§11.1 新增 6 条实测边界；§13.1 资料库索引；§14.1 刷新流程",
+    "诚实边界新增：A104 在库为 F(2020-11) 而非 F.01；JESD47 在库为 L(2022-12)，正文另处「N 版 2026-08」来自二手须外部核实",
+    "本地资料库不含 IEC 60749 系列正文与 AEC-Q100 正文 —— 涉及时只能依赖 AQG 324 引用表与二手资料",
+    "Win32 陷阱处理：路径 ≥240 字符时 stat() 报错、rglob 静默漏项 → 改用 \\\\?\\ 前缀 + os.scandir 递归"
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "rev": "v1.2.0",
+   "change": "呈现层刷新：图标 / 中文名 / 介绍（内容层按 Phase 0C 判定不重跑）",
+   "detail": [
+    "master-skill tools/update_skill.py plan 判定：age_months=0 → rejected（too recent），6轨 research 全部保留不重跑",
+    "CLI 健康检查通过：stats 92 条/57 边/29 未核实/15 误传；抽样 find JESD22-A104、ql QL-01 输出正常",
+    "新增图标：icons/logo.png (200x200) + icons/logo.svg，主题「芯片 + JESD」——铜金引脚壳体=封装互连、靛蓝裸片=die、青色 JESD=JEDEC 编号前缀；刻意区别于本机chip-fa-* / semiconductor-process-master 的通用芯片图形",
+    "新增 tools/make_icon.py（纯 Pillow 手绘，4x 超采样，不调图像生成 API，零版权风险）",
+    "frontmatter 补齐 master-skill 标准字段：displayName=半导体标准专家 / slug / icon / version=1.2.0",
+    "介绍（description）重写：从「OS 定位陈述」改为「四项硬能力 + 2 条核心心智模型 + 边界纪律 + 典型问题」的激活导向结构，保留全部原触发词并补充 HAMT/标准选型等实际问法",
+    "修正 CLI 路径：/root/.codebuddy/skills → ~/.workbuddy/skills（原为 Linux 路径，Windows 下无效）",
+    "修复 stdq check 静默缺陷：干净编号原先无任何输出且 rc=0，调用方无法区分「检查通过」与「库中无此编号」。现补显式回执（标题+匹配方式+状态+可信度+CAUTION 提示），库中查无此编号时改为告警并 rc=1",
+    "新增 tools/verify_skill.py：frontmatter/icon/meta 三方一致性 + description 关键词覆盖 + 16 项 CLI 回归（含 check 的正例与两类按设计拒绝样本）"
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "rev": "v1.1",
+   "change": "AQG 324 全文入库（Round 2）",
+   "detail": [
+    "从 ECPE 官网（token 化 dumpFile 链接）下载 AQG 324 三版 PDF：04.1/2025（145 页，现行）、03.1/2021（129 页）、02.1/2019（70 页）+ 2018 介绍与新闻稿",
+    "一手转录 QL-01~QL-11 全部条件表（Table 9.1~9.17）→ 新增 stdq ql 子命令",
+    "一手转录 Annex I.C 统计判据（B5 + CL 80% 下界 + 右删失/success run）→ 新增 stdq aqg",
+    "一手转录 Annex II.B 寿命公式 5/6/7/8（LESIT / Bayerer / Ag 烧结扩展式）+ 23 条文献 → 新增 stdq lifetime",
+    "全文正则实测引用构成：IEC 71.5% / JEP 10.6% / JEDEC_std 5.7%（修正 v1.0 的 67/10/24 估算）",
+    "★ 发现并记录双层引用体系：5 个 JEP 全部锁在 Annex SiC，正文硅基零 JEP 引用",
+    "★ 发现文档缺陷：IEC 60749-6 版本在第3章引用表(2017)与 §9.4 正文(2002)自相矛盾",
+    "补齐 24 个缺失标准节点（IEC 60747/60749/60068/60664 系列、5 个 SiC JEP、LV324、VDA Vol.3 P2、ASTM E1049、IATF 16949、ISO/IEC 17025）",
+    "引用边 25→57 条，其中 A 级 37 条；标准条目 68→92 条，A 级 14→38 条（占比 20%→41%）",
+    "修正 MM-4 LESIT 公式错误（原文无 f^a 项）",
+    "修正 EOL 判据张冠李戴（PCsec/PCmin 判据完全相同：Vf+5%/Rth+20%）",
+    "修正 AQG 324 标题（原误写为 Electronic Components，实为 Power Modules for Use in Power Electronics Converter Units in Motor Vehicles）",
+    "删除 refs/cited-by 未实现的 IEC 60749-11 边（实测全文未引用该 Part）",
+    "修复三位 MIL 编号拦截漏判（find M-101 需去掉 MIL 上下文依赖）",
+    "修复 wrap() 显示宽度计算与多行字段缩进对齐",
+    "回归测试 47/47 全通过（含 7 项安全拦截回归）"
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "version": "1.0.0",
+   "change": "首版：6 轨调研(7070行/554来源) + 68 条标准库 + 25 条引用边 + 零依赖 CLI + 5 心智模型/12 playbook/7 维 Agentic Protocol"
+  }
+ ]
+}

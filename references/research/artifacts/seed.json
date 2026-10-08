@@ -1,0 +1,23 @@
+{"standards":[
+ {"id":"JESD22-A104F","org":"JEDEC","title_en":"Temperature-Calibrated Electrical Test Methods for Temperature Measurement of Integrated Circuits","status":"Reaffirmed","edition":"F","pub_date":"2021-11","aliases":["jedec22-a104","jesd22-a104","jes22-a104f","a104f"]},
+ {"id":"JESD51-1","org":"JEDEC","title_en":"Integrated Circuits Thermal Measurement Method - Electrical Test Method (Single Semiconductor Device)","status":"Reaffirmed","edition":".01","pub_date":"1995-12","aliases":["jedec51-1"]},
+ {"id":"JESD78F.02","org":"JEDEC","title_en":"Power Cycling Tests for Qualification of Power Semiconductor Devices","status":"Reaffirmed","edition":"F.02","pub_date":"2021-08","aliases":["jesd78f02","jesd78f.2"]},
+ {"id":"JESD22-A119","org":"JEDEC","title_en":"Low Temperature Storage Life","status":"Reaffirmed","edition":"","pub_date":"2015-03"},
+ {"id":"IEC 60749-34","org":"IEC","title_en":"Semiconductor devices - Mechanical and climatic test methods - Part 34: Power cycling","status":"PUBLISHED","edition":"2010","pub_date":"2010-06","stability_date":"2020"},
+ {"id":"IEC 60749-34-1","org":"IEC","title_en":"Power cycling test for power semiconductor module","status":"PUBLISHED","edition":"1.0","pub_date":"2025-06-20","stability_date":"2029","supersedes":"IEC 60749-34","aliases":["iec60749-34-1","60749-34-1"]},
+ {"id":"AQG 324","org":"ECPE","title_en":"Qualification of Power Modules for Use in Power Electronics Converter Units in Motor Vehicles","status":"Released","edition":"04.1/2025","pub_date":"2025-04-24","aliases":["aqg324","aqg-324"]},
+ {"id":"MIL-STD-883","org":"US DoD","title_en":"Test Methods for Electronics","status":"Active","edition":"Method 2019","aliases":["mil-std-883","milstd883","883"]}
+],
+"references":[
+ {"src":"JESD78F.02","dst":"JESD51-1","kind":"normative","clause":"4.1"},
+ {"src":"JESD78F.02","dst":"IEC 60749-34","kind":"normative","clause":"4.3"},
+ {"src":"IEC 60749-34-1","dst":"AQG 324","kind":"informative","clause":"Introduction","note":"标准正文举例引用"},
+ {"src":"AQG 324","dst":"IEC 60749-34","kind":"normative","clause":"3"},
+ {"src":"AQG 324","dst":"JESD22-A119","kind":"normative","clause":"3"},
+ {"src":"IEC 60749-34-1","dst":"IEC 60749-34","kind":"normative","clause":"2"}
+],
+"clauses":[
+ {"std_id":"JESD78F.02","no":"4.1","title":"Test Method Conditions","kind":"test-condition"},
+ {"std_id":"IEC 60749-34-1","no":"6.4.2","title":"Lifetime model validation test","kind":"test-condition"},
+ {"std_id":"IEC 60749-34-1","no":"8","title":"Failure criteria","kind":"criterion","text":"VCEsat +5%; Rth(j-c) +20%"}
+]}

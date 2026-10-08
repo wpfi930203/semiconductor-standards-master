@@ -1,0 +1,531 @@
+{
+ "_meta": {
+  "schema": "edge table: (src, dst, kind, clause)",
+  "built_date": "2026-10-05",
+  "kind_definition": {
+   "normative": "规范性引用 —— 构成本标准要求，必须遵守",
+   "informative": "资料性引用 —— 仅供参考，无强制力"
+  },
+  "coverage_caveat": "⚠ 引用图谱【不完整且不完整是有原因的】：(1) JEDEC 服务条款禁止自动化抓取（curl 实测 403），JEDEC 侧只能人工核对；(2) IEC Webstore 无 Referenced by Tab，反向引用须从各标准自身 references 表抽取；(3) 本边表仅收录已从一手/交叉来源核实的边。cited-by 查询结果对 JEDEC 侧必然不完整。"
+ },
+ "edges": [
+  {
+   "src": "JESD22-A104",
+   "dst": "JESD47",
+   "kind": "normative",
+   "clause": "§5 循环次数由 JESD47 或供采双方约定",
+   "confidence": "A",
+   "note": "A104F.01 原文。这是「方法库 vs 裁判」分离的制度依据"
+  },
+  {
+   "src": "JESD22-A104",
+   "dst": "JEP140",
+   "kind": "normative",
+   "clause": "References",
+   "confidence": "A",
+   "note": "珠式热电偶测温方法"
+  },
+  {
+   "src": "JESD22-A104",
+   "dst": "JEP153",
+   "kind": "normative",
+   "clause": "References",
+   "confidence": "A",
+   "note": "烘箱温度表征与监控"
+  },
+  {
+   "src": "JESD22-A104",
+   "dst": "IPC-SM-785",
+   "kind": "normative",
+   "clause": "References",
+   "confidence": "A",
+   "note": "焊点加速可靠性测试指南（Norris-Landzberg 标定对象）"
+  },
+  {
+   "src": "JESD22-A104",
+   "dst": "JESD22-A113",
+   "kind": "normative",
+   "clause": "§5 预处理",
+   "confidence": "B",
+   "note": "TC 前必做 MSL 预处理"
+  },
+  {
+   "src": "JESD22-A104",
+   "dst": "JESD22-A121",
+   "kind": "normative",
+   "clause": "§5.1.3",
+   "confidence": "B",
+   "note": "锡须循环引用"
+  },
+  {
+   "src": "JESD47",
+   "dst": "JESD94",
+   "kind": "normative",
+   "clause": "—",
+   "confidence": "B",
+   "note": "JESD47 引用 JESD94 作为知识驱动方法论"
+  },
+  {
+   "src": "JESD94",
+   "dst": "JEP131",
+   "kind": "normative",
+   "clause": "流程：失效机理选择",
+   "confidence": "B",
+   "note": "FMEA 选失效机理"
+  },
+  {
+   "src": "JESD94",
+   "dst": "JEP122",
+   "kind": "normative",
+   "clause": "流程：寿命模型映射",
+   "confidence": "B"
+  },
+  {
+   "src": "JESD94",
+   "dst": "JESD91",
+   "kind": "normative",
+   "clause": "流程：寿命模型映射",
+   "confidence": "B"
+  },
+  {
+   "src": "JESD94",
+   "dst": "JEP143",
+   "kind": "normative",
+   "clause": "流程：资格策略",
+   "confidence": "B"
+  },
+  {
+   "src": "JESD94",
+   "dst": "JESD22-Axxx",
+   "kind": "normative",
+   "clause": "流程终点：选具体方法",
+   "confidence": "B",
+   "note": "JESD94 流程的最后一步才选 JESD22 方法"
+  },
+  {
+   "src": "JEP122",
+   "dst": "JESD91",
+   "kind": "informative",
+   "clause": "—",
+   "confidence": "C",
+   "note": "⚠ 推断，未直接核实"
+  },
+  {
+   "src": "JESD22-A108",
+   "dst": "JESD47",
+   "kind": "normative",
+   "clause": "资格矩阵",
+   "confidence": "B"
+  },
+  {
+   "src": "JESD22-A101",
+   "dst": "JESD22-A113",
+   "kind": "normative",
+   "clause": "预处理",
+   "confidence": "B"
+  },
+  {
+   "src": "JESD22-A110",
+   "dst": "JESD22-A113",
+   "kind": "normative",
+   "clause": "预处理",
+   "confidence": "B"
+  },
+  {
+   "src": "JESD22-A122",
+   "dst": "AEC-Q100",
+   "kind": "informative",
+   "clause": "—",
+   "confidence": "C",
+   "note": "⚠ 推断"
+  },
+  {
+   "src": "AEC-Q101",
+   "dst": "AQG324",
+   "kind": "normative",
+   "clause": "分立器件资格要求章节",
+   "confidence": "B",
+   "note": "AQG 324 在分立半导体部分引用 AEC-Q101 的失效机理应力试验方法（含 H3TRB / HV-H3TRB 变体）"
+  },
+  {
+   "src": "AEC-Q100",
+   "dst": "AQG324",
+   "kind": "informative",
+   "clause": "IC 资格要求章节",
+   "confidence": "B",
+   "note": "★ 两者是【互补而非替代】：AEC-Q100 按 Grade 0/1/2/3 分温度等级（IC 车规）；AQG 324 按【应用场景】（车内/车外）分，覆盖 IC+分立+无源+机电全类元件。选型看产品类型与装车位置"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JEP122",
+   "kind": "normative",
+   "clause": "加速模型依据",
+   "confidence": "B",
+   "note": "JEP 系列占 24%"
+  },
+  {
+   "src": "AEC-Q101",
+   "dst": "HV-H3TRB",
+   "kind": "informative",
+   "clause": "—",
+   "confidence": "B",
+   "note": "★ HV-H3TRB 不是独立标准编号，是 AEC-Q101 语境下 H3TRB 的高压变体（Vds→额定 80%）"
+  },
+  {
+   "src": "IPC-SM-785",
+   "dst": "IPC-9701",
+   "kind": "informative",
+   "clause": "—",
+   "confidence": "C",
+   "note": "⚠ 推断"
+  },
+  {
+   "src": "JESD22-A112",
+   "dst": "J-STD-020",
+   "kind": "replaced_by",
+   "clause": "2014 废止/替代",
+   "confidence": "A"
+  },
+  {
+   "src": "JESD22-A114",
+   "dst": "JS-001",
+   "kind": "replaced_by",
+   "clause": "—",
+   "confidence": "A"
+  },
+  {
+   "src": "JESD22-C101",
+   "dst": "JS-002",
+   "kind": "replaced_by",
+   "clause": "2020-02 撤销",
+   "confidence": "A"
+  },
+  {
+   "src": "JESD22-B102",
+   "dst": "J-STD-002D",
+   "kind": "replaced_by",
+   "clause": "2014 废止",
+   "confidence": "A"
+  },
+  {
+   "src": "JESD22-B104",
+   "dst": "JESD22-B110",
+   "kind": "replaced_by",
+   "clause": "2013-07 替代",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60749-34",
+   "kind": "normative",
+   "clause": "QL-01 PCsec / QL-02 PCmin（§9.2.2 / §9.3.2 全文按 IEC 60749-34:2011 §4/§5/§6/§8/§9 逐节改写）",
+   "confidence": "A",
+   "note": "★ 功率循环的母方法。AQG 324 未规定 ΔTvj 与循环次数，只规定 ton 边界、EOL 判据与控制策略（ton/toff 恒定）。IEC 60749-34 表1 的条件被 AQG 324 明确【排除】（不适用于寿命模型验证）"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60749-5",
+   "kind": "normative",
+   "clause": "QL-07 H3TRB（§9.8.2）",
+   "confidence": "A",
+   "note": "★ AQG 324 覆盖 IEC 60749-5 §5.2 的方法，但【强制选择 §5.2 e)1) 恒定电压负载】，不允许标准允许的间歇负载选项；且 DUT 须持续阻断"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60749-23",
+   "kind": "normative",
+   "clause": "QL-05 HTRB / QL-06 HTGB",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60749-25",
+   "kind": "normative",
+   "clause": "引用表列出的温度循环基础方法（正文试验走 QL-01/QE-01 体系）",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60749-6",
+   "kind": "normative",
+   "clause": "QL-03 HTS（§9.4.2）",
+   "confidence": "A",
+   "note": "⚠【版本矛盾】引用表写 2017，正文三处均写 2002。见 standards.json → AQG324.doc_defects"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60747-9",
+   "kind": "normative",
+   "clause": "QL-05 HTRB §7.1.4.1 (IGBT) / QL-06 HTGB / QL-07 H3TRB",
+   "confidence": "A",
+   "note": "IGBT 分立器件规范"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60747-8",
+   "kind": "normative",
+   "clause": "QL-05 / QL-06 / QL-07（MOSFET）",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60747-2",
+   "kind": "normative",
+   "clause": "QL-05 / QL-07（二极管）",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60747-15",
+   "kind": "normative",
+   "clause": "§7.2.2 结温测量（VCE(T) 法等多处改写）",
+   "confidence": "A",
+   "note": "★ 04.1/2025 变更记录显示 §7.2.2 三处均因加入 IEC 60747-15:2010 而修改。实测 AQG 324【未引用 IEC 60749-11】（v1.0 曾误记，已删除该边）"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60068-2-6",
+   "kind": "normative",
+   "clause": "QE-03 振动（正弦）",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60068-2-64",
+   "kind": "normative",
+   "clause": "QE-03 振动（宽带随机）",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60068-2-27",
+   "kind": "normative",
+   "clause": "QE-04 机械冲击",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60664-1",
+   "kind": "normative",
+   "clause": "§5.5 绝缘配合设计（电气间隙/爬电距离）",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IEC60664-4",
+   "kind": "normative",
+   "clause": "§5.5 高频电压应力下的绝缘配合",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JESD22-A104",
+   "kind": "normative",
+   "clause": "引用表（JESD22-A104F:2020）；QE-01 TST 温度循环",
+   "confidence": "A",
+   "note": "★ 精确到版本 A104F:2020"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JESD22-A119",
+   "kind": "normative",
+   "clause": "QL-04 LTS（§9.5.2，全文按 A119:2015 condition A 执行）",
+   "confidence": "A",
+   "note": "★ 04.1/2025 唯一使用的 JEDEC 通用标准（LTS 直接按其执行，非改写）"
+  },
+  {
+   "src": "AQG324",
+   "dst": "IATF16949",
+   "kind": "normative",
+   "clause": "引用表（04.1/2025 新增）",
+   "confidence": "A",
+   "note": "★ 04.1/2025 变更记录确认「chpt. 3, p.10 IATF 16949 standard added」"
+  },
+  {
+   "src": "AQG324",
+   "dst": "ISO-IEC-17025",
+   "kind": "normative",
+   "clause": "引用表；实验室能力要求",
+   "confidence": "A"
+  },
+  {
+   "src": "AQG324",
+   "dst": "AEC-Q101",
+   "kind": "informative",
+   "clause": "Annex SiC QL-10 DRB（§9.11.1「in addition to AEC Q101, refer to JEP 190」）",
+   "confidence": "A",
+   "note": "★ 04.1/2025 精确引用语境：DRB 应作为【芯片级技术资格】做，AQG 324 引用 AEC-Q101 是为了说明模块级定位而非替代"
+  },
+  {
+   "src": "AQG324",
+   "dst": "AEC-Q100",
+   "kind": "informative",
+   "clause": "正文相关章节",
+   "confidence": "B",
+   "note": "★ 两者互补非替代：Q100 按 Grade 0-3 温度分级（IC），AQG 324 按应用场景分，覆盖 IC+分立+无源+机电。实测 04.1/2025 全文引用 AEC-Q100 共 4 次"
+  },
+  {
+   "src": "AQG324",
+   "dst": "AEC-Q200",
+   "kind": "informative",
+   "clause": "引用语境待定位",
+   "confidence": "C",
+   "note": "⚠ 实测确认出现，但未逐条定位语境"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JEP183",
+   "kind": "normative",
+   "clause": "Annex SiC 第3章引用表（2021-01）",
+   "confidence": "A",
+   "note": "★ SiC MOSFET 阈值电压 VT 测量指南"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JEP184",
+   "kind": "normative",
+   "clause": "Annex SiC 第3章（2021-03）",
+   "confidence": "A",
+   "note": "★ SiC MOSFET 偏压温度不稳定（BTI）评估"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JEP190",
+   "kind": "normative",
+   "clause": "Annex SiC 第3章（2022-08）+ QL-10 DRB §9.11.1",
+   "confidence": "A",
+   "note": "★ SiC 功率器件 dV/dt 鲁棒性评估"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JEP195",
+   "kind": "normative",
+   "clause": "Annex SiC 第3章（2023-02）+ QL-09 DGS §9.10.1",
+   "confidence": "A",
+   "note": "★ SiC 器件栅开关不稳定（GSI）评估"
+  },
+  {
+   "src": "AQG324",
+   "dst": "JEP197",
+   "kind": "normative",
+   "clause": "Annex SiC 第3章（2023-11）+ QL-08 HTFB §9.9.1",
+   "confidence": "A",
+   "note": "★ SiC 功率器件双极退化评估"
+  },
+  {
+   "src": "LV324",
+   "dst": "AQG324",
+   "kind": "informative",
+   "clause": "Preface + Annex II.B [2]",
+   "confidence": "A",
+   "note": "★ AQG 324 的直接前身。LV 324 = 德国 OEM 供应规范，供应商门户映射 BMW GS 95035 / VW 82324 Group Standard / Daimler (2014)。反查 OEM 内部规范编号的入口"
+  },
+  {
+   "src": "AQG324",
+   "dst": "VDA-Vol3-Part2",
+   "kind": "normative",
+   "clause": "Annex I.C（统计方法学：CL 80% 下界、右删失、success run）",
+   "confidence": "A",
+   "note": "★ AQG 324 不自产统计方法学，直接引用 VDA Volume 3 Part 2。做可靠性数据分析时这是必须同时具备的标准"
+  },
+  {
+   "src": "AQG324",
+   "dst": "ASTM-E1049",
+   "kind": "informative",
+   "clause": "Annex II.B [13]（循环计数实践）",
+   "confidence": "A",
+   "note": "Rainflow 计数法的美国规范来源（E 1049-85 Reapproved 2005）"
+  },
+  {
+   "src": "AQG324",
+   "dst": "CIPS2008",
+   "kind": "informative",
+   "clause": "Annex I.C（寿命模型依据之一）",
+   "confidence": "B",
+   "note": "功率循环焊点寿命模型（Nürnberg 模型）"
+  }
+ ],
+ "aqg324_references_profile": {
+  "_note": "AQG 324 04.1/2025 全文【一手实测】：123 次非自引用标准编号，按出现次数计",
+  "_method": "pdftotext 全文正则提取，排除章节交叉引用与自引用；分母=123",
+  "IEC": 0.715,
+  "JEDEC_JEP": 0.106,
+  "JEDEC_standards": 0.057,
+  "ISO_IATF": 0.049,
+  "AEC": 0.033,
+  "provenance_LV324": 0.024,
+  "ASTM": 0.016,
+  "_count_by_org": {
+   "IEC": 88,
+   "JEDEC_JEP": 13,
+   "JEDEC_standards": 7,
+   "ISO_IATF": 6,
+   "AEC": 4,
+   "LV324": 3,
+   "ASTM": 2
+  },
+  "iec_breakdown": {
+   "IEC 60747 (分立器件)": 4,
+   "IEC 60749 (试验方法)": 7,
+   "IEC 60068 (环境)": 6,
+   "IEC 60664 (绝缘)": 4
+  },
+  "_critical": "⚠ 对 UNECE R10 / ELV / RoHS / WEEE / IPC / MIL-STD / SEMI / IECQ QC 080000 【全部零引用】（04.1/2025 全文正则核实）。法规合规锚点须从 UNECE R10 附录 1 与 IPC-175X / IECQ QC 080000 独立反查，不能声称『AQG 324 已覆盖法规要求』。",
+  "_correction_vs_v1": "⚠ v1.0 记为 IEC 67% + JEDEC_std 10% + JEP 24%，实测为 IEC 71.5% + JEP 10.6% + JEDEC_std 5.7%。原估算高估了 JEP 占比近 2.3 倍——因为 JEP 引用【全部集中在 Annex SiC】，正文硅基部分一个 JEP 都不引。",
+  "_structural_insight": "★ AQG 324 是【双层引用体系】：正文（硅基）只引 IEC 60747/60749/60068/60664 + 2 个 JESD22；5 个 JEP 全部锁在 Annex SiC 内。看引用构成时必须分层统计，否则会误判 AQG 324 的 JEDEC 依赖度。"
+ },
+ "milstd883_crossmap": {
+  "_note": "MIL-STD-883 四位方法号 ↔ 主题（2026-10-05 二轮核实：SMT Corp / AAA DLA / PCBSync / MIL-STD-883H 原文四源交叉）",
+  "_correction": "⚠ v1.0 曾把 TM2012 误映射为 B115 焊球剪切、TM2011 误映射为 B105、TM2001 误映射为 B100 —— 已修正。MIL-STD-883 2xxx 多为【分析/检验/工艺类】，与 JESD22-B 的【应力试验】不是一一对应，跨体系映射仅在 1xxx 段可靠。",
+  "1004": "Moisture Resistance（湿热）",
+  "1005": "Steady-State Life（稳态寿命）↔ JESD22-A108",
+  "1008": "Stabilization Bake（稳定化烘烤）",
+  "1009": "Salt Atmosphere（盐雾）↔ JESD22-A107",
+  "1010": "Temperature Cycling（温度循环）↔ JESD22-A104",
+  "1011": "Thermal Shock（热冲击）↔ JESD22-A106",
+  "1014": "Seal / Hermeticity（气密性）↔ JESD22-A109",
+  "1015": "Burn-in Test（老化）↔ JEP143",
+  "2001": "Constant Acceleration（恒定加速度）",
+  "2002": "Mechanical Shock（机械冲击）↔ JESD22-B110",
+  "2003": "Solderability（可焊性）↔ J-STD-002D",
+  "2004": "Lead Integrity（引线完整性）↔ JESD22-B105",
+  "2007": "Vibration, Variable Frequency（变频振动）↔ JESD22-B103",
+  "2009": "External Visual（外观目检）↔ JESD22-B101",
+  "2011": "Bond Strength（键合拉力，Destructive Bond Pull）",
+  "2012": "Radiography（X 射线照相）",
+  "2016": "Physical Dimensions（物理尺寸）↔ JESD22-B100",
+  "2018": "SEM Inspection of Metallization（金属化 SEM）",
+  "2019": "Die Shear Strength（芯片剪切强度）",
+  "2020": "PIND（颗粒撞击噪声检测）",
+  "2030": "Ultrasonic Inspection of Die Attach（芯片贴装超声检测）"
+ },
+ "milstd883_1xxx_crosswalk": {
+  "_note": "★ 仅 1xxx（环境应力）段与 JESD22-A 系列可靠对应 —— 这是跨体系反查真正可用的一组映射",
+  "1005↔A108": "稳态寿命 ↔ TBL",
+  "1009↔A107": "盐雾 ↔ Salt Atmosphere",
+  "1010↔A104": "温度循环 ↔ TC",
+  "1011↔A106": "热冲击 ↔ Thermal Shock",
+  "1014↔A109": "气密性 ↔ Hermeticity",
+  "1015↔JEP143": "Burn-in ↔ 老化指南",
+  "警告": "2xxx 段是【检验/分析/工艺】方法（BOND PULL、RADIOGRAPHY、SEM、PIND），与 JESD22-B 的【应力试验】不同源，⚠ 不可当作等价方法映射"
+ },
+ "_aqg324_primary_source": {
+  "file": "references/sources/books/AQG324_04.1_2025.pdf",
+  "pages": "145 PDF 页（正文标号 Page 1-110 of 110 + 附录 Annex I/II/SiC）",
+  "bytes": 5013840,
+  "retrieved": "2026-10-05",
+  "url_pattern": "https://www.ecpe.org/index.php?eID=dumpFile&t=f&f=<fileid>&token=<token>（token 化，索引页 https://ecpe.org/research/working-groups/）",
+  "license": "CC BY-ND（见 PDF 内声明）",
+  "versions_held": [
+   "04.1/2025 (f=46275)",
+   "03.1/2021 (f=30359)",
+   "02.1/2019 (f=23930)"
+  ]
+ },
+ "_aqg324_self_reference": {
+  "note": "AQG 324 04.1/2025 的 Annex II.B 文献 [1] 自引的是 AQG 324 **02.1/2019** 本身（不是 03.1/2021）。做版本对比时注意这个基准点——ECPE 自己在 2025 版里引用的仍是 2019 版。",
+  "ref": "Annex II.B Literature [1]",
+  "self_ref_version": "02.1/2019 (15.05.2019)",
+  "confidence": "A"
+ }
+}

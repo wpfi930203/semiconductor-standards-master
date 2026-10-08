@@ -1,0 +1,1392 @@
+{
+ "schema": 1,
+ "built": "2026-10-07",
+ "src_root": "<本地标准资料库>",
+ "extractor": "PyMuPDF 文本层抽取（无 OCR / 无翻译 / 无改写）",
+ "tiers": {
+  "L1": {
+   "name": "英文原文在库",
+   "can_cite_wording": true,
+   "can_cite_number": true,
+   "rule": "可直接引用措辞与数值；引用时标注标准编号 + 版本 + 页/条"
+  },
+  "L2": {
+   "name": "官方中文译本在库",
+   "can_cite_wording": true,
+   "can_cite_number": true,
+   "rule": "可引用，但须注明「官方译本，冲突时以英文版为准」"
+  },
+  "L3": {
+   "name": "机器翻译在库",
+   "can_cite_wording": false,
+   "can_cite_number": true,
+   "rule": "仅可用于【条款号 / 章节结构 / 表格位置 / 数值条件】定位；**禁止引用其术语译名**（实测已有 Wire Bond→「线束」等硬错）"
+  },
+  "L4": {
+   "name": "扫描件在库未提取",
+   "can_cite_wording": false,
+   "can_cite_number": false,
+   "rule": "不得引用任何内容；只能声明「已持有该标准扫描件，未做文字识别」"
+  },
+  "L4-OCR": {
+   "name": "扫描件已定向 OCR",
+   "can_cite_wording": false,
+   "can_cite_number": false,
+   "rule": "可用于理解与索引；**引用条款号/数值前必须人工核对原扫描页**（OCR 是个别字符可能出错的过程）"
+  },
+  "L0": {
+   "name": "不在库",
+   "can_cite_wording": false,
+   "can_cite_number": false,
+   "rule": "必须声明无法确认，禁止推测或从记忆回答"
+  }
+ },
+ "stats": {
+  "pdf_files_total": 63,
+  "distinct_std_ids_total": 52,
+  "text_extracted": 49,
+  "entries_total": 49,
+  "scanned_not_extracted": 10,
+  "scanned_distinct": 4,
+  "by_tier": {
+   "L1": 7,
+   "L2": 1,
+   "L3": 37,
+   "L4": 0,
+   "L4-OCR": 4,
+   "L0": 0
+  }
+ },
+ "entries": [
+  {
+   "std_id": "GJB-548B",
+   "org": "gjb",
+   "cat": "国军标（试验方法）",
+   "scope": "微电子器件试验方法和程序 B 版（2005）",
+   "key_points": "★ 扫描件，未文字识别。仅可声明持有（393 页全本 + 1-199/200-396 分卷）",
+   "tier": "L4-OCR",
+   "tier_name": "扫描件已定向 OCR",
+   "language": "scan",
+   "source_file": "国军标GJB 548B-2005微电子器件试验方法和程序.pdf",
+   "sha16": "fd1a6e47f63bb665",
+   "pdf_pages": null,
+   "text_chars": 0,
+   "corpus_path": "references/sources/standards/mil_ocr/GJB-548B.txt",
+   "self_version_tokens": [],
+   "self_date_tokens": [],
+   "parts": [
+    {
+     "file": "国军标GJB 548B-2005微电子器件试验方法和程序.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    },
+    {
+     "file": "国军标GJB 548B-2005微电子器件试验方法和程序200-396.pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    },
+    {
+     "file": "国军标GJB 548B-2005微电子器件试验方法和程序1-199.pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    }
+   ],
+   "ocr": {
+    "pages_done": 393,
+    "pages_total": 393,
+    "engine": "Windows.Media.Ocr (WinRT) · zh-Hans-CN",
+    "dpi": 300
+   },
+   "can_cite_wording": false,
+   "can_cite_number": false
+  },
+  {
+   "std_id": "GJB-548C",
+   "org": "gjb",
+   "cat": "国军标（试验方法）",
+   "scope": "微电子器件试验方法和程序 C 版（2021）",
+   "key_points": "★ 扫描件，未文字识别。仅可声明持有（460 页）",
+   "tier": "L4-OCR",
+   "tier_name": "扫描件已定向 OCR",
+   "language": "scan",
+   "source_file": "GJB 548C-2021-.pdf",
+   "sha16": "76d9085acf0c20d5",
+   "pdf_pages": null,
+   "text_chars": 0,
+   "corpus_path": "references/sources/standards/mil_ocr/GJB-548C.txt",
+   "self_version_tokens": [],
+   "self_date_tokens": [],
+   "parts": [
+    {
+     "file": "GJB 548C-2021-.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    }
+   ],
+   "ocr": {
+    "pages_done": 460,
+    "pages_total": 460,
+    "engine": "Windows.Media.Ocr (WinRT) · zh-Hans-CN",
+    "dpi": 300
+   },
+   "can_cite_wording": false,
+   "can_cite_number": false
+  },
+  {
+   "std_id": "IPC-7095D",
+   "org": "ipc",
+   "cat": "封装/组装工艺",
+   "scope": "BGA 设计与组装工艺的实施（2019，含修正 1）",
+   "key_points": "★ 官方中文译本（IPC-7095D-WAM1 CN，取代 IPC-7095D-2018）。文档自带声明：中英冲突以英文版为准",
+   "tier": "L2",
+   "tier_name": "官方中文译本在库",
+   "language": "zh-MT",
+   "source_file": "IPC-7095D-CHINESE  NP 2019-BGA 设计与组装工艺的实施.pdf",
+   "sha16": "ca64f9cc6e5d57f3",
+   "pdf_pages": 208,
+   "text_chars": 227244,
+   "corpus_path": "references/sources/standards/ipc/IPC-7095D.txt",
+   "self_version_tokens": [
+    "IPC-7095C",
+    "IPC-7095D",
+    "IPC-7095D-WAM1"
+   ],
+   "self_date_tokens": [
+    "2013",
+    "2018",
+    "2019"
+   ],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "IPC-7351",
+   "org": "ipc",
+   "cat": "设计/焊盘图形",
+   "scope": "表面贴装设计与连接盘图形通用要求（2005-02 原版）",
+   "key_points": "★ 英文原文。2005 年 2 月版，取代 IPC-SM-782A（含修正 1&2）",
+   "tier": "L1",
+   "tier_name": "英文原文在库",
+   "language": "en",
+   "source_file": "IPC_7351 表面贴装设计及连接盘图形标准通用要求-en.pdf",
+   "sha16": "c5ada1cb16b85844",
+   "pdf_pages": 92,
+   "text_chars": 299099,
+   "corpus_path": "references/sources/standards/ipc/IPC-7351.txt",
+   "self_version_tokens": [
+    "IPC-7351"
+   ],
+   "self_date_tokens": [
+    "December 1999",
+    "February 2005",
+    "May 1995",
+    "1995",
+    "1998",
+    "1999",
+    "2005"
+   ],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "IPC-7351B",
+   "org": "ipc",
+   "cat": "设计/焊盘图形",
+   "scope": "表面贴装设计与连接盘图形通用要求（2010-06 B 版）",
+   "key_points": "★ 英文原文。取代 IPC-7351A（2007-02）；含密度等级 A/B/C 与焊盘生成公式",
+   "tier": "L1",
+   "tier_name": "英文原文在库",
+   "language": "en",
+   "source_file": "IPC-7351B - Generic Requirements for Surface Mount Design and Land Pattern Standard.pdf",
+   "sha16": "50ff86e25d564480",
+   "pdf_pages": 112,
+   "text_chars": 378845,
+   "corpus_path": "references/sources/standards/ipc/IPC-7351B.txt",
+   "self_version_tokens": [
+    "IPC-7351A",
+    "IPC-7351B"
+   ],
+   "self_date_tokens": [
+    "February 2007",
+    "June 2010",
+    "May 1995",
+    "1995",
+    "1998",
+    "2007",
+    "2010"
+   ],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "IPC-TM-650-2.4.22c",
+   "org": "ipc",
+   "cat": "试验方法",
+   "scope": "印制板弓曲与扭曲（bow & twist）测量",
+   "key_points": "★ 英文原文。三种程序；非矩形样品的特殊处理",
+   "tier": "L1",
+   "tier_name": "英文原文在库",
+   "language": "en",
+   "source_file": "IPC-TM-650 2.4.22c.pdf",
+   "sha16": "92c29cd0a7b77614",
+   "pdf_pages": 5,
+   "text_chars": 10605,
+   "corpus_path": "references/sources/standards/ipc/IPC-TM-650-2.4.22c.txt",
+   "self_version_tokens": [
+    "IPC-2422"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "J-STD-020",
+   "org": "jedec",
+   "cat": "封装/回流",
+   "scope": "非气密封装湿敏等级 MSL 分级与回流分类",
+   "key_points": "★ 机翻件。MSL 1~6 分级、回流峰值温度与 profile；与 JESD22-A113 预处理配套使用",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/IPC JEDEC J-STD-020E：2014 Moisture Reflow Sensitivity Classification for Nonhermetic Surface Mount Devices - 完整英文电子版（22页）_1_22_translate_20240815155850.pdf",
+   "sha16": "52b8eb2da9962f78",
+   "pdf_pages": 23,
+   "text_chars": 25278,
+   "corpus_path": "references/sources/standards/jedec/J-STD-020.txt",
+   "self_version_tokens": [
+    "J-STD-020",
+    "J-STD-020D",
+    "J-STD-020E"
+   ],
+   "self_date_tokens": [
+    "2014"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A100E",
+   "org": "jedec",
+   "cat": "湿热/电化学",
+   "scope": "循环温湿度偏压（带表面凝露）",
+   "key_points": "CTC 循环剖面；凝露条件；与 A101 稳态 THB 的区别在'循环'与'凝露'",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A100E：2020 Cycled Temperature-Humidity-Bias with Surface Condensation Life Test - 完整英文电子版（8页）_1_8_translate_20240815160349.pdf",
+   "sha16": "1eb7743d59ba5758",
+   "pdf_pages": 8,
+   "text_chars": 3941,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A100E.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A100E"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A101D.01",
+   "org": "jedec",
+   "cat": "湿热/电化学",
+   "scope": "稳态温湿度偏压寿命（THB 85/85）",
+   "key_points": "85±2°C / 85±5%RH / 1000h；Peck 模型的理论出处；无偏压变体见 A102/A118",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A101D.01：2021 Steady-State Temperature-Humidity Bias Life Test - 完整英文电子版（10页）_1_10_translate_20240815160457.pdf",
+   "sha16": "20b96b81d72ec04f",
+   "pdf_pages": 10,
+   "text_chars": 4642,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A101D.01.txt",
+   "self_version_tokens": [
+    "A101D.01",
+    "JESD22"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A102E",
+   "org": "jedec",
+   "cat": "湿热/电化学",
+   "scope": "加速耐湿—无偏压蒸煮（Autoclave / PCT）",
+   "key_points": "121°C 饱和蒸汽、无偏压 → 考核封装吸湿与分层，**不含电化学腐蚀**",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A102E：2015(R2021) Accelerated Moisture Resistance - Unbiased Autoclave - 完整英文电子版（9页）_1_9_translate_20240815160638.pdf",
+   "sha16": "eb9588ec31529d71",
+   "pdf_pages": 9,
+   "text_chars": 3684,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A102E.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A102A",
+    "JESD22-A102B",
+    "JESD22-A102E"
+   ],
+   "self_date_tokens": [
+    "2012"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A103E",
+   "org": "jedec",
+   "cat": "热-电（存储）",
+   "scope": "高温存储寿命 HTSL",
+   "key_points": "Ta 150°C/1000h 族；考核金属间化合物生长、Kirkendall 空洞",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A103E：2015 High Temperature Storage Life（高温储存寿命）- 完整英文版（9页）_1_9_translate_20240815160838.pdf",
+   "sha16": "7a65fc59e00776c7",
+   "pdf_pages": 9,
+   "text_chars": 3366,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A103E.txt",
+   "self_version_tokens": [
+    "J-STD-020",
+    "JESD22",
+    "JESD22-A103E",
+    "JESD22-A113",
+    "JESD22-B101",
+    "JESD47"
+   ],
+   "self_date_tokens": [
+    "2015"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A104F",
+   "org": "jedec",
+   "cat": "热-机械",
+   "scope": "温度循环 TC（单/双/三箱，空气介质）",
+   "key_points": "★ 13 组条件（A/B/C/G/H/I/J/K/L/M/N/R/T）+ 4 种 soak mode + 每条件典型 cph；§5 明确循环次数由 JESD47 或供需约定；§7 列出采购文件须规定项；表1 脚注给出 3 条选条件注意事项 + Pb/Sn 超 125°C 不推荐",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A104F ：2020 Temperature Cycling - 完整英文电子版（15页）_1_15_translate_20240815160915.pdf",
+   "sha16": "5c47caf0284c123f",
+   "pdf_pages": 15,
+   "text_chars": 7130,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A104F.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A104F",
+    "JESD94"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A105D",
+   "org": "jedec",
+   "cat": "热-电耦合",
+   "scope": "功率与温度循环 PTC（通电+环境箱叠加）",
+   "key_points": "与 A122 的差别：A105 是「环境箱 + 通电自加热」组合，A122 是纯功率循环",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A105D ：2020 Power and Temperature Cycling - 完整英文电子版（9页）_1_9_translate_20240815161215.pdf",
+   "sha16": "f9b6d3bbfae89bee",
+   "pdf_pages": 10,
+   "text_chars": 3264,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A105D.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A105D"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A106B.01",
+   "org": "jedec",
+   "cat": "热-机械",
+   "scope": "热冲击 TST（两液槽，转换 <10s）",
+   "key_points": "★ 与 A104 的关键区别证据在此：依赖液体耦合介质的快速升降温",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A106B.01：2016 Thermal Shock - 完整英文电子版（7页）_1_7_translate_20240815161248.pdf",
+   "sha16": "4d88d5c339a73d0c",
+   "pdf_pages": 7,
+   "text_chars": 3256,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A106B.01.txt",
+   "self_version_tokens": [
+    "106B.01",
+    "A106B.01",
+    "JESD22",
+    "JESD22-A106",
+    "JESD22-A106B.01"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A107C",
+   "org": "jedec",
+   "cat": "环境腐蚀",
+   "scope": "盐雾 Salt Atmosphere",
+   "key_points": "盐雾浓度/温度/时长；考核引线框架与镀层",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A107C：2013 Salt Atmosphere - 完整英文电子版（5页）_1_5_translate_20240815161321.pdf",
+   "sha16": "dd8ec7c9ceb08a8b",
+   "pdf_pages": 5,
+   "text_chars": 1345,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A107C.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A107C"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A108F",
+   "org": "jedec",
+   "cat": "热-电（偏压寿命）",
+   "scope": "Temperature, Bias, and Operating Life（业界俗称 TBL/HTOL 母标准）",
+   "key_points": "★ 官方标题为 Temperature, Bias, and Operating Life —— 无 Voltage；Ta 需使 Tj(min) ≥ 125°C；是 HTOL/HTRB/HTGB 的母方法",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A108F-2017 Temperature, Bias, And Operating Life - 完整英文版（10页）_1_10_translate_20240815161453.pdf",
+   "sha16": "599c015a6a7c0281",
+   "pdf_pages": 10,
+   "text_chars": 4392,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A108F.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A108F",
+    "JESD47"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A109B",
+   "org": "jedec",
+   "cat": "封装完整性",
+   "scope": "气密性 Hermeticity（细检/粗检）",
+   "key_points": "氦细检泄漏率、氟碳粗检；判据按封装腔体积分档",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A109B：2011 HERMETICITY - 完整英文电子版（5页）_1_5_translate_20240815162032.pdf",
+   "sha16": "15a0354dae3b357f",
+   "pdf_pages": 6,
+   "text_chars": 1392,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A109B.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A109",
+    "JESD22-A109B",
+    "JESD22A"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A110E",
+   "org": "jedec",
+   "cat": "湿热/电化学",
+   "scope": "HAST 高加速温湿度应力（有偏压）",
+   "key_points": "★ 常用 130°C/85%RH、110°C/85%RH；与 THB 的优先关系由 IEC 60749-4 裁决",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A110E：2015 Highly Accelerated Temperature and Humidity Stress Test (HAST) - 完整英文电子版（12页）_1_12_translate_20240815162215.pdf",
+   "sha16": "cba1c9e52f47cbfd",
+   "pdf_pages": 12,
+   "text_chars": 5094,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A110E.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A110E"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A111B",
+   "org": "jedec",
+   "cat": "工艺能力",
+   "scope": "整器件浸焊评估底面贴装能力",
+   "key_points": "小外形表面贴装器件底部焊接的评估程序",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A111B ：2018 Evaluation Procedure for Determining Capability to Bottom Side Board Attach by Full Body Solder Immersion of Small Surface Mount Solid State Devices - 完整英文电子版（19页）_1_19_translate_20240815162305.pdf",
+   "sha16": "68d407db2eede0e9",
+   "pdf_pages": 20,
+   "text_chars": 11174,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A111B.txt",
+   "self_version_tokens": [
+    "J-STD-020",
+    "J-STD-035",
+    "JESD22",
+    "JESD22-A111B",
+    "JESD22-A113"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A113I",
+   "org": "jedec",
+   "cat": "预处理",
+   "scope": "非气密封装器件可靠性试验前的预处理",
+   "key_points": "★ 回流前烘烤 → 吸湿 → 3 次回流模拟 → 后续试验；与 J-STD-020 的 MSL 配合使用",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A113I：2020 Preconditioning of Nonhermetic Surface Mount Devices Prior to Reliability Testing - 完整英文电子版（36页）_1_36_translate_20240815162658.pdf",
+   "sha16": "7fc990dc052aca27",
+   "pdf_pages": 36,
+   "text_chars": 20025,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A113I.txt",
+   "self_version_tokens": [
+    "J-STD-020",
+    "J-STD-033",
+    "J-STD-035",
+    "J-STD-075",
+    "JESD22-A104",
+    "JESD22-A113I"
+   ],
+   "self_date_tokens": [
+    "2010"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A117E",
+   "org": "jedec",
+   "cat": "存储器专项",
+   "scope": "EEPROM 擦写耐久与数据保持",
+   "key_points": "擦写循环次数 + 数据保持（高温烘烤后读）双考核",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A117E：2018 Electrically Erasable Programmable ROM (EEPROM) Program Erase Endurance and Data Retention Stress Test- 完整英文电子版（21页）_1_21_translate_20240815162607.pdf",
+   "sha16": "9e25a919ddfd8a30",
+   "pdf_pages": 22,
+   "text_chars": 16536,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A117E.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A117E"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A118B.01",
+   "org": "jedec",
+   "cat": "湿热/电化学",
+   "scope": "无偏压 HAST（uHAST）",
+   "key_points": "与 A110 的区别：**无偏压** → 只考核吸湿/分层，不考核电化学",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A118B.01：2021 Accelerated Moisture Resistance - Unbiased HAST - 完整英文电子版（9页）_1_9_translate_20240815162906.pdf",
+   "sha16": "7abf499d004fc598",
+   "pdf_pages": 9,
+   "text_chars": 4212,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A118B.01.txt",
+   "self_version_tokens": [
+    "A118B.01",
+    "JESD22",
+    "JESD22-A118B.01"
+   ],
+   "self_date_tokens": [
+    "2015"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A119A",
+   "org": "jedec",
+   "cat": "热-电（存储）",
+   "scope": "低温存储寿命 LTSL",
+   "key_points": "★ AQG 324 QL-04 的母方法（cond. A，1000h @ ≤-40°C）",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A119A：2015 Low Temperature Storage Life - 完整英文电子版（7页）_1_7_translate_20240815163005.pdf",
+   "sha16": "1ba5887b6c84dc32",
+   "pdf_pages": 7,
+   "text_chars": 2244,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A119A.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A119A"
+   ],
+   "self_date_tokens": [
+    "2015"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A120B",
+   "org": "jedec",
+   "cat": "材料表征",
+   "scope": "有机材料水分扩散系数与溶解度测量",
+   "key_points": "为吸湿仿真提供 D 与 S 参数；不是可靠性试验，是材料参数试验",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A120B：2014 Test Method for the Measurement of Moisture Diffusivity and Water Solubility in Organic Materials Used in Electronic Devices - 完整英文电子版（13页）_1_13_translate_20240815163200.pdf",
+   "sha16": "a6e630697a327d96",
+   "pdf_pages": 13,
+   "text_chars": 6798,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A120B.txt",
+   "self_version_tokens": [
+    "J-STD-020",
+    "JESD22-A120B"
+   ],
+   "self_date_tokens": [
+    "2008"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A121A",
+   "org": "jedec",
+   "cat": "失效机理专项",
+   "scope": "锡及锡合金镀层锡须生长测量",
+   "key_points": "★ 锡须浸泡模式 = 5~10 min，等价 soak mode 2（A104 §5.5.3 有交叉引用）",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A121A(R2019) Test Method for Measuring Whisker Growth on Tin and Tin Alloy Surface Finishes - 完整英文电子版（29页）_1_29_translate_20240815163337.pdf",
+   "sha16": "3331b88d2976d143",
+   "pdf_pages": 31,
+   "text_chars": 14798,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A121A.txt",
+   "self_version_tokens": [
+    "JESD22-A104",
+    "JESD22-A121",
+    "JESD22-A121A"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-A122A",
+   "org": "jedec",
+   "cat": "热-电耦合",
+   "scope": "功率循环 PC（纯通电加热）",
+   "key_points": "★ 与 A104 机理不同：通电自加热 → 考核键合线/金属化/焊层；AQG 324 QL-01/QL-02 的车规化版本",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-A122A：2016 Power Cycling - 完整英文电子版（16页）_1_16_translate_20240815163259.pdf",
+   "sha16": "669de30235ded58a",
+   "pdf_pages": 16,
+   "text_chars": 6970,
+   "corpus_path": "references/sources/standards/jedec/JESD22-A122A.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A122A"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B100B",
+   "org": "jedec",
+   "cat": "几何/外观",
+   "scope": "物理尺寸",
+   "key_points": "外形尺寸测量方法",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B100B：2003 Physical Dimensions - 完整英文电子版（5页）_1_5_translate_20240815163533.pdf",
+   "sha16": "fec632c7e412ca08",
+   "pdf_pages": 5,
+   "text_chars": 1281,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B100B.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-B100B"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B101C",
+   "org": "jedec",
+   "cat": "几何/外观",
+   "scope": "外部目检 External Visual",
+   "key_points": "外观验收准则；与 B118（晶圆/芯片背面）配套",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B101C：2015 External Visual - 完整英文电子版（13页）_1_13_translate_20240815163437.pdf",
+   "sha16": "364bdf61d6b1ca21",
+   "pdf_pages": 13,
+   "text_chars": 5802,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B101C.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-B100",
+    "JESD22-B101C",
+    "JESD22-B114",
+    "JESD22-B118"
+   ],
+   "self_date_tokens": [
+    "2015"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B105E",
+   "org": "jedec",
+   "cat": "机械应力",
+   "scope": "引线完整性 Lead Integrity",
+   "key_points": "引线拉伸/弯曲疲劳；",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B105E：2018 Lead Integrity - 完整英文电子版（18页）_1_18_translate_20240813153612.pdf",
+   "sha16": "cd8515a9f5440f57",
+   "pdf_pages": 18,
+   "text_chars": 8526,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B105E.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A109",
+    "JESD22-B105E"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B106E",
+   "org": "jedec",
+   "cat": "焊接耐受力",
+   "scope": "通孔器件耐焊接热冲击",
+   "key_points": "波峰焊模拟下的耐热性",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B106E：2016 Resistance to Solder Shock for Through-Hole Mounted Devices - 完整英文电子版（11页）_1_11_translate_20240815163938.pdf",
+   "sha16": "bfd6ea552056c1d4",
+   "pdf_pages": 12,
+   "text_chars": 4906,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B106E.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-A111",
+    "JESD22-B106E"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B107D",
+   "org": "jedec",
+   "cat": "标识",
+   "scope": "标识永久性 Mark Permanency",
+   "key_points": "溶剂擦拭后标识保留；与 B114（标识可读性）配套",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B107D：2011 Mark Permanency - 完整英文电子版（11页）_1_11_translate_20240815163902.pdf",
+   "sha16": "abb9c30aff1133c5",
+   "pdf_pages": 11,
+   "text_chars": 4237,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B107D.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-B107D"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B108B",
+   "org": "jedec",
+   "cat": "几何/外观",
+   "scope": "共面性 Coplanarity",
+   "key_points": "表面贴装器件引脚/焊球共面性测量",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B108B：2010 Coplanarity Test for Surface-Mount Semiconductor Devices - 完整英文电子版（11页）_1_11_translate_20240815163752.pdf",
+   "sha16": "53327def11e19499",
+   "pdf_pages": 11,
+   "text_chars": 4497,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B108B.txt",
+   "self_version_tokens": [
+    "JESD22-B108B",
+    "JESD22-B112"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B109C",
+   "org": "jedec",
+   "cat": "互连强度",
+   "scope": "倒装芯片拉伸拉脱 Flip Chip Tensile Pull",
+   "key_points": "★ 与 B115（焊球拉）区分：B109 是倒装凸点整体拉脱",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B109C：2021 Flip Chip Tensile Pull - 完整英文电子版（13页）_1_13_translate_20240815164100.pdf",
+   "sha16": "b9942ac1ad3123d7",
+   "pdf_pages": 14,
+   "text_chars": 5059,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B109C.txt",
+   "self_version_tokens": [
+    "JESD22-B109C"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B110B.01",
+   "org": "jedec",
+   "cat": "机械应力",
+   "scope": "机械冲击（器件与子组件）",
+   "key_points": "冲击谱/峰值加速度",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B110B.01：2019 Mechanical Shock – Device and Subassembly - 完整英文电子版（11页）_1_11_translate_20240815164141.pdf",
+   "sha16": "ec06018a52c5b3cd",
+   "pdf_pages": 12,
+   "text_chars": 6151,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B110B.01.txt",
+   "self_version_tokens": [
+    "B110B.01",
+    "JESD22-B110B.01"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B111A",
+   "org": "jedec",
+   "cat": "板级可靠性",
+   "scope": "手持产品板级跌落试验",
+   "key_points": "★ 板级（PCB 组装后）而非器件级；与 JESD22-B113 弯折互补",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B111A：2016 Board Level Drop Test Method of Components for Handheld Electronic Products - 完整英文电子版（24页）_1_24_translate_20240815164218.pdf",
+   "sha16": "4a22b13a8757d4f8",
+   "pdf_pages": 24,
+   "text_chars": 14619,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B111A.txt",
+   "self_version_tokens": [
+    "IPC-9701A",
+    "J-STD-020",
+    "J-STD-033",
+    "JESD22-B110",
+    "JESD22-B111A",
+    "JESD94"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B112B",
+   "org": "jedec",
+   "cat": "几何/外观",
+   "scope": "高温下封装翘曲测量",
+   "key_points": "★ 与回流温度相关的动态翘曲；是 BGA 焊接良率的关键参数",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B112B ：2018 Package Warpage Measurement of Surface-Mount Integrated Circuits at Elevated Temperature - 完整英文电子版（27页）_1_27_translate_20240815164338.pdf",
+   "sha16": "f3d63f368f2fff0a",
+   "pdf_pages": 27,
+   "text_chars": 11304,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B112B.txt",
+   "self_version_tokens": [
+    "J-STD-020",
+    "JESD22",
+    "JESD22-A113",
+    "JESD22-B100",
+    "JESD22-B108",
+    "JESD22-B112B"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B113B",
+   "org": "jedec",
+   "cat": "板级可靠性",
+   "scope": "板级循环弯折（互连可靠性表征）",
+   "key_points": "手持产品 SMT IC 互连弯折疲劳",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B113B：2018 Board Level Cyclic Bend Test Method for Interconnect Reliability Characterization of SMT ICs for Handheld Electronic Products - 完整英文电子版（24页）_1_24_translate_20240815164421.pdf",
+   "sha16": "7e79c83de1436f3c",
+   "pdf_pages": 26,
+   "text_chars": 16942,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B113B.txt",
+   "self_version_tokens": [
+    "JESD22-B113B"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B114B",
+   "org": "jedec",
+   "cat": "标识",
+   "scope": "标识可读性 Mark Legibility",
+   "key_points": "字符可辨识度；与 B107（永久性）配套",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B114B：2020 Mark Legibility - 完整英文电子版（16页）_1_16_translate_20240815164604.pdf",
+   "sha16": "1d4d982d786536bc",
+   "pdf_pages": 15,
+   "text_chars": 6198,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B114B.txt",
+   "self_version_tokens": [
+    "JESD22-B114B"
+   ],
+   "self_date_tokens": [
+    "1990"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B115A.01",
+   "org": "jedec",
+   "cat": "互连强度",
+   "scope": "焊球拉脱 Solder Ball Pull",
+   "key_points": "★ 拉脱（pull）而非剪切（shear）；与 B117 区分",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B115A.01：2016 Solder Ball Pull - 完整英文电子版（22页）_1_22_translate_20240815164641.pdf",
+   "sha16": "cd89bce20aa11115",
+   "pdf_pages": 22,
+   "text_chars": 12061,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B115A.01.txt",
+   "self_version_tokens": [
+    "B115A.01",
+    "IPC-9708",
+    "JESD22",
+    "JESD22-B115A.01"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B116B",
+   "org": "jedec",
+   "cat": "互连强度",
+   "scope": "键合线剪切 Wire Bond Shear",
+   "key_points": "★ 机翻件，术语不可引用（把 Wire Bond 译成「线束/钢丝」）。英文原件见同目录 JESD22-B116B（英文原文条目）",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B116B：2017 Wire Bond Shear Test Method - 完整英文电子版（29页）_1_29_translate_20240815164821.pdf",
+   "sha16": "98988d35d1cde403",
+   "pdf_pages": 29,
+   "text_chars": 15138,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B116B.txt",
+   "self_version_tokens": [
+    "JESD22",
+    "JESD22-B116B"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B116B",
+   "org": "jedec",
+   "cat": "互连强度",
+   "scope": "键合线剪切 Wire Bond Shear",
+   "key_points": "★ 机翻件，术语不可引用（把 Wire Bond 译成「线束/钢丝」）。英文原件见同目录 JESD22-B116B（英文原文条目）",
+   "tier": "L1",
+   "tier_name": "英文原文在库",
+   "language": "en",
+   "source_file": "JESD22-B116B引线键合的剪切试验.pdf",
+   "sha16": "78c40073518ec3e4",
+   "pdf_pages": 32,
+   "text_chars": 57739,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B116B_2.txt",
+   "self_version_tokens": [
+    "JESD22-B116A",
+    "JESD22-B116B"
+   ],
+   "self_date_tokens": [
+    "April 2017",
+    "August 2009",
+    "2009",
+    "2017",
+    "2022"
+   ],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B117B",
+   "org": "jedec",
+   "cat": "互连强度",
+   "scope": "焊球剪切 Solder Ball Shear",
+   "key_points": "★ 剪切（shear）而非拉脱；与 B115 区分",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B117B：2014 Solder Ball Shear - 完整英文电子版（19页）_1_19_translate_20240815164936.pdf",
+   "sha16": "f8a9909e43797252",
+   "pdf_pages": 19,
+   "text_chars": 9659,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B117B.txt",
+   "self_version_tokens": [
+    "JESD22-B117B"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD22-B118",
+   "org": "jedec",
+   "cat": "几何/外观",
+   "scope": "晶圆与芯片背面外部目检",
+   "key_points": "背面外观验收准则；与 B101（封装外观）配套",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/JEDEC JESD22-B118 ：2011 Semiconductor Wafer and Die Backside External Visual Inspection - 完整英文电子版（15页）_1_15_translate_20240815165020.pdf",
+   "sha16": "d0029c6651248acc",
+   "pdf_pages": 15,
+   "text_chars": 5159,
+   "corpus_path": "references/sources/standards/jedec/JESD22-B118.txt",
+   "self_version_tokens": [
+    "JESD22-B118"
+   ],
+   "self_date_tokens": [],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD47L",
+   "org": "jedec",
+   "cat": "资格标准（裁判）",
+   "scope": "集成电路应力试验驱动型资格考核",
+   "key_points": "★ 中英对照双语。Table1 零失效样本量 / Table2 器件考核 / Table3 非易失存储器附加 / Table4 ELFR 样本量（60% 置信度）/ Table5 非气密封装 / Table6 气密封装 / Table7 变更选型 / Table8 键合最小拉力 / Table10 90% 置信度最大不良率。正文明确：ELFR 按 60% 置信度评估；通用数据可用卡方分布按 90% 置信限换算；单件昂贵器件可用 1/3 样本量",
+   "tier": "L1",
+   "tier_name": "英文原文在库",
+   "language": "en",
+   "source_file": "JEDEC-JESD47L.pdf",
+   "sha16": "30f731b3159a51d6",
+   "pdf_pages": 59,
+   "text_chars": 93587,
+   "corpus_path": "references/sources/standards/jedec/JESD47L.txt",
+   "self_version_tokens": [
+    "JESD47K",
+    "JESD47L"
+   ],
+   "self_date_tokens": [
+    "August 2018",
+    "December 2022",
+    "2018",
+    "2022"
+   ],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD51-2A",
+   "org": "jedec",
+   "cat": "热测试",
+   "scope": "集成电路热测试环境条件—自然对流（静止空气）",
+   "key_points": "静止空气下的 Rθja 测试环境；与 JESD51-6 强制对流成对",
+   "tier": "L1",
+   "tier_name": "英文原文在库",
+   "language": "en",
+   "source_file": "JESD51-2A：集成电路热测试方法环境条件——自然对流（静止空气）.pdf",
+   "sha16": "09b313ebf43ee869",
+   "pdf_pages": 22,
+   "text_chars": 32309,
+   "corpus_path": "references/sources/standards/jedec/JESD51-2A.txt",
+   "self_version_tokens": [
+    "JESD51"
+   ],
+   "self_date_tokens": [
+    "December 1995",
+    "January 2008",
+    "1995",
+    "2007",
+    "2008",
+    "2025"
+   ],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JESD51-6",
+   "org": "jedec",
+   "cat": "热测试",
+   "scope": "集成电路热测试环境条件—强制对流（流动空气）",
+   "key_points": "风冷下的 Rθja 测试环境；风速与测试板规格相关",
+   "tier": "L1",
+   "tier_name": "英文原文在库",
+   "language": "en",
+   "source_file": "JESD51-6集成电路热测试方法环境条件——强制对流（流动空气）.pdf",
+   "sha16": "3d8f467a99d4896e",
+   "pdf_pages": 20,
+   "text_chars": 32039,
+   "corpus_path": "references/sources/standards/jedec/JESD51-6.txt",
+   "self_version_tokens": [
+    "JESD51"
+   ],
+   "self_date_tokens": [
+    "March 1999",
+    "1999",
+    "2025"
+   ],
+   "can_cite_wording": true,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "JS-001",
+   "org": "jedec",
+   "cat": "电应力/ESD",
+   "scope": "HBM 人体模型组件级 ESD 敏感度测试",
+   "key_points": "★ 机翻件。JS-001-2017 新增 50V 测试级别与新分类（原文前言自述）；替代 JS-001-2014。分类等级须回英文原文核对",
+   "tier": "L3",
+   "tier_name": "机器翻译在库",
+   "language": "zh-MT",
+   "source_file": "JEDEC JESD22/ANSI ESDA JEDEC JS-001-2017 For Electrostatic Discharge Sensitivity Testing Human Body Model (HBM) -Component Level - 完整英文电子版（60页）_1_59_translate_20240815155533.pdf",
+   "sha16": "5d55bce3b2f1f887",
+   "pdf_pages": 63,
+   "text_chars": 56902,
+   "corpus_path": "references/sources/standards/jedec/JS-001.txt",
+   "self_version_tokens": [
+    "JS-001-2010",
+    "JS-001-2012",
+    "JS-001-2014",
+    "JS-001-2017"
+   ],
+   "self_date_tokens": [
+    "2010",
+    "2012",
+    "2014",
+    "2017"
+   ],
+   "can_cite_wording": false,
+   "can_cite_number": true
+  },
+  {
+   "std_id": "MIL-STD-883F",
+   "org": "mil",
+   "cat": "军标（试验方法）",
+   "scope": "微电子器件试验方法与程序 F 版",
+   "key_points": "★ 扫描件，未文字识别。仅可声明持有（708 页全本 + 1-349/359-708 分卷）",
+   "tier": "L4-OCR",
+   "tier_name": "扫描件已定向 OCR",
+   "language": "scan",
+   "source_file": "美军标 MIL-STD-883F.pdf",
+   "sha16": "8dd59bd8d9820838",
+   "pdf_pages": null,
+   "text_chars": 0,
+   "corpus_path": "references/sources/standards/mil_ocr/MIL-STD-883F.txt",
+   "self_version_tokens": [],
+   "self_date_tokens": [],
+   "parts": [
+    {
+     "file": "美军标 MIL-STD-883F.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    },
+    {
+     "file": "美军标 MIL-STD-883F(359-708).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    },
+    {
+     "file": "美军标 MIL-STD-883F(1-349).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    }
+   ],
+   "ocr": {
+    "pages_done": 9,
+    "pages_total": 708,
+    "engine": "Windows.Media.Ocr (WinRT) · zh-Hans-CN",
+    "dpi": 300
+   },
+   "can_cite_wording": false,
+   "can_cite_number": false
+  },
+  {
+   "std_id": "MIL-STD-883K",
+   "org": "mil",
+   "cat": "军标（试验方法）",
+   "scope": "微电子器件试验方法与程序 K 版",
+   "key_points": "★ 扫描件，未文字识别。仅可声明持有（768 页全本 + 1-399/400-768 分卷）",
+   "tier": "L4-OCR",
+   "tier_name": "扫描件已定向 OCR",
+   "language": "scan",
+   "source_file": "美军标 MIL-STD-883K.pdf",
+   "sha16": "e3ab56a8e0c314bb",
+   "pdf_pages": null,
+   "text_chars": 0,
+   "corpus_path": "references/sources/standards/mil_ocr/MIL-STD-883K.txt",
+   "self_version_tokens": [],
+   "self_date_tokens": [],
+   "parts": [
+    {
+     "file": "美军标 MIL-STD-883K.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    },
+    {
+     "file": "美军标 MIL-STD-883K(400-768).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    },
+    {
+     "file": "美军标 MIL-STD-883K(1-399).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    }
+   ],
+   "ocr": {
+    "pages_done": 102,
+    "pages_total": 768,
+    "engine": "Windows.Media.Ocr (WinRT) · zh-Hans-CN",
+    "dpi": 300
+   },
+   "can_cite_wording": false,
+   "can_cite_number": false
+  }
+ ],
+ "scanned_held": [
+  {
+   "std_id": "GJB-548B",
+   "org": "gjb",
+   "file": "国军标GJB 548B-2005微电子器件试验方法和程序.pdf",
+   "parts": [
+    {
+     "file": "国军标GJB 548B-2005微电子器件试验方法和程序.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    },
+    {
+     "file": "国军标GJB 548B-2005微电子器件试验方法和程序200-396.pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    },
+    {
+     "file": "国军标GJB 548B-2005微电子器件试验方法和程序1-199.pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    }
+   ],
+   "sha16": "fd1a6e47f63bb665"
+  },
+  {
+   "std_id": "GJB-548C",
+   "org": "gjb",
+   "file": "GJB 548C-2021-.pdf",
+   "parts": [
+    {
+     "file": "GJB 548C-2021-.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    }
+   ],
+   "sha16": "76d9085acf0c20d5"
+  },
+  {
+   "std_id": "MIL-STD-883F",
+   "org": "mil",
+   "file": "美军标 MIL-STD-883F.pdf",
+   "parts": [
+    {
+     "file": "美军标 MIL-STD-883F.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    },
+    {
+     "file": "美军标 MIL-STD-883F(359-708).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    },
+    {
+     "file": "美军标 MIL-STD-883F(1-349).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    }
+   ],
+   "sha16": "8dd59bd8d9820838"
+  },
+  {
+   "std_id": "MIL-STD-883K",
+   "org": "mil",
+   "file": "美军标 MIL-STD-883K.pdf",
+   "parts": [
+    {
+     "file": "美军标 MIL-STD-883K.pdf",
+     "dup_in_group": 1,
+     "is_split": false
+    },
+    {
+     "file": "美军标 MIL-STD-883K(400-768).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    },
+    {
+     "file": "美军标 MIL-STD-883K(1-399).pdf",
+     "dup_in_group": 1,
+     "is_split": true
+    }
+   ],
+   "sha16": "e3ab56a8e0c314bb"
+  }
+ ],
+ "distribution_note": "本仓库只发布**蒸馏层**（编号库 / 引用分层 / 条款级 digest / 方法索引 / CLI）。标准全文语料与 AQG 324 PDF **不随仓库分发**（版权归各标准组织）。因此 corpus 条目中的 corpus_path 在本仓库内不存在 —— 需自行准备对应标准原件。"
+}

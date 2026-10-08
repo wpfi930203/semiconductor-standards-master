@@ -1,0 +1,438 @@
+{
+ "generated": "2026-10-07",
+ "count": 37,
+ "terms": [
+  {
+   "bad": "模具垫",
+   "good": "芯片焊盘 / 芯片键合垫",
+   "en": "die pad",
+   "evidence": "B116B 机翻 L95「模具垫金属化」↔ 英文原件 L206「the die pad metallization」"
+  },
+  {
+   "bad": "模具",
+   "good": "芯片 / 裸片",
+   "en": "die",
+   "evidence": "B116B 机翻 L202「模具的表面与剪切工具的剪切面」↔ 英文 L461「surface of the die … shearing plane」"
+  },
+  {
+   "bad": "球键",
+   "good": "球焊点",
+   "en": "ball bond",
+   "evidence": "B116B 机翻 L68「球键的质量」↔ 英文 L149 上下文 ball bond"
+  },
+  {
+   "bad": "线束",
+   "good": "键合线",
+   "en": "wire bond",
+   "evidence": "B116B 机翻「线束剪切试验」↔ 英文标题「Wire Bond Shear Test Method」"
+  },
+  {
+   "bad": "热膜",
+   "good": "热超声",
+   "en": "thermosonic",
+   "evidence": "B116B 机翻 L69「热膜（球）键」↔ 英文 L153「thermosonic (ball) bonds」"
+  },
+  {
+   "bad": "针线",
+   "good": "针脚焊点",
+   "en": "stitch bond",
+   "evidence": "B116B 机翻 L73「通常为针线」↔ 英文 L162「typically a stitch bond」"
+  },
+  {
+   "bad": "冶金键",
+   "good": "冶金结合",
+   "en": "metallurgical bond",
+   "evidence": "B116B 机翻 L67「已形成的冶金键」↔ 英文 L149「the metallurgical bond」"
+  },
+  {
+   "bad": "骰子",
+   "good": "芯片 / 晶粒",
+   "en": "dice",
+   "evidence": "J-STD-020 目录「JEP160 电子固态晶片、骰子和设备…」↔ JEP160 英文标题「Wafers, Dice, and Devices」"
+  },
+  {
+   "bad": "偏见",
+   "good": "偏压 / 偏置",
+   "en": "bias",
+   "evidence": "A110E「偏见指南」= Bias Guidelines；同一文件他处已用「偏置」，前后不一致"
+  },
+  {
+   "bad": "偏差",
+   "good": "偏压 / 偏置",
+   "en": "bias",
+   "evidence": "A110E L159「连续或周期性偏差」——同一文件内 bias 有「偏见/偏差/偏置」三种译法"
+  }
+ ],
+ "entries": [
+  {
+   "std_id": "J-STD-020",
+   "cat": "封装/回流",
+   "scope": "非气密封装湿敏等级 MSL 分级与回流分类",
+   "sections": 34,
+   "repaired": 5,
+   "numeric_lines": 40,
+   "term_hits": 29,
+   "digest": "references/digests/J-STD-020.md"
+  },
+  {
+   "std_id": "JESD22-A100E",
+   "cat": "湿热/电化学",
+   "scope": "循环温湿度偏压（带表面凝露）",
+   "sections": 14,
+   "repaired": 5,
+   "numeric_lines": 19,
+   "term_hits": 26,
+   "digest": "references/digests/JESD22-A100E.md"
+  },
+  {
+   "std_id": "JESD22-A101D.01",
+   "cat": "湿热/电化学",
+   "scope": "稳态温湿度偏压寿命（THB 85/85）",
+   "sections": 16,
+   "repaired": 1,
+   "numeric_lines": 18,
+   "term_hits": 30,
+   "digest": "references/digests/JESD22-A101D.01.md"
+  },
+  {
+   "std_id": "JESD22-A102E",
+   "cat": "湿热/电化学",
+   "scope": "加速耐湿—无偏压蒸煮（Autoclave / PCT）",
+   "sections": 8,
+   "repaired": 4,
+   "numeric_lines": 15,
+   "term_hits": 3,
+   "digest": "references/digests/JESD22-A102E.md"
+  },
+  {
+   "std_id": "JESD22-A103E",
+   "cat": "热-电（存储）",
+   "scope": "高温存储寿命 HTSL",
+   "sections": 5,
+   "repaired": 0,
+   "numeric_lines": 2,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-A103E.md"
+  },
+  {
+   "std_id": "JESD22-A104F",
+   "cat": "热-机械",
+   "scope": "温度循环 TC（单/双/三箱，空气介质）",
+   "sections": 33,
+   "repaired": 3,
+   "numeric_lines": 19,
+   "term_hits": 1,
+   "digest": "references/digests/JESD22-A104F.md"
+  },
+  {
+   "std_id": "JESD22-A105D",
+   "cat": "热-电耦合",
+   "scope": "功率与温度循环 PTC（通电+环境箱叠加）",
+   "sections": 9,
+   "repaired": 3,
+   "numeric_lines": 7,
+   "term_hits": 1,
+   "digest": "references/digests/JESD22-A105D.md"
+  },
+  {
+   "std_id": "JESD22-A106B.01",
+   "cat": "热-机械",
+   "scope": "热冲击 TST（两液槽，转换 <10s）",
+   "sections": 3,
+   "repaired": 2,
+   "numeric_lines": 2,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-A106B.01.md"
+  },
+  {
+   "std_id": "JESD22-A107C",
+   "cat": "环境腐蚀",
+   "scope": "盐雾 Salt Atmosphere",
+   "sections": 0,
+   "repaired": 0,
+   "numeric_lines": 0,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-A107C.md"
+  },
+  {
+   "std_id": "JESD22-A108F",
+   "cat": "热-电（偏压寿命）",
+   "scope": "Temperature, Bias, and Operating Life（业界俗称 TBL/HTOL 母标准）",
+   "sections": 15,
+   "repaired": 0,
+   "numeric_lines": 10,
+   "term_hits": 16,
+   "digest": "references/digests/JESD22-A108F.md"
+  },
+  {
+   "std_id": "JESD22-A109B",
+   "cat": "封装完整性",
+   "scope": "气密性 Hermeticity（细检/粗检）",
+   "sections": 0,
+   "repaired": 0,
+   "numeric_lines": 0,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-A109B.md"
+  },
+  {
+   "std_id": "JESD22-A110E",
+   "cat": "湿热/电化学",
+   "scope": "HAST 高加速温湿度应力（有偏压）",
+   "sections": 14,
+   "repaired": 5,
+   "numeric_lines": 29,
+   "term_hits": 23,
+   "digest": "references/digests/JESD22-A110E.md"
+  },
+  {
+   "std_id": "JESD22-A111B",
+   "cat": "工艺能力",
+   "scope": "整器件浸焊评估底面贴装能力",
+   "sections": 28,
+   "repaired": 14,
+   "numeric_lines": 40,
+   "term_hits": 15,
+   "digest": "references/digests/JESD22-A111B.md"
+  },
+  {
+   "std_id": "JESD22-A113I",
+   "cat": "预处理",
+   "scope": "非气密封装器件可靠性试验前的预处理",
+   "sections": 20,
+   "repaired": 5,
+   "numeric_lines": 27,
+   "term_hits": 41,
+   "digest": "references/digests/JESD22-A113I.md"
+  },
+  {
+   "std_id": "JESD22-A117E",
+   "cat": "存储器专项",
+   "scope": "EEPROM 擦写耐久与数据保持",
+   "sections": 23,
+   "repaired": 2,
+   "numeric_lines": 38,
+   "term_hits": 3,
+   "digest": "references/digests/JESD22-A117E.md"
+  },
+  {
+   "std_id": "JESD22-A118B.01",
+   "cat": "湿热/电化学",
+   "scope": "无偏压 HAST（uHAST）",
+   "sections": 13,
+   "repaired": 0,
+   "numeric_lines": 20,
+   "term_hits": 4,
+   "digest": "references/digests/JESD22-A118B.01.md"
+  },
+  {
+   "std_id": "JESD22-A119A",
+   "cat": "热-电（存储）",
+   "scope": "低温存储寿命 LTSL",
+   "sections": 5,
+   "repaired": 0,
+   "numeric_lines": 2,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-A119A.md"
+  },
+  {
+   "std_id": "JESD22-A120B",
+   "cat": "材料表征",
+   "scope": "有机材料水分扩散系数与溶解度测量",
+   "sections": 28,
+   "repaired": 11,
+   "numeric_lines": 36,
+   "term_hits": 1,
+   "digest": "references/digests/JESD22-A120B.md"
+  },
+  {
+   "std_id": "JESD22-A121A",
+   "cat": "失效机理专项",
+   "scope": "锡及锡合金镀层锡须生长测量",
+   "sections": 28,
+   "repaired": 13,
+   "numeric_lines": 19,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-A121A.md"
+  },
+  {
+   "std_id": "JESD22-A122A",
+   "cat": "热-电耦合",
+   "scope": "功率循环 PC（纯通电加热）",
+   "sections": 17,
+   "repaired": 6,
+   "numeric_lines": 3,
+   "term_hits": 2,
+   "digest": "references/digests/JESD22-A122A.md"
+  },
+  {
+   "std_id": "JESD22-B100B",
+   "cat": "几何/外观",
+   "scope": "物理尺寸",
+   "sections": 0,
+   "repaired": 0,
+   "numeric_lines": 0,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-B100B.md"
+  },
+  {
+   "std_id": "JESD22-B101C",
+   "cat": "几何/外观",
+   "scope": "外部目检 External Visual",
+   "sections": 23,
+   "repaired": 8,
+   "numeric_lines": 2,
+   "term_hits": 4,
+   "digest": "references/digests/JESD22-B101C.md"
+  },
+  {
+   "std_id": "JESD22-B105E",
+   "cat": "机械应力",
+   "scope": "引线完整性 Lead Integrity",
+   "sections": 37,
+   "repaired": 7,
+   "numeric_lines": 14,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-B105E.md"
+  },
+  {
+   "std_id": "JESD22-B106E",
+   "cat": "焊接耐受力",
+   "scope": "通孔器件耐焊接热冲击",
+   "sections": 18,
+   "repaired": 0,
+   "numeric_lines": 27,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-B106E.md"
+  },
+  {
+   "std_id": "JESD22-B107D",
+   "cat": "标识",
+   "scope": "标识永久性 Mark Permanency",
+   "sections": 10,
+   "repaired": 3,
+   "numeric_lines": 8,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-B107D.md"
+  },
+  {
+   "std_id": "JESD22-B108B",
+   "cat": "几何/外观",
+   "scope": "共面性 Coplanarity",
+   "sections": 2,
+   "repaired": 0,
+   "numeric_lines": 1,
+   "term_hits": 14,
+   "digest": "references/digests/JESD22-B108B.md"
+  },
+  {
+   "std_id": "JESD22-B109C",
+   "cat": "互连强度",
+   "scope": "倒装芯片拉伸拉脱 Flip Chip Tensile Pull",
+   "sections": 30,
+   "repaired": 10,
+   "numeric_lines": 3,
+   "term_hits": 34,
+   "digest": "references/digests/JESD22-B109C.md"
+  },
+  {
+   "std_id": "JESD22-B110B.01",
+   "cat": "机械应力",
+   "scope": "机械冲击（器件与子组件）",
+   "sections": 39,
+   "repaired": 1,
+   "numeric_lines": 12,
+   "term_hits": 2,
+   "digest": "references/digests/JESD22-B110B.01.md"
+  },
+  {
+   "std_id": "JESD22-B111A",
+   "cat": "板级可靠性",
+   "scope": "手持产品板级跌落试验",
+   "sections": 18,
+   "repaired": 3,
+   "numeric_lines": 37,
+   "term_hits": 7,
+   "digest": "references/digests/JESD22-B111A.md"
+  },
+  {
+   "std_id": "JESD22-B112B",
+   "cat": "几何/外观",
+   "scope": "高温下封装翘曲测量",
+   "sections": 30,
+   "repaired": 7,
+   "numeric_lines": 11,
+   "term_hits": 4,
+   "digest": "references/digests/JESD22-B112B.md"
+  },
+  {
+   "std_id": "JESD22-B113B",
+   "cat": "板级可靠性",
+   "scope": "板级循环弯折（互连可靠性表征）",
+   "sections": 14,
+   "repaired": 0,
+   "numeric_lines": 29,
+   "term_hits": 5,
+   "digest": "references/digests/JESD22-B113B.md"
+  },
+  {
+   "std_id": "JESD22-B114B",
+   "cat": "标识",
+   "scope": "标识可读性 Mark Legibility",
+   "sections": 14,
+   "repaired": 1,
+   "numeric_lines": 1,
+   "term_hits": 0,
+   "digest": "references/digests/JESD22-B114B.md"
+  },
+  {
+   "std_id": "JESD22-B115A.01",
+   "cat": "互连强度",
+   "scope": "焊球拉脱 Solder Ball Pull",
+   "sections": 18,
+   "repaired": 3,
+   "numeric_lines": 12,
+   "term_hits": 4,
+   "digest": "references/digests/JESD22-B115A.01.md"
+  },
+  {
+   "std_id": "JESD22-B116B",
+   "cat": "互连强度",
+   "scope": "键合线剪切 Wire Bond Shear",
+   "sections": 23,
+   "repaired": 6,
+   "numeric_lines": 11,
+   "term_hits": 91,
+   "digest": "references/digests/JESD22-B116B.md"
+  },
+  {
+   "std_id": "JESD22-B117B",
+   "cat": "互连强度",
+   "scope": "焊球剪切 Solder Ball Shear",
+   "sections": 17,
+   "repaired": 0,
+   "numeric_lines": 17,
+   "term_hits": 4,
+   "digest": "references/digests/JESD22-B117B.md"
+  },
+  {
+   "std_id": "JESD22-B118",
+   "cat": "几何/外观",
+   "scope": "晶圆与芯片背面外部目检",
+   "sections": 7,
+   "repaired": 4,
+   "numeric_lines": 0,
+   "term_hits": 44,
+   "digest": "references/digests/JESD22-B118.md"
+  },
+  {
+   "std_id": "JS-001",
+   "cat": "电应力/ESD",
+   "scope": "HBM 人体模型组件级 ESD 敏感度测试",
+   "sections": 59,
+   "repaired": 4,
+   "numeric_lines": 34,
+   "term_hits": 23,
+   "digest": "references/digests/JS-001.md"
+  }
+ ]
+}
